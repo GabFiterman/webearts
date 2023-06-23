@@ -12,6 +12,9 @@ function App() {
           count is {count}
         </button>
       </div> */}
+      <div className="container-sm mainContainer">
+        <TestingComponent />
+      </div>
     </>
   );
 }
