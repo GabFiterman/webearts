@@ -1,0 +1,104 @@
+{
+    "Heading": {
+        "title": "A criatividade é a inteligência se divertindo",
+        "subtitle": "- Albert Einstein",
+        "bodyText": [
+            {
+                "id": 1,
+                "text": "Transformando sua presença online. Somos especializados em design e desenvolvimento web para empresas que buscam ascensão. "
+            },
+            {
+                "id": 2,
+                "text": "Criatividade, qualidade e soluções personalizadas que deixam uma marca duradoura."
+            },
+            {
+                "id": 1,
+                "text": "Descubra como podemos elevar sua presença online."
+            }
+        ]
+    },
+    "Introduction": {
+        "title": "Potencialize seu negócio com a sinergia de design e tecnologia!",
+        "bodyText": "Na WebeArts, unimos design e tecnologia para impulsionar o seu negócio. Oferecemos soluções completas de design gráfico, sites e web apps para destacar sua marca e impulsionar o crescimento. Alcance o sucesso online que você merece com a WebeArts."
+    },
+    "Services": {
+        "title": "Do banner ao código",
+        "design": [
+            "Criação de banners para sites e anúncios online",
+            "Design de criativos para redes sociais",
+            "Conceptualização e criação de logos e identidade de marca",
+            "Design de materiais de mídia offline, como panfletos, cartões de visita, etc.",
+            "Criação de layouts e templates para apresentações",
+            "Ilustrações personalizadas e gráficos",
+            "Design de embalagens e rótulos de produtos",
+            "Rebranding e atualização de identidade visual",
+            "Design de interfaces de usuário (UI) para aplicativos e websites",
+            "Consultoria de design para melhorias estéticas e usabilidade"
+        ],
+        "desenvolvimento": [
+            "Desenvolvimento completo de websites e landing pages, desde a fase de protótipo até a produção final.",
+            "Atualização e modernização de websites existentes, utilizando tecnologias recentes e avançadas.",
+            "Criação de websites e lojas virtuais com WordPress, oferecendo flexibilidade e facilidade de gerenciamento de conteúdo.",
+            "Desenvolvimento de web apps personalizados para atender necessidades específicas do seu negócio.",
+            "Integração de sistemas e APIs para melhorar a funcionalidade e eficiência do seu website.",
+            "Otimização de desempenho e velocidade para garantir uma experiência de usuário fluida.",
+            "Implementação de SEO (Search Engine Optimization) para melhorar a visibilidade do seu website nos mecanismos de busca.",
+            "Integração de plataformas de pagamento e funcionalidades de e-commerce para criar uma experiência de compra online completa.",
+            "Desenvolvimento responsivo, garantindo que seu website seja acessível e se adapte a diferentes dispositivos e tamanhos de tela.",
+            "Manutenção e suporte contínuo para garantir a segurança e funcionalidade do seu website ao longo do tempo."
+        ]
+    },
+    "Portfolio": {
+        "title": "Portfolio",
+        "highlightProjects": [
+            "ambrossia",
+            "goBestLife"
+        ],
+        "orderProjectsBy": []
+    },
+    "ContactUs": {
+        "title": "Pronto para Decolar ?",
+        "subtitle": "envie uma mensagem",
+        "form": {
+            "name": "Seu nome",
+            "email": "Seu melhor email",
+            "message": "Escreva-nos"
+        }
+    },
+    "OurTeam": {
+        "title": "E quem somos?",
+        "subtitle": "Somos a WebeArts, uma equipe apaixonada pela junção entre design e tecnologia.",
+        "bodyText": "Combinamos criatividade e habilidades técnicas avançadas para criar soluções completas de design gráfico, construção de sites, landing pages e web apps. Nosso objetivo é impulsionar o seu negócio, destacando sua marca, transmitindo confiança e impulsionando o crescimento. Conte conosco para alcançar o sucesso online que você merece.",
+        "teamTitle": "Equipe",
+        "teamMembers": [
+            {
+                "id": 1,
+                "name": "Gabriel",
+                "alias": "Gabriel",
+                "title": "Desenvolvedor Fullstack e Designer",
+                "photoName": "",
+                "photoExtension": ".png",
+                "shortDescription": "",
+                "longDescription": "",
+                "hardSkills": [],
+                "softSkills": []
+            },
+            {
+                "id": 2,
+                "name": "Karol",
+                "alias": "Kakau",
+                "title": "Designer",
+                "photoName": "",
+                "photoExtension": ".png",
+                "shortDescription": "",
+                "longDescription": "",
+                "hardSkills": [],
+                "softSkills": []
+            }
+        ]
+    },
+    "Footer": {
+        "title": "Obrigado!",
+        "subtitle": "by: webearts"
+    }
+}
