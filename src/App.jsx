@@ -1,18 +1,19 @@
-import { useState } from 'react'
+// import { useState } from 'react'
+import "./scss/app.scss";
+import TestingComponent from "./components/TestingComponent";
+
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <>
-      <div className='container py-4 px-3 mx-auto'>
-        <h1>Hello, Bootstrap and Vite!</h1>
-        <button className='btn btn-primary'>Primary Button</button>
+      {/* <div className='container py-4 px-3 mx-auto'>
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-      </div>
+      </div> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
