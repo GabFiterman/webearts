@@ -1,22 +1,32 @@
-// import { useState } from 'react'
+
 import "./scss/app.scss";
-import TestingComponent from "./components/TestingComponent";
+import Portfolio from "./components/Portfolio";
+import Root from "./routes/Root";
+import ErrorPage from "./pages/ErrorPage";
+import Project from "./components/Project";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/portfolio",
+    element: <Portfolio />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/portfolio/:id",
+    element: <Project />
+  }
+])
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
-    <>
-      {/* <div className='container py-4 px-3 mx-auto'>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div> */}
-      <div className="container-sm mainContainer">
-        <TestingComponent />
-      </div>
-    </>
-  );
+    <RouterProvider router={router} />
+  )
 }
 
 export default App;
