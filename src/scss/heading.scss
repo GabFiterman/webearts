@@ -1,0 +1,13 @@
+.fade-text {
+  position: relative;
+}
+
+.fade-text__item {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.fade-text__item--visible {
+  opacity: 1;
+}

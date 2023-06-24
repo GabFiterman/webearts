@@ -1,51 +1,41 @@
 {
     "Heading": {
-        "title": "A criatividade é a inteligência se divertindo",
+        "title": "A criatividade é a inteligência se <b class=\"highlight\">divertindo</b>",
         "subtitle": "- Albert Einstein",
+        "bodyTextInterval": 3000,
         "bodyText": [
-            {
-                "id": 1,
-                "text": "Transformando sua presença online. Somos especializados em design e desenvolvimento web para empresas que buscam ascensão. "
-            },
-            {
-                "id": 2,
-                "text": "Criatividade, qualidade e soluções personalizadas que deixam uma marca duradoura."
-            },
-            {
-                "id": 1,
-                "text": "Descubra como podemos elevar sua presença online."
-            }
+            "Transformando sua presença online. Somos especializados em <b class=\"highlight\">design</b> e <b class=\"highlight\">desenvolvimento</b> web para empresas que buscam <b class=\"highlight\">ascensão</b>. ",
+            "<b class=\"highlight\">Criatividade</b>, <b class=\"highlight\">qualidade</b> e soluções <b class=\"highlight\">personalizadas</b> que deixam uma marca duradoura.",
+            "Descubra como podemos elevar sua <b class=\"highlight\">presença online</b>."
         ]
     },
     "Introduction": {
-        "title": "Potencialize seu negócio com a sinergia de design e tecnologia!",
+        "title": "Potencialize seu negócio com a sinergia de <b class=\"emphasis\">design</b> e <b class=\"emphasis\">tecnologia</b>!",
         "bodyText": "Na WebeArts, unimos design e tecnologia para impulsionar o seu negócio. Oferecemos soluções completas de design gráfico, sites e web apps para destacar sua marca e impulsionar o crescimento. Alcance o sucesso online que você merece com a WebeArts."
     },
     "Services": {
         "title": "Do banner ao código",
         "design": [
-            "Criação de banners para sites e anúncios online",
-            "Design de criativos para redes sociais",
-            "Conceptualização e criação de logos e identidade de marca",
-            "Design de materiais de mídia offline, como panfletos, cartões de visita, etc.",
-            "Criação de layouts e templates para apresentações",
-            "Ilustrações personalizadas e gráficos",
-            "Design de embalagens e rótulos de produtos",
-            "Rebranding e atualização de identidade visual",
-            "Design de interfaces de usuário (UI) para aplicativos e websites",
-            "Consultoria de design para melhorias estéticas e usabilidade"
+            "Criação de banners para sites e <b>anúncios online</b>",
+            "Design de criativos para <b>redes sociais</b>",
+            "Conceptualização e criação de <b>logos e identidade</b> de marca",
+            "Design de materiais de <b>mídia offline</b>, como panfletos, cartões de visita, etc.",
+            "Criação de layouts e templates para <b>apresentações</b>",
+            "<b>Ilustrações</b> personalizadas e gráficos",
+            "<b>Rebranding</b> e atualização de identidade visual",
+            "<b>Design de interfaces</b> de usuário (UI) para aplicativos e websites",
+            "<b>Consultoria de design</b> para melhorias estéticas e usabilidade"
         ],
         "desenvolvimento": [
-            "Desenvolvimento completo de websites e landing pages, desde a fase de protótipo até a produção final.",
-            "Atualização e modernização de websites existentes, utilizando tecnologias recentes e avançadas.",
-            "Criação de websites e lojas virtuais com WordPress, oferecendo flexibilidade e facilidade de gerenciamento de conteúdo.",
-            "Desenvolvimento de web apps personalizados para atender necessidades específicas do seu negócio.",
-            "Integração de sistemas e APIs para melhorar a funcionalidade e eficiência do seu website.",
-            "Otimização de desempenho e velocidade para garantir uma experiência de usuário fluida.",
-            "Implementação de SEO (Search Engine Optimization) para melhorar a visibilidade do seu website nos mecanismos de busca.",
-            "Integração de plataformas de pagamento e funcionalidades de e-commerce para criar uma experiência de compra online completa.",
-            "Desenvolvimento responsivo, garantindo que seu website seja acessível e se adapte a diferentes dispositivos e tamanhos de tela.",
-            "Manutenção e suporte contínuo para garantir a segurança e funcionalidade do seu website ao longo do tempo."
+            "Desenvolvimento completo de <b>websites e landing pages</b>, desde a fase de protótipo até a produção final.",
+            "Atualização e <b>modernização de websites</b> existentes, utilizando tecnologias recentes e avançadas.",
+            "Criação de websites e lojas virtuais com <b>WordPress</b>, oferecendo flexibilidade e facilidade de gerenciamento de conteúdo.",
+            "Desenvolvimento de <b>web apps personalizados</b> para atender necessidades específicas do seu negócio.",
+            "Integração de <b>sistemas e APIs</b> para melhorar a funcionalidade e eficiência do seu website.",
+            "<b>Otimização de desempenho</b> e velocidade para garantir uma experiência de usuário fluida.",
+            "Implementação de <b>SEO (Search Engine Optimization)</b> para melhorar a <b>visibilidade</b> do seu website nos mecanismos de busca.",
+            "<b>Desenvolvimento responsivo</b>, garantindo que seu website seja acessível e se adapte a diferentes dispositivos e tamanhos de tela.",
+            "Manutenção e <b>suporte contínuo</b> para garantir a segurança e funcionalidade do seu website ao longo do tempo."
         ]
     },
     "Portfolio": {
