@@ -18,25 +18,25 @@ function FadeText({ texts, interval }) {
   }, [texts, interval]);
 
   return (
-    <div className="fade-text">
+    <Col className="FadeText__col">
       {texts.map((text, index) => (
         <div
           key={index}
-          className={`fade-text__item ${
-            index === currentIndex ? "fade-text__item--visible" : ""
+          className={`FadeText__item ${
+            index === currentIndex ? "FadeText__item--visible" : ""
           }`}
         >
           {ReactHtmlParser(text)}
         </div>
       ))}
-    </div>
+    </Col>
   );
 }
 
 function FunnyImage() {
   const imageSrc = '/img/StickerEinstein.png'
   return (
-    <img className="FunnyImage__image" src={imageSrc} alt="Sticker Albert Einstein" />
+    <img className="FunnyImage__image--animation" src={imageSrc} alt="Sticker Albert Einstein" />
   )
 }
 
@@ -46,7 +46,7 @@ export default function Heading({ textData }) {
     <Container fluid>
       <Row>
         <Col className="px-0 mt-5">
-          <h1 className="title title-big">{ReactHtmlParser(textData.title)}</h1>
+          <h1 className="title title-big firstTitle--animation">{ReactHtmlParser(textData.title)}</h1>
         </Col>
       </Row>
       <Row>
@@ -60,9 +60,7 @@ export default function Heading({ textData }) {
         </Col>
       </Row>
       <Row>
-        <Col className="FadeText__col">
           <FadeText texts={textData.bodyText} interval={textData.bodyTextInterval} />
-        </Col>
       </Row>
     </Container>
   );

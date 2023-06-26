@@ -1,26 +1,89 @@
-.fade-text {
-  position: relative;
-  text-align: end;
+.firstTitle--animation {
+  animation-duration: 2s;
+  animation-name: slidein;
+
+  @keyframes slidein {
+    0% {
+      margin-left: 120%;
+      width: 300%
+    }
+
+    75% {
+      margin-left: -5%;
+      width: 95%;
+    }
+
+    95% {
+      margin-left: 2%;
+      width: 102%;
+    }
+
+    100% {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 }
 
 .FadeText__col {
-  padding-top: 50vh;
 }
 
-.fade-text__item {
+.FadeText__item {
+  text-align: end;
   position: absolute;
   opacity: 0;
   transition: opacity 0.5s;
 }
 
-.fade-text__item--visible {
+.FadeText__item--visible {
   opacity: 1;
 }
 
-.FunnyImage__col {}
+.FunnyImage__col {
+  height: 10vh;
+  margin: 8rem 0 8rem 10rem;
+}
 
-.FunnyImage__image {
-  position: absolute;
-  top: 70vh;
-  left: 60vw;
+.FunnyImage__image--animation {
+  $initalValue: 10rem;
+  $finalValue: 8.5rem;
+
+  width: $initalValue;
+  transform: rotate(0deg);
+  opacity: 90%;
+
+  animation-duration: 1.25s;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+
+  @keyframes bounce {
+    0% {
+      width: $initalValue;
+      transform: rotate(0deg);
+      opacity: 90%;
+    }
+    20% {
+      width: $finalValue;
+      transform: rotate(10deg);
+    }
+    40% {
+      transform: rotate(-10deg);
+      opacity: 85%;
+    }
+    60% {
+      transform: rotate(5deg);
+      opacity: 85%;
+    }
+    80% {
+      width: $finalValue;
+      transform: rotate(-5deg);
+    }
+    100% {
+      width: $initalValue;
+      transform: rotate(0deg);
+      opacity: 90%;
+    }
+  }
+  
 }
