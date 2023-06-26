@@ -1,5 +1,10 @@
 .fade-text {
   position: relative;
+  text-align: end;
+}
+
+.FadeText__col {
+  padding-top: 50vh;
 }
 
 .fade-text__item {
@@ -10,4 +15,12 @@
 
 .fade-text__item--visible {
   opacity: 1;
+}
+
+.FunnyImage__col {}
+
+.FunnyImage__image {
+  position: absolute;
+  top: 70vh;
+  left: 60vw;
 }

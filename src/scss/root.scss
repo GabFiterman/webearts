@@ -4,7 +4,8 @@
 @media (max-width: 767px) {
     .Root {
         background-image: url('/background-mobile.jpg');
-        min-height: 100vh;
+        min-height: 1000vh;
+        // height: max-content;
         width: 100vw;
         color: $color-text-main;
         font-family: $font-family;
@@ -16,7 +17,7 @@
     }
 
     .title-big {
-        font-size: 2.5rem;
+        font-size: $font-size-title-big;
     }
 
     .highlight {
@@ -26,6 +27,11 @@
 
     .emphasis {
         color: $color-text-emphasis;
+    }
+
+    .subtitle {
+        font-size: $font-size-subtitle;
+        font-style: italic;
     }
 }
 

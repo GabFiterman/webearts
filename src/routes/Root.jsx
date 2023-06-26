@@ -12,10 +12,10 @@ export default function Root() {
                 <Heading textData={textData.Heading} />
             </Col>
         </Row>
-        <Row className="mt-5">
+        {/* <Row className="mt-5">
             <Col>
             </Col>
-        </Row>
+        </Row> */}
       </Container>
     );
   }
