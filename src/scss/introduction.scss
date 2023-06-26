@@ -1,0 +1,41 @@
+@import './_variables.scss';
+
+.Introduction__logo {
+    background-color: $color-text-main;
+    height: 7rem;
+    padding: 1rem 2rem;
+    border-radius: 0 0 2rem 0;
+    transition: opacity 0.5s ease;
+}
+
+.Introduction__container {
+    color: $color-text-ternary;
+    background-color: $color-text-main;
+    padding: 2rem 1.5rem;
+    border-radius: 0 0 4rem 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    margin-top: -15vh;
+}
+
+.Introduction__logo.hide {
+    opacity: 0;
+}
+
+.Introduction__container.show {
+    opacity: 1;
+}
+
+.Introduction__icon {
+    height: 7rem;
+    margin-left: -4rem;
+    opacity: .25;
+}
+
+.Introduction__text--title {
+    color: $color-text-highlight;
+}
+
+.Introduction__text--body {
+    margin-top: 1.5rem;
+}
