@@ -1,16 +1,18 @@
+import { useRef, useEffect } from 'react';
+import textData from "../data/text-main.json";
+import ReactHtmlParser from 'react-html-parser';
+const _t = textData.Services;
+import {Row, Col } from 'react-bootstrap';
+
 function TestingCard(props) {
   return (
     <div>
       <div className="card testingCard">
-        <div className="card-body">{props.text}</div>
+        <div className="card-body">{ReactHtmlParser(props.text)}</div>
       </div>
     </div>
   );
 }
-
-import { useRef, useEffect } from 'react';
-import textData from "../data/text-main.json";
-const _t = textData.Services;
 
 export default function TestingComponent() {
 
@@ -26,16 +28,15 @@ export default function TestingComponent() {
 
   return (
     <>
-      <h1 className="testingStyle">Testing Component is working</h1>
-      <div className="row">
-        <div className="horizontalGallery" ref={galleryRef}>
+      <Row className="mb-5">
+        <Col className="horizontalGallery" ref={galleryRef}>
           {_t.design.map((item, index) => (
             <div key={index}>
               <TestingCard text={item} />
             </div>
           ))}
-        </div>
-      </div>
+        </Col>
+      </Row>
     </>
   );
 }
