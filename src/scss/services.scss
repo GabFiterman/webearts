@@ -1,0 +1,107 @@
+@import './_variables.scss';
+
+.Services {
+    background-image: url('/img/PenTool_Curve_Constelation.png');
+    background-size: 125%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.Services__title {
+    color: $color-text-highlight;
+    font-size: 2rem;
+}
+
+.astronaut--flying {
+    margin: -5vh 0 0 -25vw;
+}
+
+.Services__image--astronaut--sleeping--container {
+    height: 18vh;
+}
+
+.astronaut--sleeping {
+    margin: -2vh 0 0 5rem;
+}
+
+.Services__image--astronaut--animation {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-name: shaking;
+
+    @keyframes shaking {
+        0% {
+            height: 10rem;
+            rotate: -25deg;
+        }
+        50% {
+            height: 9.5rem;
+            rotate: -15deg;
+        }
+        100% {
+            height: 10rem;
+            rotate: -25deg;
+        }
+
+    }
+}
+
+.Services__image--astronaut--column {
+    height: 30vh;
+}
+
+.horizontalGallery {
+    display: flex;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.design__container {
+    margin-top: 20vh !important;
+}
+
+.design__element {
+    position: absolute;
+    margin-top: -10vh;
+    margin-left: .75rem;
+}
+
+.desenvolvimento__container {
+    margin-top: 10vh !important;
+}
+
+.desenvolvimento__element {
+    position: absolute;
+    width: 40%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.Services__card {
+    margin: 0 .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $color-design-secondary;
+    scroll-snap-align: start;
+    padding: .3rem .85rem;
+    border-radius: .75rem;
+}
+
+.design {
+    background-color: $color-design-main;
+    color: $color-design-secondary;
+    height: 40vh;
+    min-width: 65vw;
+}
+
+.desenvolvimento {
+    background-color: $color-dev-main;
+    color: $color-dev-secondary;
+    height: 50vh;
+    min-width: 75vw;
+}

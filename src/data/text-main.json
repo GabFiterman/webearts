@@ -16,26 +16,26 @@
     "Services": {
         "title": "Do banner ao código",
         "design": [
-            "Criação de banners para sites e <b>anúncios online</b>",
-            "Design de criativos para <b>redes sociais</b>",
-            "Conceptualização e criação de <b>logos e identidade</b> de marca",
-            "Design de materiais de <b>mídia offline</b>, como panfletos, cartões de visita, etc.",
-            "Criação de layouts e templates para <b>apresentações</b>",
-            "<b>Ilustrações</b> personalizadas e gráficos",
-            "<b>Rebranding</b> e atualização de identidade visual",
-            "<b>Design de interfaces</b> de usuário (UI) para aplicativos e websites",
-            "<b>Consultoria de design</b> para melhorias estéticas e usabilidade"
+            "<p>Criação de banners para sites e <b>anúncios online</b></p>",
+            "<p>Design de criativos para <b>redes sociais</b></p>",
+            "<p>Conceptualização e criação de <b>logos e identidade</b> de marca</p>",
+            "<p>Design de materiais de <b>mídia offline</b>, como panfletos, cartões de visita, etc.</p>",
+            "<p>Criação de layouts e templates para <b>apresentações</b></p>",
+            "<p><b>Ilustrações</b> personalizadas e gráficos</p>",
+            "<p><b>Rebranding</b> e atualização de identidade visual</p>",
+            "<p><b>Design de interfaces</b> de usuário (UI) para aplicativos e websites</p>",
+            "<p><b>Consultoria de design</b> para melhorias estéticas e usabilidade</p>"
         ],
         "desenvolvimento": [
-            "Desenvolvimento completo de <b>websites e landing pages</b>, desde a fase de protótipo até a produção final.",
-            "Atualização e <b>modernização de websites</b> existentes, utilizando tecnologias recentes e avançadas.",
-            "Criação de websites e lojas virtuais com <b>WordPress</b>, oferecendo flexibilidade e facilidade de gerenciamento de conteúdo.",
-            "Desenvolvimento de <b>web apps personalizados</b> para atender necessidades específicas do seu negócio.",
-            "Integração de <b>sistemas e APIs</b> para melhorar a funcionalidade e eficiência do seu website.",
-            "<b>Otimização de desempenho</b> e velocidade para garantir uma experiência de usuário fluida.",
-            "Implementação de <b>SEO (Search Engine Optimization)</b> para melhorar a <b>visibilidade</b> do seu website nos mecanismos de busca.",
-            "<b>Desenvolvimento responsivo</b>, garantindo que seu website seja acessível e se adapte a diferentes dispositivos e tamanhos de tela.",
-            "Manutenção e <b>suporte contínuo</b> para garantir a segurança e funcionalidade do seu website ao longo do tempo."
+            "<p>Desenvolvimento completo de <b>websites e landing pages</b>, desde a fase de protótipo até a produção final.</p>",
+            "<p>Atualização e <b>modernização de websites</b> existentes, utilizando tecnologias recentes e avançadas.</p>",
+            "<p>Criação de websites e lojas virtuais com <b>WordPress</b>, oferecendo flexibilidade e facilidade de gerenciamento de conteúdo.</p>",
+            "<p>Desenvolvimento de <b>web apps personalizados</b> para atender necessidades específicas do seu negócio.</p>",
+            "<p>Integração de <b>sistemas e APIs</b> para melhorar a funcionalidade e eficiência do seu website.</p>",
+            "<p><b>Otimização de desempenho</b> e velocidade para garantir uma experiência de usuário fluida.</p>",
+            "<p>Implementação de <b>SEO (Search Engine Optimization)</b> para melhorar a <b>visibilidade</b> do seu website nos mecanismos de busca.</p>",
+            "<p><b>Desenvolvimento responsivo</b>, garantindo que seu website seja acessível e se adapte a diferentes dispositivos e tamanhos de tela.</p>",
+            "<p>Manutenção e <b>suporte contínuo</b> para garantir a segurança e funcionalidade do seu website ao longo do tempo.</p>"
         ]
     },
     "Portfolio": {

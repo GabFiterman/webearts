@@ -11,18 +11,4 @@
       color: $color-text-highlight;
       font-size: 2rem;
     }
-  
-    .horizontalGallery {
-      display: flex;
-      overflow-x: scroll;
-      flex-wrap: nowrap;
-      scroll-behavior: smooth;
-      scroll-snap-type: x mandatory;
-    }
-  
-    .testingCard {
-      margin: 0 .75rem;
-      width: 40vw;
-      scroll-snap-align: start;
-    }
   }
