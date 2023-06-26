@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
-import ReactHtmlParser from 'react-html-parser';
+import ReactHtmlParser from "react-html-parser";
+import { useSpring, animated } from "react-spring";
 import "../scss/heading.scss";
-// import textMain from '../data/text-main.json'
+import "../scss/ImageAnimation.scss";
+import { Col, Container } from "react-bootstrap";
 
 function FadeText({ texts, interval }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -17,7 +19,7 @@ function FadeText({ texts, interval }) {
   }, [texts, interval]);
 
   return (
-    <div className="fade-text">
+    <div className="fade-text mb-5">
       {texts.map((text, index) => (
         <div
           key={index}
@@ -32,13 +34,67 @@ function FadeText({ texts, interval }) {
   );
 }
 
+function FunnyImage({ translateYValue, rotateValue, durationValue }) {
+  const imageSrc = "/img/StickerEinstein.png";
+  const [isAnimating, setIsAnimating] = useState(true);
+
+  const animationProps = useSpring({
+    opacity: isAnimating ? 1 : 0,
+    transform: `
+      translateY(${isAnimating ? translateYValue : "0"}) 
+      rotate(${isAnimating ? rotateValue : "0"})
+    `,
+    config: {
+      duration: durationValue,
+    },
+    onRest: () => {
+      setIsAnimating(!isAnimating);
+    },
+  });
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsAnimating(!isAnimating);
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, [isAnimating]);
+
+  return <animated.img src={imageSrc} alt="Imagem" style={animationProps} />;
+}
+
 export default function Heading({ textData }) {
   console.log(textData.bodyText);
   return (
-    <>
-      <h1 className="title title-big">{ReactHtmlParser(textData.title)}</h1>
-      <h3>{ReactHtmlParser(textData.subtitle)}</h3>
-      <FadeText texts={textData.bodyText} interval={textData.bodyTextInterval} />
-    </>
+    <Container fluid>
+      <Col>
+        <h1 className="title title-big">{ReactHtmlParser(textData.title)}</h1>
+        <h3>{ReactHtmlParser(textData.subtitle)}</h3>
+      </Col>
+      <Col>
+        <div className="FunnyImage__container">
+          <div className="FunnyImage__One">
+            <FunnyImage
+              translateYValue="-180%"
+              rotateValue="80deg"
+              durationValue="2000"
+            />
+          </div>
+          <div className="FunnyImage__Two">
+            <FunnyImage
+              translateYValue="-200%"
+              rotateValue="25deg"
+              durationValue="1000"
+            />
+          </div>
+        </div>
+      </Col>
+      <Col className="FadeText">
+        <FadeText
+          texts={textData.bodyText}
+          interval={textData.bodyTextInterval}
+        />
+      </Col>
+    </Container>
   );
 }

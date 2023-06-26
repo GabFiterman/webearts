@@ -8,7 +8,8 @@
         width: 100vw;
         color: $color-text-main;
         font-family: $font-family;
-
+        overflow-x: hidden;
+        padding: 0;
     }
 
     .title {
@@ -26,6 +27,32 @@
 
     .emphasis {
         color: $color-text-emphasis;
+    }
+
+    .FunnyImage__container {
+        display: flex;
+        justify-content: end;
+        margin-top: 10vh;
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+        .FunnyImage__One{
+            margin-top: 15vh;
+
+            img {
+                width: 120%;
+            }
+        }
+
+        .FunnyImage__Two{
+            // padding-right: 15vw;
+        }
+    }
+    
+    .FadeText{
+        text-align: end;
+        margin-top: -25vh;
+        // margin-top: 45vh;
     }
 }
 

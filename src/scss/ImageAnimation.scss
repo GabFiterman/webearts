@@ -1,0 +1,21 @@
+// .FunnyImage {
+//     display: flex;
+//     z-index: 1;
+//     margin-top: -15vh;
+//     justify-content: end;
+//     margin-right: -20vw;
+// }
+
+.image-animation-enter {
+    transform: translateY(0) rotate(0);
+    opacity: 1;
+    scale: 1;
+  }
+  
+  .image-animation-enter-active {
+    transform: translateY(-100px) rotate(20deg);
+    opacity: 0;
+    scale: 0.7;
+    transition: all 2s linear;
+  }
+  
