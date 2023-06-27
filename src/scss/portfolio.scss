@@ -10,12 +10,24 @@
     margin-left: 5vw;
 }
 
+.Portfolio--image--astronaut {
+    height: 10rem;
+}
+
+.Portfolio--image--badge {
+    height: 3rem;
+    margin-left: -10vw;
+    margin-top: 10vh;
+    position: absolute;
+}
+
 .Portfolio__gallery {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 .35rem;
+    margin-top: 75vh;
 }
 
 .Portfolio__gallery--item {
@@ -32,4 +44,93 @@
 .Portfolio__gallery--card--image {
     border-radius: .5rem;
     width: 42vw;
+}
+
+.Portfolio__highlight {
+    display: flex;
+    justify-content: center;
+    margin: 10vh 5vw;
+
+}
+
+.Portfolio__highlight--card {
+    padding: 1rem 0.5rem 1.5rem 0.5rem;
+    border-radius: 1.25rem;
+    min-width: 65vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .5s;
+    position: absolute;
+
+}
+
+$card-filter: brightness(.3) blur(2px);
+.card1 {
+    background-color: $color-dev-secondary;
+    filter: brightness(1);
+
+    .Portfolio__highlight--heading--title {
+        color: $color-dev-main;
+    }
+
+    margin-left: 15vw;
+    z-index: 2;
+    position: absolute;
+    filter: $card-filter;
+}
+
+.card2 {
+    background-color: $color-dev-main;
+    z-index: 1;
+    margin-top: 6vh;
+    margin-right: 15vw;
+    filter: $card-filter;
+}
+
+.card1:hover,
+.card1:focus,
+.card2:hover,
+.card2:focus {
+    filter: brightness(1) blur(0px);
+    box-shadow: 0 0 10px rgba($gray-middle, 0.75);
+    z-index: 3;
+    animation: floatingAnimation 3s ease-in-out infinite;
+    /* Aumenta a ordem de empilhamento durante o hover/focus */
+}
+
+@keyframes floatingAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
+.Portfolio__highlight--card--heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Portfolio__highlight--heading--logo {
+    background-color: $color-dev-secondary;
+    max-height: 10vh;
+    max-width: 25vw;
+    padding: .32rem;
+}
+
+.Portfolio__highlight--heading--title {
+    padding: 0 .5rem;
+    text-align: end;
+}
+
+.Portfolio__highlight--thumbnail {
+    margin-top: 1.5rem;
+    width: 50vw;
 }
