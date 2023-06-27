@@ -5,7 +5,7 @@ import textData from "../data/text-main.json";
 import Heading from "../components/Heading";
 import Introduction from "../components/Introduction";
 import Services from "../components/Services";
-
+import Portfolio from "../components/Portfolio"
 export default function Root() {
   return (
     <Container className="Root">
@@ -20,8 +20,13 @@ export default function Root() {
         </Col>
       </Row>
       <Row>
-        <Col className="px-0">
+        <Col className="px-0 mb-5">
           <Services />
+        </Col>
+      </Row>
+      <Row>
+        <Col className="px-0 mt-5">
+          <Portfolio />
         </Col>
       </Row>
     </Container>

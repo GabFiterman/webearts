@@ -51,7 +51,7 @@ export default function Services() {
       </Row>
 
       <Row>
-        <Col xs={6} className="design__container px-4">
+        <Col xs={6} className="design__container">
           <h3 className="title">Design</h3>
         </Col>
         <Col xs={4}>
@@ -77,7 +77,7 @@ export default function Services() {
       </Row>
 
       <Row>
-        <Col xs={6} className="desenvolvimento__container px-4">
+        <Col xs={6} className="desenvolvimento__container">
           <h3 className="title">Desenvolvimento</h3>
         </Col>
         <Col xs={4}>

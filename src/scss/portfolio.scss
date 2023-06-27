@@ -1,0 +1,35 @@
+@import './variables';
+
+.Portfolio {
+    background-image: url('/public/Background-Portfolio.png');
+    min-height: 241vh;
+    padding-top: 35vh;
+}
+
+.Portfolio--title {
+    margin-left: 5vw;
+}
+
+.Portfolio__gallery {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 .35rem;
+}
+
+.Portfolio__gallery--item {
+    margin: 1.5rem 0;
+}
+
+.Portfolio__gallery--card {
+    background-image: url('/public/img/portfolio/Card_Portfolio.png');
+    border-radius: .75rem;
+    min-height: 20vh;
+    padding: 5rem .5rem;
+}
+
+.Portfolio__gallery--card--image {
+    border-radius: .5rem;
+    width: 42vw;
+}

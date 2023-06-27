@@ -72,5 +72,79 @@
                 "descriptionBody": "Flyer para impressão e divulgação de panfletagem, arte que fez parte do pactoe inaugural da loja"
             }
         ]
+    },
+    {
+        "id": 3,
+        "company": {
+            "name": "Go Best Life 2",
+            "logoFile": "goBestLogo.png",
+            "slug": "go_best_life"
+        },
+        "general": {
+            "thumbnailName": "thumbGoBest",
+            "thumbnailExtension": ".png",
+            "type": "Design || Dev",
+            "core": "Social Media",
+            "description": "Go Best Life é uma empresa de personal trainer 'sob-demanda', Mussum Ipsum, cacilds vidis litro abertis. Aenean aliquam molestie leo, vitae iaculis nisl.Per aumento de cachacis, eu reclamis.A ordem dos tratores não altera o pão duris.Diuretics paradis num copo é motivis de denguis.",
+            "date": {
+                "madeYear": 2022,
+                "madeMonth": 3,
+                "publishYear": 2023,
+                "publishMonth": 6
+            }
+        },
+        "gallery": [
+            {
+                "id": 1,
+                "imageName": "thumbGoBest",
+                "imageExtension": ".png",
+                "descriptionTitle": "Social Media",
+                "descriptionBody": "Arte criada para postagem de rotina da Go Best Life"
+            },
+            {
+                "id": 2,
+                "imageName": "thumbByShop",
+                "imageExtension": ".png",
+                "descriptionTitle": "Social Media",
+                "descriptionBody": "Arte criada para postagem de rotina da Go Best Life"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "company": {
+            "name": "ByShop 2",
+            "logoFile": "byShopLogo.png",
+            "slug": "by_shop"
+        },
+        "general": {
+            "thumbnailName": "thumbByShop",
+            "thumbnailExtension": ".png",
+            "type": "Design || Dev",
+            "core": "Branding",
+            "description": "A ByShop é como descrito pelo dono: 'um pitstop de primeira', Mussum Ipsum, cacilds vidis litro abertis. Aenean aliquam molestie leo, vitae iaculis nisl.Per aumento de cachacis, eu reclamis.A ordem dos tratores não altera o pão duris.Diuretics paradis num copo é motivis de denguis.",
+            "date": {
+                "madeYear": 2023,
+                "madeMonth": 2,
+                "publishYear": 2023,
+                "publishMonth": 6
+            }
+        },
+        "gallery": [
+            {
+                "id": 1,
+                "imageName": "thumbByShop",
+                "imageExtension": ".png",
+                "descriptionTitle": "Flyer",
+                "descriptionBody": "Flyer para impressão e divulgação de panfletagem, arte que fez parte do pactoe inaugural da loja"
+            },
+            {
+                "id": 2,
+                "imageName": "thumbGoBest",
+                "imageExtension": ".png",
+                "descriptionTitle": "Flyer",
+                "descriptionBody": "Flyer para impressão e divulgação de panfletagem, arte que fez parte do pactoe inaugural da loja"
+            }
+        ]
     }
 ]

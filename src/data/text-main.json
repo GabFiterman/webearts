@@ -44,7 +44,7 @@
             "ambrossia",
             "goBestLife"
         ],
-        "orderProjectsBy": []
+        "orderProjectsBy": "name"
     },
     "ContactUs": {
         "title": "Pronto para Decolar ?",
