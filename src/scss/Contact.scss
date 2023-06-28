@@ -1,0 +1,76 @@
+@import './variables';
+
+.Contact__heading {
+    margin-bottom: -10vh;
+}
+
+.Contact__headign--title {
+    font-size: 2rem;
+}
+
+.Contact__headign--subtitle {
+    font-size: 1.15rem;
+    line-height: 1.25rem;
+}
+
+.Contact__image--astronaut {
+    height: 45vh;
+    margin-left: -5vw;
+    animation: floatingAnimation 3s ease-in-out infinite;
+
+}
+
+@keyframes floatingAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.Contact__image--logoWhatsapp {
+    width: 35vw;
+    animation: floatingAnimation 3s ease-in-out infinite;
+}
+
+.Contact__form {
+    margin-top: 12vh;
+}
+
+.Contact__form--group {}
+
+.Contact__form--input {
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    outline: none;
+    width: 100%;
+    margin-bottom: 2vh;
+    background-color: $gray-middle;
+    color: $black-darkest;
+    transition: all .35s;
+}
+
+.Contact__form--input:focus {
+    background-color: $gray-light;
+}
+
+.Contact__form--input--textarea {
+    min-height: 12rem;
+    border-radius: .75rem;
+}
+
+.Contact__form--button {
+    padding: .5rem 1.5rem;
+    font-weight: bold;
+    background-color: $color-text-highlight;
+    color: $color-text-main;
+    outline: none;
+    border-radius: 2rem;
+    width: 100%;
+}

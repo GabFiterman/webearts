@@ -2,6 +2,8 @@
 
 .Portfolio {
     background-image: url('/public/Background-Portfolio.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 241vh;
     padding-top: 35vh;
 }
