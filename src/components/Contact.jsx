@@ -64,6 +64,7 @@ function EmailForm() {
 }
 
 async function SendEmail(email, name, message) {
+  //TODO: Adicionar API de envio de email
   // Lógica de envio de e-mail
   const response = await fetch("URL_DA_API_DE_ENVIO_DE_EMAIL", {
     method: "POST",
@@ -89,9 +90,9 @@ export default function Contact() {
           <h1 className="title Contact__heading--title">
             {ReactHtmlParser(_t.title)}
           </h1>
-          <p className="subtitle Contact__headign--subtitle">
+          <div className="subtitle Contact__headign--subtitle">
             {ReactHtmlParser(_t.subtitle)}
-          </p>
+          </div>
         </Col>
         <Col xs={5}>
           <a href={linkWhatsapp} target="_blank" rel="noreferrer">

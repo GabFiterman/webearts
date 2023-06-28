@@ -57,8 +57,8 @@
     },
     "OurTeam": {
         "title": "E quem somos?",
-        "subtitle": "Somos a WebeArts, uma equipe apaixonada pela junção entre design e tecnologia.",
-        "bodyText": "Combinamos criatividade e habilidades técnicas avançadas para criar soluções completas de design gráfico, construção de sites, landing pages e web apps. Nosso objetivo é impulsionar o seu negócio, destacando sua marca, transmitindo confiança e impulsionando o crescimento. Conte conosco para alcançar o sucesso online que você merece.",
+        "subtitle": "Somos a WebeArts, uma equipe apaixonada pela junção entre <b class=\"highlight\">design e tecnologia</b>.",
+        "bodyText": "Combinamos criatividade e habilidades técnicas avançadas para criar soluções completas de design gráfico, construção de sites, landing pages e web apps. Nosso objetivo é  <b class=\"highlight\">impulsionar o seu negócio</b>, destacando sua marca, transmitindo confiança e impulsionando o crescimento.  <b class=\"highlight\">Conte conosco para alcançar o sucesso online que você merece</b>.",
         "teamTitle": "Equipe",
         "teamMembers": [
             {

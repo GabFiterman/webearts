@@ -7,6 +7,8 @@ import Introduction from "../components/Introduction";
 import Services from "../components/Services";
 import Portfolio from "../components/Portfolio"
 import Contact from "../components/Contact";
+import Team from '../components/Team';
+
 export default function Root() {
   return (
     <Container className="Root">
@@ -33,6 +35,11 @@ export default function Root() {
       <Row>
         <Col className="px-0 mt-5">
           <Contact />
+        </Col>
+      </Row>
+      <Row>
+        <Col className="px-0 mt-5">
+          <Team />
         </Col>
       </Row>
     </Container>
