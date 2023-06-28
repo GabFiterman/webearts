@@ -1,0 +1,59 @@
+@import './variables';
+.Project {
+    background-image: url('/public/background-mobile.jpg');
+    color: $color-text-main;
+    padding-top: 5vh;
+
+    .Project__company--logo {
+        max-height: 16vh;
+        background-color: $color-text-main;
+        padding: .75rem;
+        border-radius: .5rem;
+    }
+
+    .Project__company--name {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .Project__general--core {
+        font-style: italic;
+    }
+
+    .Project__general--description {
+
+    }
+
+    .Project__gallery--image {
+
+    }
+
+    .Project__image--container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .Project__image--astronaut {
+        max-width: 50vw;
+        text-align: center;
+        margin-top: 15vh;
+
+        animation: floatingAnimation 3s ease-in-out infinite;
+
+        
+@keyframes floatingAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(-5px);
+    }
+    
+    100% {
+        transform: translateY(0);
+    }
+}
+
+    }
+}
