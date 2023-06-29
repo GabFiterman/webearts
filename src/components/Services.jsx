@@ -3,9 +3,8 @@ import { useRef, useEffect } from "react";
 import textData from "../data/text-main.json";
 import "../scss/services.scss";
 import ReactHtmlParser from "react-html-parser";
-const _t = textData.Services;
 
-function HorizontalGallery({ type }) {
+function HorizontalGallery({ type, _t }) {
   const textArray = type === "design" ? _t.design : _t.desenvolvimento;
 
   const galleryRef = useRef(null);
@@ -29,7 +28,7 @@ function HorizontalGallery({ type }) {
   );
 }
 
-export default function Services() {
+export default function Services({ _t }) {
   const astronautLoveUSrc = "/img/astronauts/Astronaut_LoveU.png";
   const designElementSrc = "/img/PenTool-cutted.png";
   const astronautSleepingSrc = "/img/Astronaut_TouchingStart.png";
@@ -63,7 +62,7 @@ export default function Services() {
         </Col>
       </Row>
       <Row>
-        <HorizontalGallery type="design" />
+        <HorizontalGallery type="design" _t={_t} />
       </Row>
 
       <Row>
@@ -89,7 +88,7 @@ export default function Services() {
         </Col>
       </Row>
       <Row>
-        <HorizontalGallery type="desenvolvimento" />
+        <HorizontalGallery type="desenvolvimento" _t={_t} />
       </Row>
     </Container>
   );

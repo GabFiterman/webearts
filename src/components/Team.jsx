@@ -1,8 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
-import textData from "../data/text-main.json";
 import ReactHtmlParser from "react-html-parser";
-import "../scss/Team.scss";
-const _t = textData.OurTeam;
+import "../scss/team.scss";
 
 function Member({ name }) {
   return (
@@ -19,7 +17,7 @@ function Member({ name }) {
   );
 }
 
-export default function Team() {
+export default function Team({ _t }) {
   const imgAstronautSrc = "/img/astronauts/Astronaut_Apontando.png";
   return (
     <Container>

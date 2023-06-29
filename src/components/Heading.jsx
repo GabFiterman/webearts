@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import ReactHtmlParser from 'react-html-parser';
+import ReactHtmlParser from "react-html-parser";
 import "../scss/heading.scss";
 import { Col, Container, Row } from "react-bootstrap";
 // import textMain from '../data/text-main.json'
@@ -34,24 +34,30 @@ function FadeText({ texts, interval }) {
 }
 
 function FunnyImage() {
-  const imageSrc = '/img/StickerEinstein.png'
+  const imageSrc = "/img/StickerEinstein.png";
   return (
-    <img className="FunnyImage__image--animation" src={imageSrc} alt="Sticker Albert Einstein" />
-  )
+    <img
+      className="FunnyImage__image--animation"
+      src={imageSrc}
+      alt="Sticker Albert Einstein"
+    />
+  );
 }
 
-export default function Heading({ textData }) {
-  console.log('Heading Says: \n textData.bodyText:\n', textData.bodyText);
+export default function Heading({ _t }) {
+  console.log("Heading Says: \n _t.bodyText:\n", _t.bodyText);
   return (
     <Container fluid>
       <Row>
         <Col className="px-0 mt-5">
-          <h1 className="title title-big firstTitle--animation">{ReactHtmlParser(textData.title)}</h1>
+          <h1 className="title title-big firstTitle--animation">
+            {ReactHtmlParser(_t.title)}
+          </h1>
         </Col>
       </Row>
       <Row>
         <Col>
-          <h3 className="subtitle">{ReactHtmlParser(textData.subtitle)}</h3>
+          <h3 className="subtitle">{ReactHtmlParser(_t.subtitle)}</h3>
         </Col>
       </Row>
       <Row>
@@ -60,7 +66,7 @@ export default function Heading({ textData }) {
         </Col>
       </Row>
       <Row>
-          <FadeText texts={textData.bodyText} interval={textData.bodyTextInterval} />
+        <FadeText texts={_t.bodyText} interval={_t.bodyTextInterval} />
       </Row>
     </Container>
   );

@@ -1,11 +1,9 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { useState } from "react";
-import textData from "../data/text-main.json";
 import ReactHtmlParser from "react-html-parser";
-import "../scss/Contact.scss";
-const _t = textData.ContactUs;
+import "../scss/contact.scss";
 
-function EmailForm() {
+function EmailForm({ _t }) {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -79,7 +77,7 @@ async function SendEmail(email, name, message) {
   }
 }
 
-export default function Contact() {
+export default function Contact({ _t }) {
   //   const imgAstronautPlayingSrc = "/img/astronauts/Astronaut_SoltandoFoguete.png";
   const logoWhatsappSrc = "/img/Logo_Whatsapp_1.png";
   const linkWhatsapp = "https://api.whatsapp.com/send?phone=5562984602348";
@@ -106,7 +104,7 @@ export default function Contact() {
       </Row>
       <Row>
         <Col>
-          <EmailForm />
+          <EmailForm _t={_t} />
         </Col>
       </Row>
     </Container>

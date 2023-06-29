@@ -1,8 +1,6 @@
-import '../scss/Footer.scss';
-import textData from '../data/text-main.json';
-const _t = textData.Footer;
+import '../scss/footer.scss';
 
-export default function Footer() {
+export default function Footer({_t}) {
     const logoSrc = '/public/img/Logo-DarkMode.png'
     return(
         <div className="Footer">
