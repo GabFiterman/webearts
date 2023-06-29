@@ -1,57 +1,139 @@
 [
     {
         "id": 1,
+        "priority": 0,
         "company": {
-            "name": "Go Best Life",
-            "logoFile": "goBestLogo.png",
-            "slug": "go_best_life"
+            "name": "Agata Cristy",
+            "logoFile": "AgataCristy__Logo--Black.png",
+            "slug": "agata_cristy"
         },
         "general": {
-            "thumbnailName": "thumbGoBest",
+            "thumbnailName": "AgataCristy__Logo--Black",
             "thumbnailExtension": ".png",
-            "type": "Design || Dev",
+            "type": "Design",
             "core": "Social Media",
-            "description": "Go Best Life é uma empresa de personal trainer 'sob-demanda', Mussum Ipsum, cacilds vidis litro abertis. Aenean aliquam molestie leo, vitae iaculis nisl.Per aumento de cachacis, eu reclamis.A ordem dos tratores não altera o pão duris.Diuretics paradis num copo é motivis de denguis.",
+            "description": "Criação de arte para redes sociais",
             "date": {
-                "madeYear": 2022,
-                "madeMonth": 3,
+                "madeYear": 2023,
+                "madeMonth": 5,
                 "publishYear": 2023,
-                "publishMonth": 6
+                "publishMonth": 5
             }
         },
         "gallery": [
             {
                 "id": 1,
-                "imageName": "thumbGoBest",
-                "imageExtension": ".png",
-                "descriptionTitle": "Social Media",
-                "descriptionBody": "Arte criada para postagem de rotina da Go Best Life"
+                "imageName": "AgataCristy__Portfolio--1",
+                "imageExtension": ".jpg",
+                "descriptionTitle": "",
+                "descriptionBody": "Como cuidar dos seus gatos idosos"
             },
             {
                 "id": 2,
-                "imageName": "thumbByShop",
-                "imageExtension": ".png",
-                "descriptionTitle": "Social Media",
-                "descriptionBody": "Arte criada para postagem de rotina da Go Best Life"
+                "imageName": "AgataCristy__Portfolio--2",
+                "imageExtension": ".jpg",
+                "descriptionTitle": "",
+                "descriptionBody": "Os sinais de estresse em gatos e como ajuda-los"
             }
         ]
     },
     {
         "id": 2,
+        "priority": 0,
         "company": {
-            "name": "ByShop",
-            "logoFile": "byShopLogo.png",
+            "name": "By Shop",
+            "logoFile": "Logo_Vertcial.png",
             "slug": "by_shop"
         },
         "general": {
-            "thumbnailName": "thumbByShop",
+            "thumbnailName": "Logo_Vertcial",
             "thumbnailExtension": ".png",
-            "type": "Design || Dev",
-            "core": "Branding",
-            "description": "A ByShop é como descrito pelo dono: 'um pitstop de primeira', Mussum Ipsum, cacilds vidis litro abertis. Aenean aliquam molestie leo, vitae iaculis nisl.Per aumento de cachacis, eu reclamis.A ordem dos tratores não altera o pão duris.Diuretics paradis num copo é motivis de denguis.",
+            "type": "Design",
+            "core": "Branding e Mídia on e offline",
+            "description": "A ByShop é como descrito pelo dono: 'um pitstop de primeira', com foco em um atendimento excelente que vão além da mecânica mas realmente colocam o cliente em prioridade. As palavras que o dono usou para guiar o projeto foram que a marca precisava transmitir parceria, solidez, confiança e é claro, autocenter.",
             "date": {
-                "madeYear": 2023,
-                "madeMonth": 2,
+                "madeYear": 2022,
+                "madeMonth": 10,
+                "publishYear": 2023,
+                "publishMonth": 2
+            }
+        },
+        "gallery": [
+            {
+                "id": 1,
+                "imageName": "Papel_timbrado_Horizontal",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 2,
+                "imageName": "Logo_Vertcial",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 3,
+                "imageName": "Flyer_01-Mockup",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 4,
+                "imageName": "Flyer_01",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 5,
+                "imageName": "cartao_visitas_dark",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 6,
+                "imageName": "Flyer_02-Mockup",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 7,
+                "imageName": "Flyer_02",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 8,
+                "imageName": "banner-cavalete-2",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "priority": 0,
+        "company": {
+            "name": "Dry Clean",
+            "logoFile": "Logo__DryClean.png",
+            "slug": "dry_clean"
+        },
+        "general": {
+            "thumbnailName": "Logo__DryClean",
+            "thumbnailExtension": ".png",
+            "type": "Design",
+            "core": "Social Media",
+            "description": "Criação de arte para redes sociais",
+            "date": {
+                "madeYear": 2022,
+                "madeMonth": 6,
                 "publishYear": 2023,
                 "publishMonth": 6
             }
@@ -59,33 +141,62 @@
         "gallery": [
             {
                 "id": 1,
-                "imageName": "thumbByShop",
+                "imageName": "Dry Clean (1)",
                 "imageExtension": ".png",
-                "descriptionTitle": "Flyer",
-                "descriptionBody": "Flyer para impressão e divulgação de panfletagem, arte que fez parte do pactoe inaugural da loja"
+                "descriptionTitle": "",
+                "descriptionBody": ""
             },
             {
                 "id": 2,
-                "imageName": "thumbGoBest",
+                "imageName": "Dry Clean (2)",
                 "imageExtension": ".png",
-                "descriptionTitle": "Flyer",
-                "descriptionBody": "Flyer para impressão e divulgação de panfletagem, arte que fez parte do pactoe inaugural da loja"
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 3,
+                "imageName": "Dry Clean (3)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 4,
+                "imageName": "Dry Clean (4)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 5,
+                "imageName": "Dry Clean (5)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 6,
+                "imageName": "Dry Clean (7)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
             }
         ]
     },
     {
-        "id": 3,
+        "id": 4,
+        "priority": 0,
         "company": {
-            "name": "Go Best Life 2",
-            "logoFile": "goBestLogo.png",
+            "name": "Go Best Life",
+            "logoFile": "Logo__GoBestLife.png",
             "slug": "go_best_life"
         },
         "general": {
-            "thumbnailName": "thumbGoBest",
+            "thumbnailName": "Logo__GoBestLife",
             "thumbnailExtension": ".png",
-            "type": "Design || Dev",
+            "type": "Design",
             "core": "Social Media",
-            "description": "Go Best Life é uma empresa de personal trainer 'sob-demanda', Mussum Ipsum, cacilds vidis litro abertis. Aenean aliquam molestie leo, vitae iaculis nisl.Per aumento de cachacis, eu reclamis.A ordem dos tratores não altera o pão duris.Diuretics paradis num copo é motivis de denguis.",
+            "description": "Criação de arte para redes sociais",
             "date": {
                 "madeYear": 2022,
                 "madeMonth": 3,
@@ -96,36 +207,51 @@
         "gallery": [
             {
                 "id": 1,
-                "imageName": "thumbGoBest",
+                "imageName": "GoBestLife (1)",
                 "imageExtension": ".png",
-                "descriptionTitle": "Social Media",
-                "descriptionBody": "Arte criada para postagem de rotina da Go Best Life"
+                "descriptionTitle": "",
+                "descriptionBody": ""
             },
             {
                 "id": 2,
-                "imageName": "thumbByShop",
+                "imageName": "GoBestLife (2)",
                 "imageExtension": ".png",
-                "descriptionTitle": "Social Media",
-                "descriptionBody": "Arte criada para postagem de rotina da Go Best Life"
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 3,
+                "imageName": "GoBestLife (3)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 4,
+                "imageName": "GoBestLife (4)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
             }
         ]
     },
     {
-        "id": 4,
+        "id": 5,
+        "priority": 0,
         "company": {
-            "name": "ByShop 2",
-            "logoFile": "byShopLogo.png",
-            "slug": "by_shop"
+            "name": "Lett",
+            "logoFile": "Logo__Lett.jpg",
+            "slug": "lett"
         },
         "general": {
-            "thumbnailName": "thumbByShop",
-            "thumbnailExtension": ".png",
-            "type": "Design || Dev",
-            "core": "Branding",
-            "description": "A ByShop é como descrito pelo dono: 'um pitstop de primeira', Mussum Ipsum, cacilds vidis litro abertis. Aenean aliquam molestie leo, vitae iaculis nisl.Per aumento de cachacis, eu reclamis.A ordem dos tratores não altera o pão duris.Diuretics paradis num copo é motivis de denguis.",
+            "thumbnailName": "Logo__Lett",
+            "thumbnailExtension": ".jpg",
+            "type": "Design",
+            "core": "Social Media",
+            "description": "Criação de módulo de sistema baseado em um page builder",
             "date": {
-                "madeYear": 2023,
-                "madeMonth": 2,
+                "madeYear": 2022,
+                "madeMonth": 3,
                 "publishYear": 2023,
                 "publishMonth": 6
             }
@@ -133,17 +259,507 @@
         "gallery": [
             {
                 "id": 1,
-                "imageName": "thumbByShop",
+                "imageName": "",
                 "imageExtension": ".png",
-                "descriptionTitle": "Flyer",
-                "descriptionBody": "Flyer para impressão e divulgação de panfletagem, arte que fez parte do pactoe inaugural da loja"
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "priority": 0,
+        "company": {
+            "name": "Liberdade Modas",
+            "logoFile": "Logo__LiberdadeModas.png",
+            "slug": "liberdade_modas"
+        },
+        "general": {
+            "thumbnailName": "Logo2_LiberdadeModas",
+            "thumbnailExtension": ".png",
+            "type": "Design",
+            "core": "Social Media | e-Book ",
+            "description": "",
+            "date": {
+                "madeYear": 2022,
+                "madeMonth": 3,
+                "publishYear": 2023,
+                "publishMonth": 6
+            }
+        },
+        "gallery": [
+            {
+                "id": 1,
+                "imageName": "Liberdade_Modas (1)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
             },
             {
                 "id": 2,
-                "imageName": "thumbGoBest",
+                "imageName": "Liberdade_Modas (2)",
                 "imageExtension": ".png",
-                "descriptionTitle": "Flyer",
-                "descriptionBody": "Flyer para impressão e divulgação de panfletagem, arte que fez parte do pactoe inaugural da loja"
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 3,
+                "imageName": "Liberdade_Modas (3)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 4,
+                "imageName": "Liberdade_Modas (4)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 5,
+                "imageName": "Liberdade_Modas (5)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 6,
+                "imageName": "Liberdade_Modas (6)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 7,
+                "imageName": "Liberdade_Modas (7)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 8,
+                "imageName": "Liberdade_Modas (8)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "priority": 0,
+        "company": {
+            "name": "Optimus",
+            "logoFile": "Logo__Optimus--original.png",
+            "slug": "optimus"
+        },
+        "general": {
+            "thumbnailName": "Logo__Optimus--original",
+            "thumbnailExtension": ".png",
+            "type": "Design",
+            "core": "Social Media",
+            "description": "",
+            "date": {
+                "madeYear": 2022,
+                "madeMonth": 3,
+                "publishYear": 2023,
+                "publishMonth": 6
+            }
+        },
+        "gallery": [
+            {
+                "id": 1,
+                "imageName": "Optimus (1)",
+                "imageExtension": ".jpg",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 2,
+                "imageName": "Optimus (2)",
+                "imageExtension": ".jpg",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 3,
+                "imageName": "Optimus (3)",
+                "imageExtension": ".jpg",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 4,
+                "imageName": "Optimus (4)",
+                "imageExtension": ".jpg",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 5,
+                "imageName": "Optimus (5)",
+                "imageExtension": ".jpg",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 6,
+                "imageName": "Optimus (6)",
+                "imageExtension": ".jpg",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 7,
+                "imageName": "Optimus (7)",
+                "imageExtension": ".jpg",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 8,
+                "imageName": "Optimus (8)",
+                "imageExtension": ".jpg",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "priority": 0,
+        "company": {
+            "name": "Thaline Vierde",
+            "logoFile": "Logo__ThalineVierde (1).png",
+            "slug": "thaline_vierde"
+        },
+        "general": {
+            "thumbnailName": "Logo__ThalineVierde (1)",
+            "thumbnailExtension": ".png",
+            "type": "Design",
+            "core": "Social Media",
+            "description": "",
+            "date": {
+                "madeYear": 2022,
+                "madeMonth": 3,
+                "publishYear": 2023,
+                "publishMonth": 6
+            }
+        },
+        "gallery": [
+            {
+                "id": 1,
+                "imageName": "ThalineVierde (1)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "priority": 0,
+        "company": {
+            "name": "Think Life",
+            "logoFile": "Logo__ThinkLife--Original.png",
+            "slug": "think_life"
+        },
+        "general": {
+            "thumbnailName": "Logo__ThinkLife--Original",
+            "thumbnailExtension": ".png",
+            "type": "Design",
+            "core": "Social Media",
+            "description": "",
+            "date": {
+                "madeYear": 2022,
+                "madeMonth": 3,
+                "publishYear": 2023,
+                "publishMonth": 6
+            }
+        },
+        "gallery": [
+            {
+                "id": 1,
+                "imageName": "ThinkLife (1)",
+                "imageExtension": ".jpg",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 2,
+                "imageName": "ThinkLife (2)",
+                "imageExtension": ".jpg",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 3,
+                "imageName": "ThinkLife (3)",
+                "imageExtension": ".jpg",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 4,
+                "imageName": "ThinkLife (4)",
+                "imageExtension": ".jpg",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 5,
+                "imageName": "ThinkLife (5)",
+                "imageExtension": ".jpg",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 6,
+                "imageName": "ThinkLife (6)",
+                "imageExtension": ".jpg",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 7,
+                "imageName": "ThinkLife (7)",
+                "imageExtension": ".jpg",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 8,
+                "imageName": "ThinkLife (8)",
+                "imageExtension": ".jpg",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 9,
+                "imageName": "ThinkLife (9)",
+                "imageExtension": ".jpg",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 10,
+                "imageName": "ThinkLife (10)",
+                "imageExtension": ".jpg",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "priority": 0,
+        "company": {
+            "name": "Trust Cleaning",
+            "logoFile": "Logo__TrustCleaning--original.png",
+            "slug": "trust_cleaning"
+        },
+        "general": {
+            "thumbnailName": "Logo__TrustCleaning--original",
+            "thumbnailExtension": ".png",
+            "type": "Design",
+            "core": "Social Media",
+            "description": "",
+            "date": {
+                "madeYear": 2022,
+                "madeMonth": 3,
+                "publishYear": 2023,
+                "publishMonth": 6
+            }
+        },
+        "gallery": [
+            {
+                "id": 1,
+                "imageName": "TrustClean (1)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 2,
+                "imageName": "TrustClean (2)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 3,
+                "imageName": "TrustClean (3)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 4,
+                "imageName": "TrustClean (4)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 5,
+                "imageName": "TrustClean (5)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 6,
+                "imageName": "TrustClean (6)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 7,
+                "imageName": "TrustClean (7)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "priority": 0,
+        "company": {
+            "name": "Use AnaVieira",
+            "logoFile": "Logo__UseAnaVieira.png",
+            "slug": "use_ana_vieira"
+        },
+        "general": {
+            "thumbnailName": "Logo__UseAnaVieira",
+            "thumbnailExtension": ".png",
+            "type": "Design",
+            "core": "Social Media",
+            "description": "",
+            "date": {
+                "madeYear": 2022,
+                "madeMonth": 3,
+                "publishYear": 2023,
+                "publishMonth": 6
+            }
+        },
+        "gallery": [
+            {
+                "id": 1,
+                "imageName": "Site__UseAnaVieira (0)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 2,
+                "imageName": "Site__UseAnaVieira (1)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 3,
+                "imageName": "Site__UseAnaVieira (2)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 4,
+                "imageName": "Site__UseAnaVieira (3)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 5,
+                "imageName": "UseAnaVieira__cartao-de-visitas (1)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 6,
+                "imageName": "UseAnaVieira__cartao-de-visitas (2)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 7,
+                "imageName": "UseAnaVieira__Envelope",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 8,
+                "imageName": "UseAnaVieira__Design__Vitrine__Produto (1)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 9,
+                "imageName": "UseAnaVieira__Design__Vitrine__Produto (2)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 10,
+                "imageName": "UseAnaVieira__Design__Vitrine__Produto (3)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 11,
+                "imageName": "UseAnaVieira__Design__Vitrine__Produto (4)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            },
+            {
+                "id": 12,
+                "imageName": "UseAnaVieira__Design__Vitrine__Produto (5)",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "priority": 0,
+        "company": {
+            "name": "Webearts",
+            "logoFile": "Logo__Webearts--3D.jpg",
+            "slug": "webearts"
+        },
+        "general": {
+            "thumbnailName": "Logo__Webearts--3D",
+            "thumbnailExtension": ".jpg",
+            "type": "Design",
+            "core": "Social Media",
+            "description": "",
+            "date": {
+                "madeYear": 2022,
+                "madeMonth": 3,
+                "publishYear": 2023,
+                "publishMonth": 6
+            }
+        },
+        "gallery": [
+            {
+                "id": 1,
+                "imageName": "",
+                "imageExtension": ".png",
+                "descriptionTitle": "",
+                "descriptionBody": ""
             }
         ]
     }

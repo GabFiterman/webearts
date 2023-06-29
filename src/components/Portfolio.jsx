@@ -15,7 +15,7 @@ function PortfolioGallery() {
             className="Portfolio__gallery--card"
           >
             <img
-              src={`/public/img/portfolio/${project.general.thumbnailName}${project.general.thumbnailExtension}`}
+              src={`/public/img/portfolio/${project.company.slug}/${project.general.thumbnailName}${project.general.thumbnailExtension}`}
               alt={`Card para o projeto ${project.company.name}`}
               className="Portfolio__gallery--card--image"
             />
