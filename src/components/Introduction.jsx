@@ -29,17 +29,16 @@ export default function Introduction({ _t }) {
         src={logoSrc}
         alt="Logo Webearts"
       />
-      <Container
-        fluid
+      <div
         className={`Introduction__container ${showContainer ? "show" : ""}`}
       >
         <Row>
-          <Col xs={10}>
+          <Col xs={10} md={8} lg={6}>
             <h2 className="title Introduction__text--title">
               {ReactHtmlParser(_t.title)}
             </h2>
           </Col>
-          <Col xs={2}>
+          <Col xs={2} md={4} lg={6}>
             <img
               className="Introduction__icon"
               src={iconSrc}
@@ -54,7 +53,7 @@ export default function Introduction({ _t }) {
             </p>
           </Col>
         </Row>
-      </Container>
+      </div>
     </>
   );
 }
