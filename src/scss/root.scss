@@ -1,38 +1,45 @@
 @import "bootstrap/scss/bootstrap";
 @import './variables';
 
+.title {
+    font-family: $font-titles;
+}
+
+.title-big {
+    font-size: $font-size-title-big;
+}
+
+.highlight {
+    color: $color-text-highlight;
+    font-weight: bold;
+}
+
+.emphasis {
+    color: $color-text-emphasis;
+}
+
+.subtitle {
+    font-size: $font-size-subtitle;
+    font-style: italic;
+}
+
+.Root {
+    color: $color-text-main;
+    font-family: $font-family;
+    overflow-x: hidden;
+    width: 100vw;
+    padding-top: $padding-y-page;
+}
+
 // Mobile
 @media (max-width: 767px) {
     .Root {
         background-image: url('/background-mobile.jpg');
-        min-height: 980vh;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
         width: 100vw;
-        color: $color-text-main;
-        font-family: $font-family;
         overflow-x: hidden;
-
-    }
-
-    .title {
-        font-family: $font-titles;
-    }
-
-    .title-big {
-        font-size: $font-size-title-big;
-    }
-
-    .highlight {
-        font-weight: bold;
-        color: $color-text-highlight;
-    }
-
-    .emphasis {
-        color: $color-text-emphasis;
-    }
-
-    .subtitle {
-        font-size: $font-size-subtitle;
-        font-style: italic;
     }
 }
 
@@ -40,5 +47,10 @@
 @media (min-width: 768px) {
     .Root {
         background-image: url('/background-desktop.jpg');
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
+        width: 100vw;
+        overflow-x: hidden;
     }
 }
