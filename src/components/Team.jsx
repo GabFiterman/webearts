@@ -20,12 +20,12 @@ function Member({ name }) {
 export default function Team({ _t }) {
   const imgAstronautSrc = "/img/astronauts/Astronaut_Apontando.png";
   return (
-    <Container>
+    <Container className="Team">
       <Row className="Team__heading align-items-start justify-content-between">
-        <Col xs={8}>
+        <Col>
           <h1 className="Team__title title title-big highlight">{_t.title}</h1>
         </Col>
-        <Col xs={4}>
+        <Col>
           <img
             className="Team__image--astronaut"
             alt="Figurinha de astronauta apontando para o alto"
@@ -38,10 +38,10 @@ export default function Team({ _t }) {
           <h3 className="Team__body--subtittle">
             {ReactHtmlParser(_t.subtitle)}
           </h3>
-          <p className="Team__body--bodyText">{ReactHtmlParser(_t.bodyText)}</p>
+          <p className="Team__body--bodyText px-3">{ReactHtmlParser(_t.bodyText)}</p>
         </Col>
       </Row>
-      <Row className="Team__members justify-content-end">
+      <Row className="Team__members px-3">
         <Col xs={12}>
           <h2 className="Team__members--title title">
             {ReactHtmlParser(_t.teamTitle)}

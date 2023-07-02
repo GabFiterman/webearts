@@ -1,19 +1,11 @@
 @import './variables';
 
-.Portfolio {
-    background-image: url('/public/Background-Portfolio.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 241vh;
-    padding-top: 35vh;
-}
+.Portfolio {}
 
-.Portfolio--title {
-    margin-left: 5vw;
-}
+.Portfolio--title {}
 
 .Portfolio--image--astronaut {
-    height: 10rem;
+    height: 12rem;
 }
 
 .Portfolio--image--badge {
@@ -29,47 +21,35 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 .35rem;
-    margin-top: 75vh;
 }
 
 .Portfolio__gallery--item {
     margin: 1.5rem 0;
-}
-
-.Portfolio__gallery--card {
-    background-image: url('/public/img/portfolio/Card_Portfolio.png');
-    border-radius: .75rem;
-    min-height: 20vh;
-    padding: 5rem .5rem;
+    background-color: #fff;
+    padding: .5rem;
+    width: 40vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+    filter: brightness(.6) blur(2px);
 }
 
 .Portfolio__gallery--card--image {
-    border-radius: .5rem;
-    width: 42vw;
-    // height: 30vh;
     background-color: $color-text-main;
+    border-radius: .5rem;
+    max-height: 28vh;
+    max-width: 100%;
 }
 
-.Portfolio__highlight {
-    display: flex;
-    justify-content: center;
-    margin: 10vh 5vw;
-
-}
-
-.Portfolio__highlight--card {
-    padding: 1rem 0.5rem 1.5rem 0.5rem;
-    border-radius: 1.25rem;
-    min-width: 65vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all .5s;
-    position: absolute;
-
+.Portfolio__gallery--item:hover,
+.Portfolio__highlight--card:hover {
+    cursor: pointer;
 }
 
 $card-filter: brightness(.3) blur(2px);
+
 .card1 {
     background-color: $color-dev-secondary;
     filter: brightness(1);
@@ -92,34 +72,51 @@ $card-filter: brightness(.3) blur(2px);
     filter: $card-filter;
 }
 
-.card1:hover,
-.card1:focus,
-.card2:hover,
-.card2:focus {
+.noBlur {
     filter: brightness(1) blur(0px);
     box-shadow: 0 0 10px rgba($gray-middle, 0.75);
     z-index: 3;
     animation: floatingAnimation 3s ease-in-out infinite;
-    /* Aumenta a ordem de empilhamento durante o hover/focus */
 }
 
 @keyframes floatingAnimation {
     0% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
-    50% {
-      transform: translateY(-5px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
 
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.Portfolio__highlight {
+    display: flex;
+    justify-content: center;
+    margin: 10vh auto;
+    min-height: 50vh !important;
+}
+
+.Portfolio__highlight--card {
+    align-items: center;
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 65vw;
+    padding: 1rem 0.5rem 1.5rem 0.5rem;
+    position: absolute;
+    transition: all .5s;
+}
 
 .Portfolio__highlight--card--heading {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .Portfolio__highlight--heading--logo {
@@ -134,7 +131,68 @@ $card-filter: brightness(.3) blur(2px);
     text-align: end;
 }
 
+.Portfolio__highlight--thumbnail--container {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .Portfolio__highlight--thumbnail {
     margin-top: 1.5rem;
     width: 50vw;
+}
+
+
+@media (min-width: 768px) {
+    .Portfolio--image--astronaut {
+        height: 22rem;
+    }
+
+    .Portfolio__highlight {}
+
+    .Portfolio__highlight--card {
+        padding: 3rem 2rem 5rem 2rem;
+        min-width: 35vw;
+    }
+
+    .Portfolio__highlight--card--heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .Portfolio__highlight--heading--logo {
+        background-color: $color-dev-secondary;
+        max-height: 10vh;
+        max-width: 10vw;
+        padding: .32rem;
+    }
+
+    .Portfolio__highlight--heading--title {
+        padding: 0 .5rem;
+        text-align: end;
+    }
+
+    .Portfolio__highlight--thumbnail--container {
+        height: 30vh;
+    }
+
+    .Portfolio__highlight--thumbnail {
+        margin-top: 1.5rem;
+        max-width: 25vw;
+    }
+
+    .Portfolio__gallery--item {
+        width: 25vw;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .Portfolio--image--astronaut {
+        height: 30rem;
+        margin-right: 10vw;
+    }
 }

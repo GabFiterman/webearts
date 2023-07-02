@@ -8,7 +8,7 @@
 
 .Team__image--astronaut {
     max-height: 30vh;
-    margin-left: -15vw;
+    // margin-left: -15vw;
     rotate: 10deg;
 }
 
@@ -23,13 +23,13 @@
 }
 
 .Team__body--bodyText {
-    text-align: justify;
-    max-width: 80vw;
-    margin: 0 auto;
+    // text-align: justify;
+    // max-width: 40vw;
+    // padding: inherit 8vw;
 }
 
 .Team__members {
-    margin-top: 8vh;
+    margin-top: 5vh !important;
     margin-left: 5vw;
 }
 
@@ -44,10 +44,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 2vh;
 }
 
 .Team__members--image {
-    max-width: 040vw;
+    max-width: 40vw;
 }
 
 .image--Gabriel {
@@ -89,5 +90,26 @@
 
     100% {
         transform: translateY(0);
+    }
+}
+
+
+@media (min-width: 768px) {
+    .Team {
+        padding: 0 5vw !important;
+    }
+
+    .Team__members--image {
+        max-width: 25vw;
+    }
+}
+
+@media (min-width: 992px) {
+    .Team {
+        padding: 0 15vw !important;
+    }
+
+    .Team__members--image {
+        max-width: 15vw;
     }
 }

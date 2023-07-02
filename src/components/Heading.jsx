@@ -21,7 +21,7 @@ function FadeText({ texts, interval }) {
       {texts.map((text, index) => (
         <div
           key={index}
-          className={`FadeText__item ${
+          className={`FadeText__item mb-lg-4 ${
             index === currentIndex ? "FadeText__item--visible" : ""
           }`}
         >
@@ -50,7 +50,7 @@ export default function Heading({ _t }) {
   return (
     <Container fluid className="Heading">
       <Row>
-        <Col xs={12} md={8} lg={6}>
+        <Col xs={12} md={10} lg={6}>
           <h1 className="title title-big firstTitle--animation">
             {ReactHtmlParser(_t.title)}
           </h1>

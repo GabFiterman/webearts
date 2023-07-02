@@ -1,21 +1,41 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { useRef, useEffect } from "react";
-import textData from "../data/text-main.json";
+import { useRef, useEffect, useState } from "react";
 import "../scss/services.scss";
 import ReactHtmlParser from "react-html-parser";
 
 function HorizontalGallery({ type, _t }) {
   const textArray = type === "design" ? _t.design : _t.desenvolvimento;
-
   const galleryRef = useRef(null);
+  const [startScroll, setStartScroll] = useState(false);
+
   useEffect(() => {
     const galleryElement = galleryRef.current;
-    const scrollInterval = setInterval(() => {
-      galleryElement.scrollLeft += galleryElement.offsetWidth;
-    }, 5000);
 
-    return () => clearInterval(scrollInterval);
-  }, []);
+
+    const handleScroll = () => {
+      const scrollYPosition = window.scrollY;
+      const threshold = type === 'design' ? 1100 : 1700;
+      setStartScroll(scrollYPosition >= threshold);
+    };
+    
+    window.addEventListener("scroll", handleScroll);
+    
+    let scrollXInterval;
+    
+    if (startScroll) {
+      const scrollTimer = type === 'design' ? 10000 : 16000;
+      console.log('timer de ', scrollTimer/100, 's começou!')
+      scrollXInterval = setInterval(() => {
+        galleryElement.scrollLeft += galleryElement.offsetWidth;
+        console.log(`Iniciou a rolagem horizontal dos elementos, `, type);
+      }, scrollTimer);
+    }
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      clearInterval(scrollXInterval);
+    };
+  }, [startScroll]);
 
   return (
     <div className="horizontalGallery" ref={galleryRef}>
@@ -30,14 +50,12 @@ function HorizontalGallery({ type, _t }) {
 
 export default function Services({ _t }) {
   const astronautLoveUSrc = "/img/astronauts/Astronaut_LoveU.png";
-  const designElementSrc = "/img/PenTool-cutted.png";
   const astronautSleepingSrc = "/img/Astronaut_TouchingStart.png";
-  const desenvolvimentoElementSrc = "/img/ChaveDev.png";
 
   return (
     <Container fluid className="Services">
-      <Row className="align-items-center">
-        <Col xs={8}>
+      <Row className="justify-content-between align-items-center">
+        <Col xs={7} md={6} lg={4}>
           <h1 className="title Services__title">{ReactHtmlParser(_t.title)}</h1>
         </Col>
         <Col xs={2} className="Services__image--astronaut--column">
@@ -49,16 +67,9 @@ export default function Services({ _t }) {
         </Col>
       </Row>
 
-      <Row>
+      <Row className="justify-content-between align-items-center">
         <Col xs={6} className="design__container">
-          <h3 className="title">Design</h3>
-        </Col>
-        <Col xs={4}>
-          <img
-            className="design__element"
-            src={designElementSrc}
-            alt="Elemento de design 'PenTool'"
-          />
+          <h3 className="title title-big mx-4">Design</h3>
         </Col>
       </Row>
       <Row>
@@ -77,14 +88,7 @@ export default function Services({ _t }) {
 
       <Row>
         <Col xs={6} className="desenvolvimento__container">
-          <h3 className="title">Desenvolvimento</h3>
-        </Col>
-        <Col xs={4}>
-          <img
-            className="desenvolvimento__element"
-            src={desenvolvimentoElementSrc}
-            alt="Elemento de desenvolvimento 'Chave (</>)'"
-          />
+          <h3 className="title title-big mx-4">Desenvolvimento</h3>
         </Col>
       </Row>
       <Row>

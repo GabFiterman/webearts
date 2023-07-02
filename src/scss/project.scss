@@ -1,59 +1,156 @@
 @import './variables';
-.Project {
-    background-image: url('/public/background-mobile.jpg');
-    color: $color-text-main;
-    padding-top: 5vh;
 
-    .Project__company--logo {
-        max-height: 16vh;
-        background-color: $color-text-main;
-        padding: .75rem;
-        border-radius: .5rem;
-    }
+@function multiple-box-shadow($n) {
+  $value: '#{random($random-stars-size)}px #{random($random-stars-size)}px #FFF';
 
-    .Project__company--name {
-        font-size: 2rem;
-        font-weight: bold;
-    }
+  @for $i from 2 through $n {
+    $value: '#{$value}, #{random($random-stars-size)}px #{random($random-stars-size)}px #FFF';
+  }
 
-    .Project__general--core {
-        font-style: italic;
-    }
-
-    .Project__general--description {
-
-    }
-
-    .Project__gallery--image {
-
-    }
-
-    .Project__image--container {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .Project__image--astronaut {
-        max-width: 50vw;
-        text-align: center;
-        margin-top: 15vh;
-
-        animation: floatingAnimation 3s ease-in-out infinite;
-
-        
-@keyframes floatingAnimation {
-    0% {
-        transform: translateY(0);
-    }
-    
-    50% {
-        transform: translateY(-5px);
-    }
-    
-    100% {
-        transform: translateY(0);
-    }
+  @return unquote($value);
 }
 
+$random-stars-size: 8000;
+$shadows-small: multiple-box-shadow(2800);
+$shadows-medium: multiple-box-shadow(800);
+$shadows-big: multiple-box-shadow(400);
+
+.stars {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: $shadows-small;
+  animation: animStar 50s linear infinite;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-small;
+  }
+}
+
+.stars2 {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: $shadows-medium;
+  animation: animStar 100s linear infinite;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $shadows-medium;
+  }
+}
+
+.stars3 {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: $shadows-big;
+  animation: animStar 150s linear infinite;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: $shadows-big;
+  }
+}
+
+.Project {
+  height: 100%;
+  background: radial-gradient(ellipse at top, #07162D 0%, #090A0F 100%);
+  overflow: hidden;
+  font-size: 1.25rem;
+
+  color: $color-text-main;
+  padding-top: 5vh;
+  text-align: center;
+
+  .Project__company--logo {
+    max-height: 16vh;
+    background-color: $color-text-main;
+    padding: .75rem;
+    border-radius: .5rem;
+  }
+
+  .Project__company--name {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .Project__general--core {
+    font-style: italic;
+  }
+
+  .Project__general--description {
+    padding: 0 10vw;
+  }
+
+  .Project__gallery--image {
+    max-width: 100%;
+  }
+
+  .Project__gallery--image--container {
+    height: 100%;
+    width: 100%;
+    // background-color: white;
+  }
+
+  .Project__gallery {
+    background-color: rgba($color-design-secondary, 0.8);
+    background-blend-mode: screen;
+    padding: 4vh 8vw;
+    width: 90vw;
+    // display: flex;
+    // justify-content: center;
+  }
+
+  .Project__image--astronaut {
+    max-width: 50vw;
+    max-height: 30vh;
+    text-align: center;
+    margin-top: 15vh;
+
+    animation: floatingAnimation 3s ease-in-out infinite;
+
+
+    @keyframes floatingAnimation {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-5px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
     }
+
+  }
+}
+
+
+@media (min-width: 992px) {
+  .Project__gallery--image {
+    max-height: 80vh;
+  }
+  
+  .Project__general--description {
+    padding: 0 20vw;
+  }
 }

@@ -21,7 +21,7 @@ function EmailForm({ _t }) {
     }
   };
   return (
-    <div className="container">
+    <Container>
       <form className="Contact__form" onSubmit={handleSubmit}>
         <div className="Contact__form--group">
           <input
@@ -57,7 +57,7 @@ function EmailForm({ _t }) {
           Enviar
         </button>
       </form>
-    </div>
+    </Container>
   );
 }
 
@@ -82,9 +82,9 @@ export default function Contact({ _t }) {
   const logoWhatsappSrc = "/img/Logo_Whatsapp_1.png";
   const linkWhatsapp = "https://api.whatsapp.com/send?phone=5562984602348";
   return (
-    <Container fluid>
-      <Row>
-        <Col xs={7} className="Contact__heading">
+    <Container className="Contact">
+      <Row className="align-items-center justify-content-between">
+        <Col xs={7} md={9} className="Contact__heading">
           <h1 className="title Contact__heading--title">
             {ReactHtmlParser(_t.title)}
           </h1>
@@ -92,7 +92,7 @@ export default function Contact({ _t }) {
             {ReactHtmlParser(_t.subtitle)}
           </div>
         </Col>
-        <Col xs={5}>
+        <Col xs={5} md={3}>
           <a href={linkWhatsapp} target="_blank" rel="noreferrer">
             <img
               className="Contact__image--logoWhatsapp"

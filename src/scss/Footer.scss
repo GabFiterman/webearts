@@ -14,17 +14,42 @@
 }
 
 .Footer__logo {
-    max-height: 2rem;
+    max-height: 15vw;
 }
 
 .Footer__title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 200;
     margin-top: 5vh;
 }
 
 .Footer__subtitle {
-    font-size: .6rem;
+    font-size: .95rem;
+    font-style: italic;
     font-weight: bold;
     margin-top: 5vh;
+}
+
+@media (min-width: 768px) {
+    .Footer__title {
+        font-size: 3rem;
+        font-weight: 200;
+        margin-top: 5vh;
+    }
+    
+    .Footer__subtitle {
+        font-size: 1.25rem;
+        font-style: italic;
+        font-weight: bold;
+        margin-top: 5vh;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    .Footer__logo {
+        margin-top: 10vh;
+        max-height: 6vw;
+    }
+
 }

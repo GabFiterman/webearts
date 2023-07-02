@@ -1,7 +1,7 @@
 @import './variables';
 
 .Contact__heading {
-    margin-bottom: -10vh;
+    // margin-bottom: -10vh;
 }
 
 .Contact__headign--title {
@@ -40,7 +40,7 @@
 }
 
 .Contact__form {
-    margin-top: 12vh;
+    margin-top: 6vh;
 }
 
 .Contact__form--group {}
@@ -73,4 +73,27 @@
     outline: none;
     border-radius: 2rem;
     width: 100%;
+}
+
+@media (min-width: 768px) {
+    .Contact {
+        padding: 0 5vw !important;
+    }
+    .Contact__image--logoWhatsapp {
+        width: 15vw;
+        
+    }
+}
+
+@media (min-width: 992px) {
+    .Contact {
+        padding: 0 15vw !important;
+    }
+    .Contact__image--logoWhatsapp {
+        width: 12vw;
+        justify-self: start;
+    }
+    .Contact__form--button {
+        width: 30%;
+    }
 }

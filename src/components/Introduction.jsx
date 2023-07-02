@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import "../scss/introduction.scss";
 import ReactHtmlParser from "react-html-parser";
 import { useState, useEffect } from "react";
@@ -11,7 +11,7 @@ export default function Introduction({ _t }) {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const threshold = 250; // Defina aqui a posição de scroll em que a transição deve ocorrer
+      const threshold = 225; // Defina aqui a posição de scroll em que a transição deve ocorrer
 
       setShowContainer(scrollPosition >= threshold);
     };
@@ -23,7 +23,7 @@ export default function Introduction({ _t }) {
   }, []);
 
   return (
-    <>
+    <div>
       <img
         className={`Introduction__logo ${showContainer ? "hide" : ""}`}
         src={logoSrc}
@@ -32,9 +32,9 @@ export default function Introduction({ _t }) {
       <div
         className={`Introduction__container ${showContainer ? "show" : ""}`}
       >
-        <Row>
-          <Col xs={10} md={8} lg={6}>
-            <h2 className="title Introduction__text--title">
+        <Row className="p-4">
+          <Col xs={10} md={8} lg={6} className="p-4">
+            <h2 className="title Introduction__text--title mx-4">
               {ReactHtmlParser(_t.title)}
             </h2>
           </Col>
@@ -46,7 +46,7 @@ export default function Introduction({ _t }) {
             />
           </Col>
         </Row>
-        <Row>
+        <Row className="px-4 mx-4">
           <Col>
             <p className="Introduction__text--body">
               {ReactHtmlParser(_t.bodyText)}
@@ -54,6 +54,6 @@ export default function Introduction({ _t }) {
           </Col>
         </Row>
       </div>
-    </>
+    </div>
   );
 }

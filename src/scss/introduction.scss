@@ -3,15 +3,14 @@
 .Introduction__logo {
     background-color: $color-text-main;
     height: 7rem;
-    padding: 1rem 2rem;
     border-radius: 0 0 2rem 0;
     transition: opacity 0.5s ease;
+    padding: 2vh 2vw 2vh 25vw;
 }
 
 .Introduction__container {
     color: $color-text-ternary;
     background-color: $color-text-main;
-    padding: 2rem 2.5rem !important;
     border-radius: 0 0 4rem 0;
     opacity: 0;
     transition: opacity 0.2s ease;
@@ -28,7 +27,7 @@
 
 .Introduction__icon {
     height: 7rem;
-    margin-left: -4rem;
+    margin-left: -1rem;
     opacity: .25;
 }
 
@@ -37,18 +36,16 @@
 }
 
 .Introduction__text--body {
-    margin-top: 1.5rem;
+    // margin-top: 1.5rem;
 }
 
 @media (min-width: 768px) {
+    .Introduction__container {
+        padding: 0 8vw 5vh 8vw;
+    }
     .Introduction__logo {
         margin-top: 5vh;
         height: 12rem;
-        padding: 2rem 8rem 2rem 4rem;
-    }
-
-    .Introduction__container  {
-        padding: 2rem 5rem !important;
     }
 
     .Introduction__icon {
@@ -59,12 +56,15 @@
 @media (min-width: 992px) {
     .Introduction__container  {
         max-width: 75vw !important;
+        text-align: center;
     }
+
     .Introduction__logo {
-        margin-top: 2vh;
-        padding: 2rem 12rem 2rem 6rem;
+        // margin-top: 2vh;
     }
+
     .Introduction__icon {
-        margin-left: -4rem;
+        // margin-left: -4rem;
+        height: 10rem;
     }
 }

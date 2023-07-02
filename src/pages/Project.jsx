@@ -1,13 +1,20 @@
-import { Link, useParams } from "react-router-dom";
-import { Carousel, Col, Row, Container } from "react-bootstrap";
-import portfolioData from "../data/portfolio.json";
 import "../scss/project.scss";
+import { Carousel, Col, Row, Container } from "react-bootstrap";
+import { Link, useParams, useLocation } from "react-router-dom";
+import { PortfolioGallery} from "../components/Portfolio";
+import { useEffect } from "react";
+import portfolioData from "../data/portfolio.json";
 
 export default function Project() {
   const { id } = useParams();
-  const project = portfolioData.find((project) => project.id === parseInt(id));
   const imageAsronautSrc = "/img/astronauts/Astronaut-MontadoAviaoPapel.png";
+  const location = useLocation();
+  const project = portfolioData.find((project) => project.id === parseInt(id));
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, [location]);
+  
   if (!project) {
     return (
       <div>
@@ -17,22 +24,26 @@ export default function Project() {
   }
 
   return (
-    <Container className="Project">
-      <Row className="justify-content-start align-items-end">
-        <Col xs={4}>
+    <Container fluid className="Project">
+      <div className="stars"></div>
+      <div className="stars2"></div>
+      <div className="stars3"></div>
+      <Row className="">
+        <Col>
           <img
             className="Project__company--logo"
             src={`/public/img/portfolio/${project.company.slug}/${project.company.logoFile}`}
             alt={`Logo ${project.company.name}`}
           />
         </Col>
-        <Col xs={8}>
+      </Row>
+      <Row>
+        <Col>
           <h2 className="Project__company--name">{project.company.name}</h2>
         </Col>
       </Row>
       <Row>
-        <Col xs={4}></Col>
-        <Col xs={8}>
+        <Col>
           <p className="Project__general--core">{project.general.core}</p>
         </Col>
       </Row>
@@ -44,25 +55,27 @@ export default function Project() {
         </Col>
       </Row>
       <Row>
-        <Col>
+        <Col className="Project__gallery">
           <Carousel>
             {project.gallery.map((item) => (
               <Carousel.Item key={item.id}>
-                <img
-                  className="Project__gallery--image d-block w-100"
-                  src={`/public/img/portfolio/${project.company.slug}/${item.imageName}${item.imageExtension}`}
-                  alt={item.descriptionTitle}
-                />
-                {/* <Carousel.Caption>
-                  <h3>{item.descriptionTitle}</h3>
-                  <p>{item.descriptionBody}</p>
-                </Carousel.Caption> */}
+                <div className="Project__gallery--image--container">
+                  <img
+                    className="Project__gallery--image"
+                    src={`/public/img/portfolio/${project.company.slug}/${item.imageName}${item.imageExtension}`}
+                    alt={item.descriptionTitle}
+                  />
+                  {/* <Carousel.Caption>
+                    <h3>{item.descriptionTitle}</h3>
+                    <p>{item.descriptionBody}</p>
+                  </Carousel.Caption> */}
+                </div>
               </Carousel.Item>
             ))}
           </Carousel>
         </Col>
       </Row>
-      <div className="Project__image--container">
+      <div>
         {/* TODO: Preciso fazer com que retorne diretamente para a secção do portfólio*/}
         <Link to="/">
           <img
@@ -72,6 +85,13 @@ export default function Project() {
           />
         </Link>
       </div>
+      <Container>
+        <Row className="px-md-4">
+          <Col>
+            <PortfolioGallery />
+          </Col>
+        </Row>
+      </Container>
     </Container>
   );
 }
