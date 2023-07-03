@@ -32,7 +32,7 @@ export default function Project() {
         <Col>
           <img
             className="Project__company--logo"
-            src={`/public/img/portfolio/${project.company.slug}/${project.company.logoFile}`}
+            src={`/img/portfolio/${project.company.slug}/${project.company.logoFile}`}
             alt={`Logo ${project.company.name}`}
           />
         </Col>
@@ -62,7 +62,7 @@ export default function Project() {
                 <div className="Project__gallery--image--container">
                   <img
                     className="Project__gallery--image"
-                    src={`/public/img/portfolio/${project.company.slug}/${item.imageName}${item.imageExtension}`}
+                    src={`/img/portfolio/${project.company.slug}/${item.imageName}${item.imageExtension}`}
                     alt={item.descriptionTitle}
                   />
                   {/* <Carousel.Caption>

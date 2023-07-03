@@ -60,7 +60,7 @@ export default function Services({ _t }) {
         </Col>
         <Col xs={2} className="Services__image--astronaut--column">
           <img
-            className="Services__image--astronaut--animation astronaut--flying"
+            className="image__astronaut--flying"
             src={astronautLoveUSrc}
             alt="Astronauta voando em foguete te mandando corações"
           />
@@ -77,9 +77,9 @@ export default function Services({ _t }) {
       </Row>
 
       <Row>
-        <Col className="Services__image--astronaut--sleeping--container">
+        <Col className="Services__image--astronaut--sleeping--container justify-content-end">
           <img
-            className="Services__image--astronaut--animation astronaut--sleeping"
+            className="image__astronaut--sleeping"
             src={astronautSleepingSrc}
             alt="Astronauta deitado e tranquilo"
           />

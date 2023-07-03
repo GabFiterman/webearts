@@ -15,19 +15,22 @@
     margin-top: 5vh;
 }
 
-.astronaut--flying {
-    margin: -5vh 0 0 -25vw;
-}
+.image__astronaut--flying {
+    margin: -5vh 0 0 -40vw;
+
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-name: shaking;
+    @include shaking(14rem, 12rem);
+}   
 
 .Services__image--astronaut--sleeping--container {
     height: 18vh;
 }
 
-.astronaut--sleeping {
+.image__astronaut--sleeping {
     margin: -2vh 0 0 5rem;
-}
-
-.Services__image--astronaut--animation {
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-out;
@@ -112,26 +115,21 @@
         margin-left: 22vw;
     }
 
-    .Services__image--astronaut--animation {
-        @include shaking(20rem, 18rem);
-    }
-
     .Services__title {
         font-size: calc($font-size-title-big * 1.5);
     }
 
-    .Services__image--astronaut--column {
-        .astronaut--flying {
-            margin: -2vh 0 0 -25vw;
-            height: 25vh !important;
-        }
+    .image__astronaut--flying {
+        margin: -2vh 0 0 -25vw;
+        height: 25vh !important;
     }
 
     .Services__image--astronaut--sleeping--container {
         height: 8vh;
     }
 
-    .astronaut--sleeping {
+    .image__astronaut--sleeping {
+        @include shaking(40vw, 35vw);
         margin: -6vh 0 0 65vw;
     }
 
@@ -158,15 +156,19 @@
         margin-left: 30vw;
     }
 
+    .image__astronaut--sleeping {
+        @include shaking(25vw, 22vw);
+        margin: -6vh 0 0 65vw;
+    }
+
+
     .Services__title {
         font-size: calc($font-size-title-big * 2);
     }
-
-    .Services__image--astronaut--column {
-        .astronaut--flying {
-            margin: -2vh 0 0 -25vw;
-            height: 45vh !important;
-        }
+    
+    .image__astronaut--flying {
+        margin: -2vh 0 0 -25vw;
+        height: 45vh !important;
     }
 
     .design {

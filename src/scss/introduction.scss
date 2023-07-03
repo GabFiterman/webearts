@@ -27,7 +27,7 @@
 
 .Introduction__icon {
     height: 7rem;
-    margin-left: -1rem;
+    margin-left: -15vw;
     opacity: .25;
 }
 
@@ -49,14 +49,14 @@
     }
 
     .Introduction__icon {
-        margin-left: 2rem;
+        margin-left: 2vw;
+        height: 18vw;
     }
 }
 
 @media (min-width: 992px) {
     .Introduction__container  {
         max-width: 75vw !important;
-        text-align: center;
     }
 
     .Introduction__logo {

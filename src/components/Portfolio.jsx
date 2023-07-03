@@ -20,7 +20,7 @@ export function PortfolioGallery() {
       {porfolioData.map((project) => (
           <li key={project.id} className={`Portfolio__gallery--item  ${clickedCardId === project.id ? 'noBlur' : ''}`} onClick={() => handleClick(project.id)}>
             <img
-              src={`/public/img/portfolio/${project.company.slug}/${project.general.thumbnailName}${project.general.thumbnailExtension}`}
+              src={`/img/portfolio/${project.company.slug}/${project.general.thumbnailName}${project.general.thumbnailExtension}`}
               alt={`Card para o projeto ${project.company.name}`}
               className={`Portfolio__gallery--card--image`}
             />
@@ -57,7 +57,7 @@ function PortfolioHighlight({ projectNames }) {
               <div className="Portfolio__highlight--thumbnail--container">
                 <img
                   className="Portfolio__highlight--thumbnail"
-                  src={`/public/img/portfolio/${project.company.slug}/${project.general.thumbnailName}${project.general.thumbnailExtension}`}
+                  src={`/img/portfolio/${project.company.slug}/${project.general.thumbnailName}${project.general.thumbnailExtension}`}
                   alt={`Card para o projeto ${project.company.name}`}
                 />
               </div>
@@ -70,8 +70,8 @@ function PortfolioHighlight({ projectNames }) {
 export default function Portfolio({ _t }) {
   const highlihtProjects = ["Trust Cleaning", "Dry Clean"];
   const astronautTouchMeSrc =
-    "/public/img/astronauts/Astronaut_Genial+Switch-Aceso.png";
-  const badgeTouchMeSrc = "/public/img/astronauts/Balao_Dialogo.png";
+    "/img/astronauts/Astronaut_Genial+Switch-Aceso.png";
+  const badgeTouchMeSrc = "/img/astronauts/Balao_Dialogo.png";
 
   return (
     <div className="Portfolio mx-4">

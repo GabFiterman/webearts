@@ -1,7 +1,10 @@
-import { Col, Container, Row } from "react-bootstrap";
 import { useState } from "react";
 import ReactHtmlParser from "react-html-parser";
+import sgMail from "@sendgrid/mail";
+import { Col, Container, Row } from "react-bootstrap";
 import "../scss/contact.scss";
+const sendGridApiKey = import.meta.env.VITE_SENDGRID_API_KEY;
+sgMail.setApiKey(sendGridApiKey);
 
 function EmailForm({ _t }) {
   const [email, setEmail] = useState("");
@@ -11,15 +14,17 @@ function EmailForm({ _t }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    console.log(`email: ${email}\nname: ${name}\nmessage: ${message}`)
     try {
-      // Chamada assíncrona para o servidor de envio de e-mails
-      await SendEmail(email);
+      await SendEmail(email, name, message, () => {
+        setEmail("");
+      });
       console.log("E-mail enviado com sucesso:", email);
-      setEmail("");
     } catch (error) {
       console.error("Erro ao enviar o e-mail:", error);
     }
   };
+
   return (
     <Container>
       <form className="Contact__form" onSubmit={handleSubmit}>
@@ -61,24 +66,23 @@ function EmailForm({ _t }) {
   );
 }
 
-async function SendEmail(email, name, message) {
-  //TODO: Adicionar API de envio de email
-  // Lógica de envio de e-mail
-  const response = await fetch("URL_DA_API_DE_ENVIO_DE_EMAIL", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ email }),
-  });
+async function SendEmail(email, name, message, callback) {
+  const msg = {
+    to: "gabriel@webearts.com", // Seu endereço de e-mail
+    from: email,
+    subject: "Novo e-mail de contato",
+    text: `Nome: ${name}\n\nMensagem: ${message}`,
+  };
 
-  if (!response.ok) {
+  try {
+    await sgMail.send(msg);
+    callback(); // Chama a função de callback passada como argumento
+  } catch (error) {
     throw new Error("Erro ao enviar o e-mail");
   }
 }
 
 export default function Contact({ _t }) {
-  //   const imgAstronautPlayingSrc = "/img/astronauts/Astronaut_SoltandoFoguete.png";
   const logoWhatsappSrc = "/img/Logo_Whatsapp_1.png";
   const linkWhatsapp = "https://api.whatsapp.com/send?phone=5562984602348";
   return (

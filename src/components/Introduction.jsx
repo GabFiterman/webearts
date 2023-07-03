@@ -33,12 +33,12 @@ export default function Introduction({ _t }) {
         className={`Introduction__container ${showContainer ? "show" : ""}`}
       >
         <Row className="p-4">
-          <Col xs={10} md={8} lg={6} className="p-4">
+          <Col xs={10} md={8} lg={8} className="p-4">
             <h2 className="title Introduction__text--title mx-4">
               {ReactHtmlParser(_t.title)}
             </h2>
           </Col>
-          <Col xs={2} md={4} lg={6}>
+          <Col xs={2} md={4} lg={4}>
             <img
               className="Introduction__icon"
               src={iconSrc}

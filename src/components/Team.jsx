@@ -10,7 +10,7 @@ function Member({ name }) {
         alt={`${name}, ${
           name === "Gabriel" ? "Desenvolvedor e Designer" : "Designer Gráfica"
         }`}
-        src={`/public/img/members/Photo_${name}.png`}
+        src={`/img/members/Photo_${name}.png`}
       />
       <span className={`Team__members--span span--${name}`}>{name}</span>
     </div>
