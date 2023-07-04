@@ -4,6 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import emailjs from '@emailjs/browser';
 import "../scss/contact.scss";
 
+
 function EmailForm({ _t }) {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
@@ -11,7 +12,8 @@ function EmailForm({ _t }) {
   const emailServiceId = import.meta.env.VITE_EMAIL_SERVICE_ID;
   const emailTemplateId = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
   const emailPublicKey = import.meta.env.VITE_EMAIL_PUBLIC_KEY;
-
+  const [showSuccess, setShowSuccess] = useState(false);
+  const checkSrc = '/img/icon-check.gif';
   const templateParams = {
     from_name: name,
     message: message,
@@ -25,6 +27,10 @@ function EmailForm({ _t }) {
       setName('')
       setEmail('')
       setMessage('')
+      setShowSuccess(true);
+      setTimeout(() => {
+        setShowSuccess(false)
+      }, 2000)
     }, (err) => {
       console.error('ERRO AO ENVIAR EMAIL: ', err)
     })
@@ -64,13 +70,21 @@ function EmailForm({ _t }) {
             required
           />
         </div>
-        <button type="submit" className="Contact__form--button">
-          Enviar
-        </button>
+        <div className="Contact__submit">
+          <button type="submit" className="Contact__form--button">
+            Enviar
+          </button>
+          {showSuccess && (
+          <div className="Contact__success">
+            <img className="Contact__success--image" src={checkSrc} alt="Mensagem enviada com Sucesso!" />
+          </div>
+          )}
+        </div>
       </form>
     </Container>
   );
 }
+
 
 export default function Contact({ _t }) {
   const logoWhatsappSrc = "/img/Logo_Whatsapp_1.png";
