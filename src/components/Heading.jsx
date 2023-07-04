@@ -46,7 +46,6 @@ function FunnyImage() {
 }
 
 export default function Heading({ _t }) {
-  console.log("Heading Says: \n _t.bodyText:\n", _t.bodyText);
   return (
     <Container fluid className="Heading">
       <Row>

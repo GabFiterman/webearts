@@ -24,10 +24,8 @@ function HorizontalGallery({ type, _t }) {
     
     if (startScroll) {
       const scrollTimer = type === 'design' ? 10000 : 16000;
-      console.log('timer de ', scrollTimer/100, 's começou!')
       scrollXInterval = setInterval(() => {
         galleryElement.scrollLeft += galleryElement.offsetWidth;
-        console.log(`Iniciou a rolagem horizontal dos elementos, `, type);
       }, scrollTimer);
     }
 
