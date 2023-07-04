@@ -1,28 +1,21 @@
 import { useState } from "react";
 import ReactHtmlParser from "react-html-parser";
-import sgMail from "@sendgrid/mail";
 import { Col, Container, Row } from "react-bootstrap";
+import axios from 'axios';
 import "../scss/contact.scss";
-const sendGridApiKey = import.meta.env.VITE_SENDGRID_API_KEY;
-sgMail.setApiKey(sendGridApiKey);
+
+const sendEmail = async (emailData) => {
+}
 
 function EmailForm({ _t }) {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    console.log(`email: ${email}\nname: ${name}\nmessage: ${message}`)
-    try {
-      await SendEmail(email, name, message, () => {
-        setEmail("");
-      });
-      console.log("E-mail enviado com sucesso:", email);
-    } catch (error) {
-      console.error("Erro ao enviar o e-mail:", error);
-    }
+    console.log(`email: ${email}\nname: ${name}\nmessage: ${message}`);
   };
 
   return (
@@ -64,22 +57,6 @@ function EmailForm({ _t }) {
       </form>
     </Container>
   );
-}
-
-async function SendEmail(email, name, message, callback) {
-  const msg = {
-    to: "gabriel@webearts.com", // Seu endereço de e-mail
-    from: email,
-    subject: "Novo e-mail de contato",
-    text: `Nome: ${name}\n\nMensagem: ${message}`,
-  };
-
-  try {
-    await sgMail.send(msg);
-    callback(); // Chama a função de callback passada como argumento
-  } catch (error) {
-    throw new Error("Erro ao enviar o e-mail");
-  }
 }
 
 export default function Contact({ _t }) {
