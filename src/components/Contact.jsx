@@ -1,21 +1,34 @@
 import { useState } from "react";
 import ReactHtmlParser from "react-html-parser";
 import { Col, Container, Row } from "react-bootstrap";
-import axios from 'axios';
+import emailjs from '@emailjs/browser';
 import "../scss/contact.scss";
-
-const sendEmail = async (emailData) => {
-}
 
 function EmailForm({ _t }) {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+  const emailServiceId = import.meta.env.VITE_EMAIL_SERVICE_ID;
+  const emailTemplateId = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
+  const emailPublicKey = import.meta.env.VITE_EMAIL_PUBLIC_KEY;
 
+  const templateParams = {
+    from_name: name,
+    message: message,
+    email: email
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(`email: ${email}\nname: ${name}\nmessage: ${message}`);
+    
+    emailjs.send(emailServiceId, emailTemplateId, templateParams, emailPublicKey).then(() => {
+      setName('')
+      setEmail('')
+      setMessage('')
+    }, (err) => {
+      console.error('ERRO AO ENVIAR EMAIL: ', err)
+    })
+
   };
 
   return (
