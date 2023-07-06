@@ -1,7 +1,7 @@
 import "../scss/project.scss";
 import { Carousel, Col, Row, Container } from "react-bootstrap";
 import { Link, useParams, useLocation } from "react-router-dom";
-import { PortfolioGallery} from "../components/Portfolio";
+import { PortfolioGallery } from "../components/Portfolio";
 import { useEffect } from "react";
 import portfolioData from "../data/portfolio.json";
 
@@ -12,14 +12,25 @@ export default function Project() {
   const project = portfolioData.find((project) => project.id === parseInt(id));
 
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, [location]);
-  
+
   if (!project) {
     return (
-      <div>
-        <h2>Projeto não encontrado!</h2>
-      </div>
+      <Container fluid className="Project">
+        <div className="stars"></div>
+        <div className="stars2"></div>
+        <div className="stars3"></div>
+        <Row>
+          <Col>
+            <img
+              className="Project__gallery--image"
+              src={`/img/portfolio/Art_404.jpg`}
+              alt="Ainda não temos itens para este projeto."
+            />
+          </Col>
+        </Row>
+      </Container>
     );
   }
 
@@ -60,11 +71,19 @@ export default function Project() {
             {project.gallery.map((item) => (
               <Carousel.Item key={item.id}>
                 <div className="Project__gallery--image--container">
-                  <img
-                    className="Project__gallery--image"
-                    src={`/img/portfolio/${project.company.slug}/${item.imageName}${item.imageExtension}`}
-                    alt={item.descriptionTitle}
-                  />
+                  {project.gallery.length >= 2 ? (
+                    <img
+                      className="Project__gallery--image"
+                      src={`/img/portfolio/${project.company.slug}/${item.imageName}${item.imageExtension}`}
+                      alt={item.descriptionTitle}
+                    />
+                  ) : (
+                    <img
+                      className="Project__gallery--image"
+                      src={`/img/portfolio/Art_404.jpg`}
+                      alt="Ainda não temos itens para este projeto."
+                    />
+                  )}
                   {/* <Carousel.Caption>
                     <h3>{item.descriptionTitle}</h3>
                     <p>{item.descriptionBody}</p>
