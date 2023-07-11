@@ -5,8 +5,8 @@ import { useState, useEffect } from "react";
 
 export default function Introduction({ _t }) {
   const [showContainer, setShowContainer] = useState(false);
-  const logoSrc = "/img/Logo.png";
-  const iconSrc = "/img/FavIco.png";
+  const logoSrc = "/img/Logo.webp";
+  const iconSrc = "/img/FavIco.webp";
 
   useEffect(() => {
     const handleScroll = () => {

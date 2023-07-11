@@ -87,7 +87,7 @@ function EmailForm({ _t }) {
 
 
 export default function Contact({ _t }) {
-  const logoWhatsappSrc = "/img/Logo_Whatsapp_1.png";
+  const logoWhatsappSrc = "/img/Logo_Whatsapp_1.webp";
   const linkWhatsapp = "https://api.whatsapp.com/send?phone=5562984602348";
   return (
     <Container className="Contact">

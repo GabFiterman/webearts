@@ -10,7 +10,7 @@ function Member({ name }) {
         alt={`${name}, ${
           name === "Gabriel" ? "Desenvolvedor e Designer" : "Designer Gráfica"
         }`}
-        src={`/img/members/Photo_${name}.png`}
+        src={`/img/members/Photo_${name}.webp`}
       />
       <span className={`Team__members--span span--${name}`}>{name}</span>
     </div>
@@ -18,7 +18,7 @@ function Member({ name }) {
 }
 
 export default function Team({ _t }) {
-  const imgAstronautSrc = "/img/astronauts/Astronaut_Apontando.png";
+  const imgAstronautSrc = "/img/astronauts/Astronaut_Apontando.webp";
   return (
     <Container className="Team">
       <Row className="Team__heading align-items-start justify-content-between">

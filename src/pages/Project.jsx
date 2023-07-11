@@ -7,7 +7,7 @@ import portfolioData from "../data/portfolio.json";
 
 export default function Project() {
   const { id } = useParams();
-  const imageAsronautSrc = "/img/astronauts/Astronaut-MontadoAviaoPapel.png";
+  const imageAsronautSrc = "/img/astronauts/Astronaut-MontadoAviaoPapel.webp";
   const location = useLocation();
   const project = portfolioData.find((project) => project.id === parseInt(id));
 
@@ -25,7 +25,7 @@ export default function Project() {
           <Col>
             <img
               className="Project__gallery--image"
-              src={`/img/portfolio/Art_404.jpg`}
+              src={`/img/portfolio/Art_404.webp`}
               alt="Ainda não temos itens para este projeto."
             />
           </Col>
@@ -80,7 +80,7 @@ export default function Project() {
                   ) : (
                     <img
                       className="Project__gallery--image"
-                      src={`/img/portfolio/Art_404.jpg`}
+                      src={`/img/portfolio/Art_404.webp`}
                       alt="Ainda não temos itens para este projeto."
                     />
                   )}

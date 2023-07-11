@@ -70,8 +70,8 @@ function PortfolioHighlight({ projectNames }) {
 export default function Portfolio({ _t }) {
   const highlihtProjects = ["Trust Cleaning", "Dry Clean"];
   const astronautTouchMeSrc =
-    "/img/astronauts/Astronaut_Genial+Switch-Aceso.png";
-  const badgeTouchMeSrc = "/img/astronauts/Balao_Dialogo.png";
+    "/img/astronauts/Astronaut_Genial+Switch-Aceso.webp";
+  const badgeTouchMeSrc = "/img/astronauts/Balao_Dialogo.webp";
 
   return (
     <div className="Portfolio mx-4">

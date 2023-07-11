@@ -1,7 +1,7 @@
 import '../scss/footer.scss';
 
 export default function Footer({_t}) {
-    const logoSrc = '/img/Logo-DarkMode.png'
+    const logoSrc = '/img/Logo-DarkMode.webp'
     return(
         <div className="Footer">
             <img className='Footer__logo' src={logoSrc} alt="Logo WebeArts" />

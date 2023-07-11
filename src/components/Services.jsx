@@ -47,8 +47,8 @@ function HorizontalGallery({ type, _t }) {
 }
 
 export default function Services({ _t }) {
-  const astronautLoveUSrc = "/img/astronauts/Astronaut_LoveU.png";
-  const astronautSleepingSrc = "/img/Astronaut_TouchingStart.png";
+  const astronautLoveUSrc = "/img/astronauts/Astronaut_LoveU.webp";
+  const astronautSleepingSrc = "/img/Astronaut_TouchingStart.webp";
 
   return (
     <Container fluid className="Services">

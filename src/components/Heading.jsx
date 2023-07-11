@@ -33,7 +33,7 @@ function FadeText({ texts, interval }) {
 }
 
 function FunnyImage() {
-  const imageSrc = "/img/StickerEinstein.png";
+  const imageSrc = "/img/StickerEinstein.webp";
   return (
     <>
       <img
