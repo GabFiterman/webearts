@@ -1,0 +1,84 @@
+@import './animations.scss';
+@import './_variables.scss';
+
+.firstTitle--animation {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+.FadeText__item {
+  padding: 0 1.5rem;
+  margin-top: -4vh;
+  opacity: 0;
+  position: absolute;
+  text-align: end;
+  transition: opacity 0.5s;
+}
+
+.FadeText__item--visible {
+  opacity: 1;
+}
+
+.FunnyImage__col {
+  height: 50vh;
+  margin: 0 4rem;
+  text-align: right;
+}
+
+.FunnyImage__image--animation {
+  animation-duration: 3.65s;
+  animation-iteration-count: infinite;
+  animation-name: bigHeadBounce;
+  @include bigHeadBounce(75vw, 62vw);
+}
+
+@media (min-width: 500px) {
+  .FunnyImage__image--animation {
+    @include bigHeadBounce(60vw, 55vw);
+    margin: -8vh 5vw 0 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .FunnyImage__image--animation {
+    @include bigHeadBounce(50vw, 40vw);
+    margin: -15vh 25vw 0 0 !important;
+  }
+
+  .FadeText__item {
+    margin-top: 5vh;
+  }
+  
+  .FunnyImage__col {
+    height: 40vh;
+    margin-left: 25vw;
+  }
+
+  .FadeText__item  {
+    text-align: right;
+  }
+}
+
+@media (min-width: 992px) {  
+  .FunnyImage__image--animation {
+    @include bigHeadBounce(45vw, 38vw);
+    margin: -25vh 0 0 0 !important;
+  }
+
+  .FadeText__item {
+    margin-top: -10vh;
+  }
+  
+  .FunnyImage__col {
+    height: 50vh;
+    margin-top: -16vh !important;
+    text-align: center;
+  }
+  
+  .FadeText__item  {
+    text-align: left;
+    max-width: 40vw;
+    font-size: 1.5rem;
+    margin-bottom: 4vh;
+  }
+}

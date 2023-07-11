@@ -1,0 +1,55 @@
+@import './variables';
+
+.Footer {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/BackgroundFooter.webp');
+    // background-color: #282828;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
+    min-height: 50vh;
+}
+
+.Footer__logo {
+    max-height: 15vw;
+}
+
+.Footer__title {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 5vh;
+}
+
+.Footer__subtitle {
+    font-size: .95rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 5vh;
+}
+
+@media (min-width: 768px) {
+    .Footer__title {
+        font-size: 3rem;
+        font-weight: 200;
+        margin-top: 5vh;
+    }
+    
+    .Footer__subtitle {
+        font-size: 1.25rem;
+        font-style: italic;
+        font-weight: bold;
+        margin-top: 5vh;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    .Footer__logo {
+        margin-top: 10vh;
+        max-height: 6vw;
+    }
+
+}

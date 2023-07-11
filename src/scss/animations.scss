@@ -1,0 +1,81 @@
+@keyframes slidein {
+    0% {
+        margin-left: 120%;
+        width: 300%
+    }
+
+    75% {
+        margin-left: -5%;
+        width: 95%;
+    }
+
+    95% {
+        margin-left: 2%;
+        width: 102%;
+    }
+
+    100% {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@mixin bigHeadBounce($initialValue, $finalValue) {
+    animation-timing-function: cubic-bezier(0.53, 0.24, 0, 0.76);
+
+    @keyframes bigHeadBounce {
+        0% {
+            width: $initialValue;
+            transform: rotate(-15deg);
+            margin-top: 1vh;
+        }
+
+        20% {
+            transform: rotate(10deg);
+        }
+
+        40% {
+            transform: rotate(-10deg);
+        }
+
+        50% {
+            width: $finalValue;
+            margin-top: -1vh;
+        }
+
+        60% {
+            transform: rotate(5deg);
+        }
+
+        80% {
+            transform: rotate(-5deg);
+        }
+
+        100% {
+            width: $initialValue;
+            transform: rotate(-15deg);
+            margin-top: 1vh;
+        }
+    }
+}
+
+@mixin shaking($initialValue, $finalValue) {
+    
+    @keyframes shaking {
+        0% {
+            height: $initialValue;
+            rotate: -25deg;
+        }
+    
+        50% {
+            height: $finalValue;
+            rotate: -15deg;
+        }
+    
+        100% {
+            height: $initialValue;
+            rotate: -25deg;
+        }
+    
+    }
+}

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Montserrat:wght@200;400;700;900&family=Righteous&display=swap');
+
+/**--------------------------------------------------*/
+$gray-light: #F3F6F6;
+$gray-middle: #D9D9D9;
+$gray-grafitte: #7F7979;
+$orange-pumpkin: #FF6C0A;
+$blue-deep: #162D50;
+$blue-light: #83D6E8;
+$black-darkest: #282828;
+
+/**--------------------------------------------------*/
+
+$color-text-main: $gray-light;
+$color-text-highlight: $orange-pumpkin;
+$color-text-emphasis: $blue-deep;
+$color-text-secondary: $black-darkest;
+$color-text-ternary: $gray-grafitte;
+
+$color-design-main: $blue-light;
+$color-design-secondary: $blue-deep;
+
+$color-dev-main:  $black-darkest;
+$color-dev-secondary: $gray-middle;
+
+$font-family: 'Montserrat', 'Poppins', 'Helvetica', 'Arial', Sans-serif;
+$font-titles: 'Righteous', 'Roboto Slab';
+
+$font-size-title-big: 2.25rem;
+$font-size-subtitle: 1.15rem;
+
+$margin-x-page: 15vw;
+$margin-y-page: 10vh;
+
+$padding-x-page: 10vw;
+$padding-y-page: 8vh;
+
+$margin-x-item: 15vw;
+$margin-y-item: 10vh;
+
+$padding-x-item: 10vw;
+$padding-y-item: 8vh;
+
+
+

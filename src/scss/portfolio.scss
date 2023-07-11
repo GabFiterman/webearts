@@ -1,0 +1,198 @@
+@import './variables';
+
+.Portfolio {}
+
+.Portfolio--title {}
+
+.Portfolio--image--astronaut {
+    height: 12rem;
+}
+
+.Portfolio--image--badge {
+    height: 3rem;
+    margin-left: -10vw;
+    margin-top: 10vh;
+    position: absolute;
+}
+
+.Portfolio__gallery {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 .35rem;
+}
+
+.Portfolio__gallery--item {
+    margin: 1.5rem 0;
+    background-color: #fff;
+    padding: .5rem;
+    width: 40vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+    filter: brightness(.6) blur(2px);
+}
+
+.Portfolio__gallery--card--image {
+    background-color: $color-text-main;
+    border-radius: .5rem;
+    max-height: 28vh;
+    max-width: 100%;
+}
+
+.Portfolio__gallery--item:hover,
+.Portfolio__highlight--card:hover {
+    cursor: pointer;
+}
+
+$card-filter: brightness(.3) blur(2px);
+
+.card1 {
+    background-color: $color-dev-secondary;
+    filter: brightness(1);
+
+    .Portfolio__highlight--heading--title {
+        color: $color-dev-main;
+    }
+
+    margin-left: 15vw;
+    z-index: 2;
+    position: absolute;
+    filter: $card-filter;
+}
+
+.card2 {
+    background-color: $color-dev-main;
+    z-index: 1;
+    margin-top: 6vh;
+    margin-right: 15vw;
+    filter: $card-filter;
+}
+
+.noBlur {
+    filter: brightness(1) blur(0px);
+    box-shadow: 0 0 10px rgba($gray-middle, 0.75);
+    z-index: 3;
+    animation: floatingAnimation 3s ease-in-out infinite;
+}
+
+@keyframes floatingAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.Portfolio__highlight {
+    display: flex;
+    justify-content: center;
+    margin: 10vh auto;
+    min-height: 50vh !important;
+}
+
+.Portfolio__highlight--card {
+    align-items: center;
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 65vw;
+    padding: 1rem 0.5rem 1.5rem 0.5rem;
+    position: absolute;
+    transition: all .5s;
+}
+
+.Portfolio__highlight--card--heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Portfolio__highlight--heading--logo {
+    background-color: $color-dev-secondary;
+    max-height: 10vh;
+    max-width: 25vw;
+    padding: .32rem;
+}
+
+.Portfolio__highlight--heading--title {
+    padding: 0 .5rem;
+    text-align: end;
+}
+
+.Portfolio__highlight--thumbnail--container {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Portfolio__highlight--thumbnail {
+    margin-top: 1.5rem;
+    width: 50vw;
+}
+
+
+@media (min-width: 768px) {
+    .Portfolio--image--astronaut {
+        height: 22rem;
+    }
+
+    .Portfolio__highlight {}
+
+    .Portfolio__highlight--card {
+        padding: 3rem 2rem 5rem 2rem;
+        min-width: 35vw;
+    }
+
+    .Portfolio__highlight--card--heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .Portfolio__highlight--heading--logo {
+        background-color: $color-dev-secondary;
+        max-height: 10vh;
+        max-width: 10vw;
+        padding: .32rem;
+    }
+
+    .Portfolio__highlight--heading--title {
+        padding: 0 .5rem;
+        text-align: end;
+    }
+
+    .Portfolio__highlight--thumbnail--container {
+        height: 30vh;
+    }
+
+    .Portfolio__highlight--thumbnail {
+        margin-top: 1.5rem;
+        max-width: 25vw;
+    }
+
+    .Portfolio__gallery--item {
+        width: 25vw;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .Portfolio--image--astronaut {
+        height: 30rem;
+        margin-right: 10vw;
+    }
+}

@@ -1,0 +1,115 @@
+@import './variables';
+
+.Team__heading {}
+
+.Team__title {
+    margin-left: 5vw;
+}
+
+.Team__image--astronaut {
+    max-height: 30vh;
+    // margin-left: -15vw;
+    rotate: 10deg;
+}
+
+.Team__body {}
+
+.Team__body--subtittle {
+    font-weight: bold;
+    font-size: 1.15rem;
+    max-width: 75vw;
+    text-align: center;
+    margin: 1.65rem auto;
+}
+
+.Team__body--bodyText {
+    // text-align: justify;
+    // max-width: 40vw;
+    // padding: inherit 8vw;
+}
+
+.Team__members {
+    margin-top: 5vh !important;
+    margin-left: 5vw;
+}
+
+.Team__members--title {
+    font-size: 3rem;
+    color: $color-text-ternary;
+
+}
+
+.Team__members--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.Team__members--image {
+    max-width: 40vw;
+}
+
+.image--Gabriel {
+    animation: floatingAnimation 2.5s ease-in-out infinite;
+}
+
+.image--Kakau {
+    animation: floatingAnimation 3.25s ease-in-out infinite;
+}
+
+.Team__members--span {
+    padding: .35rem 1.5rem;
+    font-weight: bold;
+    margin-top: -1.25rem;
+}
+
+.span--Gabriel {
+    background-color: $color-dev-main;
+    color: $color-dev-secondary;
+    animation: floatingAnimation 2s ease-in-out infinite;
+}
+
+.span--Kakau {
+    background-color: $color-design-main;
+    color: $color-design-secondary;
+    animation: floatingAnimation 2.5s ease-in-out infinite;
+}
+
+
+
+@keyframes floatingAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@media (min-width: 768px) {
+    .Team {
+        padding: 0 5vw !important;
+    }
+
+    .Team__members--image {
+        max-width: 25vw;
+    }
+}
+
+@media (min-width: 992px) {
+    .Team {
+        padding: 0 15vw !important;
+    }
+
+    .Team__members--image {
+        max-width: 15vw;
+    }
+}
