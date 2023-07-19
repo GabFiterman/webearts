@@ -1,10 +1,9 @@
-<div style="display: flex; flex-direction: column; align-items: center;  justify-content: center; ">
-    <img style="height: 6em" src="./public/img/Logo-darkMode.webp" alt="Logo webearts" />
+<div>
+    <img style="height: 6em" src="https://imgur.com/2tK1uft.png" alt="Logo webearts" />
+    <br />
     <a target="_blank" href="https://webearts.com">webearts.com</a>
 </div>
-
-# Webearts
-
+<hr />
 O Webearts é um website/portfolio desenvolvido por Gabriel e Kakau, dois profissionais freelancers especializados em design e desenvolvimento. O projeto tem como objetivo criar uma experiência visual impactante e animada para exibir nossos trabalhos e serviços.
 
 ## Visão Geral
