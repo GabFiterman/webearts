@@ -40,6 +40,7 @@
     },
     "Portfolio": {
         "title": "Portfolio",
+        "categories": ["design gráfico", "desenvolvimento"],
         "highlightProjects": [
             "ambrossia",
             "goBestLife"

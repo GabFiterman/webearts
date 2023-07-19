@@ -27,13 +27,13 @@ export default function Root() {
         </Col>
       </Row>
       <Row>
-        <Col className="px-0 mb-5">
-          <Services _t={textData.Services} />
+        <Col className="px-0 mt-5" id="portfolioSection">
+          <Portfolio _t={textData.Portfolio} />
         </Col>
       </Row>
       <Row>
-        <Col className="px-0 mt-5" id="portfolioSection">
-          <Portfolio _t={textData.Portfolio} />
+        <Col className="px-0 mb-5">
+          <Services _t={textData.Services} />
         </Col>
       </Row>
       <Row>

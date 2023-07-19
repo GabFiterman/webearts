@@ -1,7 +1,6 @@
 import "../scss/project.scss";
 import { Carousel, Col, Row, Container } from "react-bootstrap";
 import { Link, useParams, useLocation } from "react-router-dom";
-import { PortfolioGallery } from "../components/Portfolio";
 import { useEffect } from "react";
 import portfolioData from "../data/portfolio.json";
 
@@ -104,13 +103,6 @@ export default function Project() {
           />
         </Link>
       </div>
-      <Container>
-        <Row className="px-md-4">
-          <Col>
-            <PortfolioGallery />
-          </Col>
-        </Row>
-      </Container>
     </Container>
   );
 }

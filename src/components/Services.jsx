@@ -47,7 +47,6 @@ function HorizontalGallery({ type, _t }) {
 }
 
 export default function Services({ _t }) {
-  const astronautLoveUSrc = "/img/astronauts/Astronaut_LoveU.webp";
   const astronautSleepingSrc = "/img/Astronaut_TouchingStart.webp";
 
   return (
@@ -55,13 +54,6 @@ export default function Services({ _t }) {
       <Row className="justify-content-between align-items-center">
         <Col xs={7} md={6} lg={4}>
           <h1 className="title Services__title">{ReactHtmlParser(_t.title)}</h1>
-        </Col>
-        <Col xs={2} className="Services__image--astronaut--column">
-          <img
-            className="image__astronaut--flying"
-            src={astronautLoveUSrc}
-            alt="Astronauta voando em foguete te mandando corações"
-          />
         </Col>
       </Row>
 
