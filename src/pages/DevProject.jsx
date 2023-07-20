@@ -1,6 +1,6 @@
 import StarsBackground from "../components/starsBackground";
-import { useParams, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 import portfolioData from "../data/portfolio-dev.json";
 import { Container, Row, Col } from "react-bootstrap";
 import "../scss/DevProject.scss";
@@ -150,7 +150,7 @@ function SecondaryBanners({ project }) {
 }
 
 function AboutText({ description }) {
-  const [showAboutText, setShowAboutText] = useState(false);
+  const [showAboutText, setShowAboutText] = useState(true);
 
   return (
     <Row>
@@ -201,6 +201,11 @@ export default function DevProject() {
   const { id } = useParams();
   const project = portfolioData.find((project) => project.id === parseInt(id));
   const gitHubSrc = "/img/GithubLogo.webp";
+  const location = useLocation();
+  
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, [location]);
 
   return (
     <Container fluid className="DevProject Root">
