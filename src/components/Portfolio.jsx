@@ -9,8 +9,6 @@ function CategoriesContainer(props) {
   const categories = _t.categories;
   const [activeCategory, setActiveCategory] = useState(categories[1]);
 
-  console.log(activeCategory);
-
   return (
     <>
     <div className="CategoriesContainer mt-3">

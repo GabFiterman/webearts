@@ -8,13 +8,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 5vh 0;
 }
 
 .category__title {
-    font-size: 1em;
+    font-size: 1.25em;
     text-transform: capitalize;
 }
 
 .activeCategory {
     border-bottom: 2px #cdcdcd solid;
+    font-weight: bold;
 }
