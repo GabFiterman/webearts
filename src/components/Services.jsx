@@ -51,8 +51,8 @@ export default function Services({ _t }) {
   return (
     <Container fluid className="Services">
       <Row className="justify-content-between align-items-center">
-        <Col xs={12} md={8} lg={6}>
-          <h1 className="title Services__title">{ReactHtmlParser(_t.title)}</h1>
+        <Col xs={12} md={8}>
+          <h1 className="title title-big Services__title">{ReactHtmlParser(_t.title)}</h1>
         </Col>
       </Row>
 
