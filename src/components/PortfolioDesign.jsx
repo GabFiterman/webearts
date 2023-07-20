@@ -5,7 +5,7 @@ export default function PortfolioDesign ({_t}) {
         <Container>
             <Row className="justify-content-center">
                 <Col xs={12} md={6}>
-                    <img style={{maxWidth: '100%'}} src="/public/img/Art_404.webp"/>
+                    <img style={{maxWidth: '100%'}} src="/img/Art_404.webp"/>
                 </Col>
             </Row>
         </Container>
