@@ -1,7 +1,7 @@
 export default function PortfolioDesign ({_t}) {
     return (
         <div>
-            <h1>Portfolio DESIGN</h1>
+            <img style={{maxWidth: '95vw'}} src="/public/img/Art_404.webp"/>
         </div>
     )
 }
