@@ -11,7 +11,6 @@ function HorizontalGallery({ type, _t }) {
   useEffect(() => {
     const galleryElement = galleryRef.current;
 
-
     const handleScroll = () => {
       const scrollYPosition = window.scrollY;
       const threshold = type === 'design' ? 1100 : 1700;
@@ -47,21 +46,13 @@ function HorizontalGallery({ type, _t }) {
 }
 
 export default function Services({ _t }) {
-  const astronautLoveUSrc = "/img/astronauts/Astronaut_LoveU.webp";
   const astronautSleepingSrc = "/img/Astronaut_TouchingStart.webp";
 
   return (
     <Container fluid className="Services">
       <Row className="justify-content-between align-items-center">
-        <Col xs={7} md={6} lg={4}>
-          <h1 className="title Services__title">{ReactHtmlParser(_t.title)}</h1>
-        </Col>
-        <Col xs={2} className="Services__image--astronaut--column">
-          <img
-            className="image__astronaut--flying"
-            src={astronautLoveUSrc}
-            alt="Astronauta voando em foguete te mandando corações"
-          />
+        <Col xs={12} md={8}>
+          <h1 className="title title-big Services__title">{ReactHtmlParser(_t.title)}</h1>
         </Col>
       </Row>
 

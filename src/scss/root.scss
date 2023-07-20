@@ -1,111 +1,5 @@
 @import "bootstrap/scss/bootstrap";
-@import './variables';
-
-// @import compass;
-
-// n is number of stars required
-@function multiple-box-shadow($n) {
-  $value: '#{random($random-stars-size)}px #{random($random-stars-size)}px #FFF';
-  @for $i from 2 through $n {
-    $value: '#{$value}, #{random($random-stars-size)}px #{random($random-stars-size)}px #FFF';
-  }
-  @return unquote($value);
-}
-
-$random-stars-size: 8000;
-$shadows-small: multiple-box-shadow(2800);
-$shadows-medium: multiple-box-shadow(800);
-$shadows-big: multiple-box-shadow(400);
-
-.Root {
-  height: 100%;
-  background: radial-gradient(ellipse at top, #07162D 0%, #090A0F 100%);
-  overflow: hidden;
-}
-
-.stars {
-  width: 1px;
-  height: 1px;
-  background: transparent;
-  box-shadow: $shadows-small;
-  animation: animStar 50s linear infinite;
-  
-  &:after {
-    content: " ";
-    position: absolute;
-    top: 2000px;
-    width: 1px;
-    height: 1px;
-    background: transparent;
-    box-shadow: $shadows-small;
-  }
-}
-
-.stars2 {
-  width: 2px;
-  height: 2px;
-  background: transparent;
-  box-shadow: $shadows-medium;
-  animation: animStar 100s linear infinite;
-  
-  &:after {
-    content: " ";
-    position: absolute;
-    top: 2000px;
-    width: 2px;
-    height: 2px;
-    background: transparent;
-    box-shadow: $shadows-medium;
-  }
-}
-
-.stars3 {
-  width: 3px;
-  height: 3px;
-  background: transparent;
-  box-shadow: $shadows-big;
-  animation: animStar 150s linear infinite;
-  
-  &:after {
-    content: " ";
-    position: absolute;
-    top: 2000px;
-    width: 3px;
-    height: 3px;
-    background: transparent;
-    box-shadow: $shadows-big;
-  }
-}
-
-@keyframes animStar {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-2000px);
-  }
-}
-
-
-* {
-    scrollbar-width: thin;
-    scrollbar-color: $color-dev-secondary $color-text-secondary;
-  }
-  
-//   /* Works on Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  *::-webkit-scrollbar-track {
-    background: $color-dev-main;
-  }
-  
-  *::-webkit-scrollbar-thumb {
-    background-color:  $color-dev-secondary;
-    border-radius: 20px;
-    border: 3px solid $color-dev-main;
-  }
+@import "./_variables";
 
 .title {
     font-family: $font-titles;
@@ -145,7 +39,7 @@ $shadows-big: multiple-box-shadow(400);
 // Desktop
 @media (min-width: 768px) {
     .title-big {
-        font-size: calc($font-size-title-big * 2);
+        font-size: calc($font-size-title-big * 1.35);
     }
 }
 

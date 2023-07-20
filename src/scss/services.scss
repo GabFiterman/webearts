@@ -10,7 +10,6 @@
 
 .Services__title {
     color: $color-text-highlight;
-    font-size: $font-size-title-big;
     margin-left: 5vw;
     margin-top: 5vh;
 }
@@ -35,7 +34,7 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease-out;
     animation-name: shaking;
-    @include shaking(14rem, 12rem);
+    @include shaking(10rem, 8rem);
 }
 
 .Services__image--astronaut--column {
@@ -84,7 +83,7 @@
     scroll-snap-align: start;
     padding: .3rem .85rem;
     border-radius: .75rem;
-    font-size: 1.35rem;
+    font-size: 1em;
 }
 
 .design {
@@ -103,7 +102,6 @@
 
 @media (min-width: 768px) {
     .Services {
-        // TODO: fazer versão deste background para telas maiores
         background-image: url();
         background-size: 95%;
         background-position: left 25vh;
@@ -116,7 +114,6 @@
     }
 
     .Services__title {
-        font-size: calc($font-size-title-big * 1.5);
     }
 
     .image__astronaut--flying {
@@ -129,13 +126,8 @@
     }
 
     .image__astronaut--sleeping {
-        @include shaking(40vw, 35vw);
+        @include shaking(15rem, 12rem);
         margin: -6vh 0 0 65vw;
-    }
-
-
-    .Services__card {
-        font-size: 1.75rem;
     }
 
     .design {
@@ -157,15 +149,9 @@
     }
 
     .image__astronaut--sleeping {
-        @include shaking(25vw, 22vw);
-        margin: -6vh 0 0 65vw;
+        // margin: -6vh 0 0 65vw;
     }
 
-
-    .Services__title {
-        font-size: calc($font-size-title-big * 2);
-    }
-    
     .image__astronaut--flying {
         margin: -2vh 0 0 -25vw;
         height: 45vh !important;

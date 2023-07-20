@@ -1,0 +1,163 @@
+[
+    {
+        "id": 1,
+        "projectName": "2BuyPro",
+        "repository": "",
+        "infos": {
+            "core": "Page Builder",
+            "status": "MVP",
+            "lastUpdate": "06/2023",
+            "tech": [
+                "Vue",
+                "React",
+                "Node",
+                "Vuetify",
+                "AWS S3",
+                "MongoDB",
+                "Figma",
+                "Photoshop",
+                "Git",
+                "Github",
+                "Jenkins",
+                "VS Code"
+            ]
+        },
+        "description": "<p>O <b>objetivo principal</b> deste projeto foi <b class=\"highlight\">evoluir</b> o principal produto, o 2Buy, que basicamente traz as melhores ofertas para o usuário <b>baseado em localização</b>. Porém <b class=\"highlight\">na prática funciona como um módulo</b> para se incorporar em uma página, o que já é muito útil e largamente utilizado por big players como Ambev e Seara.</p><br /><img class=\"aboutText__image\" src=\"https://i.imgur.com/EOajrKi.png\" alt=\"Módulo 2Buy original\" /> <br/> <p>Então a evolução traz além do módulo, a <b>capacidade de</b> <b class=\"highlight\">construir a página completa</b>, a equipe de discovery observou que estes módulos eram muito mais utilizados em páginas <b class=\"highlight\">Hotsite</b> (tipo <b>landing pages</b>, mas mais voltadas para conversão direta).</p><p>Então o desafio começou, criar um <b class=\"highlight\">construtor de páginas simples e prático</b>. A primeiro momento como <b class=\"highlight\">MVP</b> (mínimo produto viável — <b>recursos limitados</b>) para entrar em estudo se o projeto segue adiante.</p><p>O 2BuyPro foi um projeto desenvolvido durante meu período como desenvolvedor na lett. Mesmo que minha contribuição tenha sido nível de MVP afirmo que foi de longe meu projeto mais admirável.</p>",
+        "coverSource": {
+            "type": "gif",
+            "host": "self",
+            "name": "2BuyPro - Page Builder GIF",
+            "description": "O 2BuyPro foi um projeto de um page builder desenvolvido em minha experiência na Lett, do discovery ao frontend, fora meu primeiro GRANDE desafio.",
+            "src": "2BuyPro_Building_Page_Mark-2.gif",
+            "source": "2BuyPro"
+        },
+        "mainSource": {
+            "type": "video",
+            "host": "vimeo",
+            "name": "2BuyPro - Page Builder",
+            "description": "O 2BuyPro foi um projeto de um page builder desenvolvido em minha experiência na Lett, do discovery ao frontend, fora meu primeiro GRANDE desafio.",
+            "src": "847026530",
+            "source": ""
+        },
+        "secondarySources": [
+            {
+                "type": "video",
+                "host": "vimeo",
+                "name": "2BuyPro - Feature: Undo/redo",
+                "description": "Implementação da feature Undo / Redo no sistema 2BuyPro, a feature implementa um histórico limitado de ações do usuário, permitindo que o mesmo possa desfazer suas últimas 20 alterações (desconsiderando alterações no texto, que são tratadas como um único bloco). Ou refazê-las se assim desejar. A implementação associa as combinações de teclas Ctrl + Z e Ctrl + Shift + Z para disparar as ações de desfazer e refazer, respectivamente.",
+                "src": "847016742"
+            },
+            {
+                "type": "video",
+                "host": "vimeo",
+                "name": "2BuyPro - Feature: Missing Products",
+                "description": "Implementação da feature Missing Products no sistema 2BuyPro, a feature implementa o bloqueio da saída do editor na falta do componente de produtos. A implementação traz aviso visual da falta do componente e em sua existência bloqueia sua duplicidade.",
+                "src": "847017667"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "projectName": "Campari Vue",
+        "repository": "https://github.com/GabFiterman/Campari-Hotsite-Vue",
+        "infos": {
+            "core": "Hotsite / Landing Page",
+            "status": "Finalizado!",
+            "lastUpdate": "11/2022",
+            "tech": [
+                "Vue",
+                "Node",
+                "Vite",
+                "JsonServer",
+                "Figma",
+                "Photoshop",
+                "Git",
+                "Github",
+                "Jenkins",
+                "VS Code"
+            ]
+        },
+        "description": "<p>Projeto com <b class=\"highlight\">Vue</b> explorando a ferramenta, com consumo de API, conceito de rotas, estados e foco na utilização eficiente da componentização.</p><p>2Buy é originalmente uma ferramenta de direcionamento de tráfego para grandes marcas que buscam impulsionar o desempenho digital. O projeto em questão é o meu <b>primeiro desafio</b>, como estagiário na Lett, onde foi necessário <b class=\"highlight\">replicar visualmente o projeto existente, usando Vue</b>. É importante ressaltar que este foi meu primeiro projeto utilizando esta tecnologia.</p>",
+        "coverSource": {
+            "type": "gif",
+            "host": "self",
+            "name": "Mostrando Tela Inicial",
+            "description": "",
+            "src": "Campari_Mostrando_Tela_Inicial.gif",
+            "source": ""
+        },
+        "mainSource": {},
+        "secondarySources": [
+            {
+                "type": "image",
+                "host": "imgur",
+                "name": "Repository Gh CampariVue",
+                "description": "Visite o repositório GitHub",
+                "src": "https://i.imgur.com/SK7CWbO.jpg",
+                "source": "https://github.com/GabFiterman/Campari-Hotsite-Vue"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "projectName": "Github API",
+        "repository": "https://github.com/GabFiterman/ChallengeLett",
+        "infos": {
+            "core": "Buscador de Usuários e Repositórios Github",
+            "status": "Finalizado!",
+            "lastUpdate": "03/2022",
+            "tech": [
+                "HTML",
+                "CSS",
+                "Javascript",
+                "Figma",
+                "Photoshop",
+                "Git",
+                "Github",
+                "VS Code"
+            ]
+        },
+        "description": "<p>Projeto com <b class=\"highlight\">Vue</b> explorando a ferramenta, com consumo de API, conceito de rotas, estados e foco na utilização eficiente da componentização.</p><p>2Buy é originalmente uma ferramenta de direcionamento de tráfego para grandes marcas que buscam impulsionar o desempenho digital. O projeto em questão é o meu <b>primeiro desafio</b>, como estagiário na Lett, onde foi necessário <b class=\"highlight\">replicar visualmente o projeto existente, usando Vue</b>. É importante ressaltar que este foi meu primeiro projeto utilizando esta tecnologia.</p>",
+        "coverSource": {
+            "type": "gif",
+            "host": "self",
+            "name": "Mostrando Tela Inicial",
+            "description": "O 2BuyPro foi um projeto de um page builder desenvolvido em minha experiência na Lett, do discovery ao frontend, fora meu primeiro GRANDE desafio.",
+            "src": "GithubApi_Usabilidade_Basica.gif",
+            "source": "https://gabfiterman.github.io/ChallengeLett/"
+        },
+        "mainSource": {},
+        "secondarySources": []
+    },
+    {
+        "id": 4,
+        "projectName": "Webearts",
+        "repository": "https://github.com/GabFiterman/webearts",
+        "infos": {
+            "core": "Portfolio e site pessoal.",
+            "status": "v2 Em construção.",
+            "lastUpdate": "06/2023",
+            "tech": [
+                "React",
+                "Bootstrap",
+                "SCSS",
+                "Git",
+                "Github",
+                "VS Code",
+                "Photoshop",
+                "Adobe Premiere"
+            ]
+        },
+        "description": "<p>A webearts <b class=\"highlight\">é este projeto</b> mesmo que você está acessando!</p><em>O portfólio faz parte do portfolio?</em><p>Mas é claro, desde a <b class=\"highlight\">concepção da marca</b> Webearts, <b class=\"highlight\">edição</b> do material, <b class=\"highlight\">prototipagem</b> e <b class=\"highlight\">código</b>, foram autorais (e deram um trabalhão …)</p><p>Mas nada tão recompensador quanto ver o próprio trabalho bem exibido e organizado que fala por si só. Então sinta-se a vontade para <b class=\"highlight\">continuar navegando</b> por este este portfolio.</p>",
+        "coverSource": {
+            "type": "image",
+            "host": "self",
+            "name": "Mostrando Tela Inicial",
+            "description": "O 2BuyPro foi um projeto de um page builder desenvolvido em minha experiência na Lett, do discovery ao frontend, fora meu primeiro GRANDE desafio.",
+            "src": "Webearts_logo3D.webp",
+            "source": "https://github.com/GabFiterman/webearts"
+        },
+        "mainSource": {},
+        "secondarySources": []
+    }
+]

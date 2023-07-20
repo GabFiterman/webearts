@@ -1,0 +1,36 @@
+@import './variables';
+
+.gallery__item--title {
+    text-decoration: underline;
+    color: $color-text-highlight;
+}
+
+.coverBanner {
+    border-radius: 1em;
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+
+.coverBanner--gif {
+    margin: 0 auto;
+    filter: brightness(.75);
+}
+.coverBanner--gif:hover {
+    filter: brightness(1.1);
+}
+
+.gallery__item {
+    margin: 5vh 0;
+}
+
+
+.coverBanner__container {
+
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+
+}

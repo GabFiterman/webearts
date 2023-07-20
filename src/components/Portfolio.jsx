@@ -1,97 +1,58 @@
 import "../scss/portfolio.scss";
-import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import porfolioData from "../data/portfolio.json";
+import { Container, Row, Col } from "react-bootstrap";
+import PortfolioDev from "./PortfolioDev";
+import PortfolioDesign from './PortfolioDesign';
 
-export function PortfolioGallery() {
-  const [clickedCardId, setClickedCardId] = useState(null);
-  const navigate = useNavigate();
-
-  const handleClick = (projectId) => {
-    if (clickedCardId === projectId) {
-      navigate(`/portfolio/${projectId}`)
-    } else {
-      setClickedCardId(projectId);
-    }
-  };
+function CategoriesContainer(props) {
+  const { _t } = props;
+  const categories = _t.categories;
+  const [activeCategory, setActiveCategory] = useState(categories[1]);
 
   return (
-    <ul className="Portfolio__gallery px-md-4 mx-lg-4" id="portfolio__gallery">
-      {porfolioData.map((project) => (
-          <li key={project.id} className={`Portfolio__gallery--item  ${clickedCardId === project.id ? 'noBlur' : ''}`} onClick={() => handleClick(project.id)}>
-            <img
-              src={`/img/portfolio/${project.company.slug}/${project.general.thumbnailName}${project.general.thumbnailExtension}`}
-              alt={`Card para o projeto ${project.company.name}`}
-              className={`Portfolio__gallery--card--image`}
-            />
-          </li>
+    <>
+    <div className="CategoriesContainer mt-3">
+      {categories.map((category, i) => (
+        <h3
+          className={
+            category === activeCategory
+              ? "activeCategory category__title"
+              : "category__title"
+          }
+          key={i}
+          onClick={() => setActiveCategory(category)}
+        >
+          {category}
+        </h3>
       ))}
-    </ul>
-  );
-}
-
-function PortfolioHighlight({ projectNames }) {
-  const [clickedCardId, setClickedCardId] = useState(null);
-  const navigate = useNavigate();
-
-  const handleClick = (projectId) => {
-    if (clickedCardId === projectId) {
-      navigate(`/portfolio/${projectId}`);
-    } else {
-      setClickedCardId(projectId);
-    }
-  };
-
-  return (
-    <div className="Portfolio__highlight">
-      {porfolioData
-        .filter((project) => projectNames.includes(project.company.name))
-        .map((project, index) => (
-          <div
-            key={project.id}
-            className={`Portfolio__highlight--card ${
-              index === 0 ? "card1" : "card2"
-            } ${clickedCardId === project.id ? "noBlur" : ""}`}
-            onClick={() => handleClick(project.id)}
-          >
-              <div className="Portfolio__highlight--thumbnail--container">
-                <img
-                  className="Portfolio__highlight--thumbnail"
-                  src={`/img/portfolio/${project.company.slug}/${project.general.thumbnailName}${project.general.thumbnailExtension}`}
-                  alt={`Card para o projeto ${project.company.name}`}
-                />
-              </div>
-          </div>
-        ))}
     </div>
+      {activeCategory === "desenvolvimento" ? (
+        <PortfolioDev _t={_t} />
+      ) : (
+        <PortfolioDesign _t={_t} />
+      )}
+    </>
   );
 }
-
 export default function Portfolio({ _t }) {
-  const highlihtProjects = ["Trust Cleaning", "Dry Clean"];
-  const astronautTouchMeSrc =
-    "/img/astronauts/Astronaut_Genial+Switch-Aceso.webp";
-  const badgeTouchMeSrc = "/img/astronauts/Balao_Dialogo.webp";
-
+  const astronautFlying = "/img/astronauts/Astronaut_LoveU.webp";
   return (
-    <div className="Portfolio mx-4">
-      <div className="d-flex align-items-end justify-content-between">
-        <h1 className="title title-big Portfolio--title mx-2">{_t.title}</h1>
-        <div className="d-flex align-items">
-          {/* <img
-            className="Portfolio--image--badge"
-            alt="Astronauta clique-me"
-            src={badgeTouchMeSrc}
-          /> */}
+    <Container className="Portfolio">
+      <Row className="align-items-end">
+        <Col>
+          <h1 className="title title-big">{_t.title}</h1>
+        </Col>
+        <Col xs={2} className="Services__image--astronaut--column">
           <img
-            className="Portfolio--image--astronaut"
-            alt="Astronauta clique-me"
-            src={astronautTouchMeSrc}
+            className="image__astronaut--flying"
+            src={astronautFlying}
+            alt="Astronauta voando em foguete te mandando corações"
           />
-        </div>
-      </div>
-      <PortfolioHighlight projectNames={highlihtProjects} />
-      <PortfolioGallery />
-    </div>
+        </Col>
+      </Row>
+      <Row className="mt-5">
+        <CategoriesContainer _t={_t} />
+      </Row>
+    </Container>
   );
 }
