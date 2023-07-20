@@ -31,14 +31,14 @@ function PortfolioGallery(props) {
             key={index}
             className="gallery__item"
             onClick={() => navigate(`portfolio/dev-projects/${project.id}`)}
-          >
+            >
             <Col>
               <h1 className="title text-center gallery__item--title">
                 {project.projectName}
               </h1>
             </Col>
           </Row>
-          <Row className="justify-content-center">
+          <Row className="justify-content-center" onClick={() => navigate(`portfolio/dev-projects/${project.id}`)}>
             <Col xs={11} md={10} lg={8}>
               <CoverBanner coverSource={project.coverSource} />
             </Col>

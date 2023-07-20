@@ -1,5 +1,4 @@
 .DevProject {
-    min-height: 125vh;
 
     ul {
         padding-left: 0;
@@ -54,4 +53,10 @@
     filter: invert(1);
     max-height: 3rem;
     opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+    .DevProject{
+        padding: 0 20vw;
+    }
 }

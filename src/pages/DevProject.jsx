@@ -8,7 +8,7 @@ import ReactHtmlParser from "react-html-parser";
 
 function ProjectInfos({ project }) {
   return (
-    <>
+    <div className="px-4">
       <Row>
         <Col xs={6}>
           <h2 className="highlight">Core</h2>
@@ -49,7 +49,7 @@ function ProjectInfos({ project }) {
           </ul>
         </Col>
       </Row>
-    </>
+    </div>
   );
 }
 
@@ -58,7 +58,7 @@ function MainBanner({ project }) {
     ? project.mainSource
     : project.coverSource;
   return (
-    <Row className="justify-content-center">
+    <Row className="justify-content-center px-4">
       <Col xs={12}>
         {mainSource.type === "video" && mainSource.host === "youtube" ? (
           <YoutubeEmbededVideo src={mainSource.src} />
@@ -125,7 +125,7 @@ function VimeoEmbededVideo({ src }) {
 
 function SecondaryBanners({ project }) {
   return (
-    <Row className="justify-content-center mt-2">
+    <Row className="justify-content-center mt-2 px-4">
       {project.secondarySources.map((source, index) => (
         <Col xs={12} key={index} className="mt-4">
           {source.type === "video" && source.host === "youtube" ? (
@@ -153,7 +153,7 @@ function AboutText({ description }) {
   const [showAboutText, setShowAboutText] = useState(true);
 
   return (
-    <Row>
+    <Row className="px-4">
       <Col>
         <p
           onClick={() => setShowAboutText(!showAboutText)}
@@ -202,7 +202,7 @@ export default function DevProject() {
   const project = portfolioData.find((project) => project.id === parseInt(id));
   const gitHubSrc = "/img/GithubLogo.webp";
   const location = useLocation();
-  
+
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, [location]);
@@ -210,23 +210,33 @@ export default function DevProject() {
   return (
     <Container fluid className="DevProject Root">
       <StarsBackground />
-      <Row className="my-4 justify-content-start">
+      <Row className="my-4 px-4">
         {project.repository !== "" ? (
-          <Col xs={1}>
-            <a target="_blank" href={project.repository} rel="noreferrer">
-              <img
-                className="github__logo"
-                src={gitHubSrc}
-                alt="Repositório Github"
-              />
-            </a>
+          <>
+            <Col xs={1}>
+              <a target="_blank" href={project.repository} rel="noreferrer">
+                <img
+                  className="github__logo"
+                  src={gitHubSrc}
+                  alt="Repositório Github"
+                />
+              </a>
+            </Col>
+            <Col>
+              <h1 className="title title-big highlight text-end">
+                {project.projectName}
+              </h1>
+            </Col>
+          </>
+        ) : (
+          <>
+          <Col>
+            <h1 className="title title-big highlight text-center">
+              {project.projectName}
+            </h1>
           </Col>
-        ) : undefined}
-        <Col>
-          <h1 className="title title-big highlight text-center">
-            {project.projectName}
-          </h1>
-        </Col>
+        </>
+        )}
       </Row>
       <ProjectInfos project={project} />
       <AboutText description={project.description} />
