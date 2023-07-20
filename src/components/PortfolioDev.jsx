@@ -2,13 +2,13 @@ import "../scss/portfolioDev.scss";
 import portfolioData from "../data/portfolio-dev.json";
 import { useNavigate } from "react-router-dom";
 
-function MainBanner({mainSource}) {
-  const { type, host, name, description, src, source } = mainSource;
+function CoverBanner({coverSource}) {
+  const { type, host, name, description, src, source } = coverSource;
   if(type === 'gif' || type === 'image') {
     const imgSrc = host === 'self' ? `/img/portfolio/${src}` : src
     return (
-        <div className="mainBanner__container">
-            <img className="mainBanner mainBanner--gif" src={imgSrc} alt={description} />
+        <div className="coverBanner__container">
+            <img className="coverBanner coverBanner--gif" src={imgSrc} alt={description} />
         </div>
     )
   }
@@ -23,7 +23,7 @@ function PortfolioGallery(props) {
       {portfolioData.map((project, index) => (
         <div key={index} className="gallery__item" onClick={() => navigate(`portfolio/dev-projects/${project.id}`)}>
           <h1 className="title text-center gallery__item--title">{project.projectName}</h1>
-          <MainBanner mainSource={project.mainSource} />
+          <CoverBanner coverSource={project.coverSource} />
         </div>
       ))}
     </div>
