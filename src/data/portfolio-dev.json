@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "projectName": "2BuyPro",
         "repository": "",
         "infos": {
@@ -56,6 +57,7 @@
         ]
     },
     {
+        "id": 2,
         "projectName": "Campari Vue",
         "repository": "https://github.com/GabFiterman/Campari-Hotsite-Vue",
         "infos": {
@@ -96,6 +98,7 @@
         ]
     },
     {
+        "id": 3,
         "projectName": "Github API",
         "repository": "https://github.com/GabFiterman/ChallengeLett",
         "infos": {
@@ -126,6 +129,7 @@
         ]
     },
     {
+        "id": 4,
         "projectName": "Webearts",
         "repository": "https://github.com/GabFiterman/webearts",
         "infos": {
