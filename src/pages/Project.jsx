@@ -94,7 +94,6 @@ export default function Project() {
         </Col>
       </Row>
       <div>
-        {/* TODO: Preciso fazer com que retorne diretamente para a secção do portfólio*/}
         <Link to="/">
           <img
             className="Project__image--astronaut"

@@ -57,7 +57,6 @@ function MainBanner({ project }) {
   const mainSource = project.mainSource.src
     ? project.mainSource
     : project.coverSource;
-  console.log(mainSource);
   return (
     <Row className="justify-content-center">
       <Col xs={12}>
@@ -83,8 +82,6 @@ function MainBanner({ project }) {
 
 function ImageBanner({ src, host, source }) {
   const imgSrc = host === "self" ? `/img/portfolio/${src}` : src;
-
-  console.log(src, host, source, "\n ***** \n");
   return (
     <>
       {source ? (
