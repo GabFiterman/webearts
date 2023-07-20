@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 function MainBanner({mainSource}) {
   const { type, host, name, description, src, source } = mainSource;
   if(type === 'gif' || type === 'image') {
-    const imgSrc = host === 'self' ? `/public/img/portfolio/${src}` : src
+    const imgSrc = host === 'self' ? `/img/portfolio/${src}` : src
     return (
         <div className="mainBanner__container">
             <img className="mainBanner mainBanner--gif" src={imgSrc} alt={description} />

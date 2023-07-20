@@ -1,0 +1,19 @@
+.DevProject {
+    min-height: 125vh;
+    ul {
+        padding-left: 0;
+    }
+}
+
+.DevProject__techList {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+        list-style: none;
+    }
+}
+
+.DevProject__about--title {
+    // font-weight: bold;
+    text-decoration: underline;
+}

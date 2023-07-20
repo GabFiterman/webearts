@@ -5,6 +5,7 @@ import Portfolio from "../components/Portfolio";
 import Contact from "../components/Contact";
 import Team from "../components/Team";
 import Footer from "../components/Footer";
+import StarsBackground from "../components/starsBackground";
 
 import "../scss/root.scss";
 import { Col, Container, Row } from "react-bootstrap";
@@ -13,9 +14,7 @@ import textData from "../data/text-main.json";
 export default function Root() {
   return (
     <Container fluid className="Root">
-      <div className="stars"></div>
-      <div className="stars2"></div>
-      <div className="stars3"></div>
+      <StarsBackground />
       <Row className="mb-5">
         <Col className="px-4 mb-sm-4">
           <Heading _t={textData.Heading} />
