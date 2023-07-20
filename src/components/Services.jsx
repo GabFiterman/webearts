@@ -11,7 +11,6 @@ function HorizontalGallery({ type, _t }) {
   useEffect(() => {
     const galleryElement = galleryRef.current;
 
-
     const handleScroll = () => {
       const scrollYPosition = window.scrollY;
       const threshold = type === 'design' ? 1100 : 1700;
@@ -52,7 +51,7 @@ export default function Services({ _t }) {
   return (
     <Container fluid className="Services">
       <Row className="justify-content-between align-items-center">
-        <Col xs={7} md={6} lg={4}>
+        <Col xs={12} md={8} lg={6}>
           <h1 className="title Services__title">{ReactHtmlParser(_t.title)}</h1>
         </Col>
       </Row>

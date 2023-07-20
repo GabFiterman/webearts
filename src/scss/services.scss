@@ -35,7 +35,7 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease-out;
     animation-name: shaking;
-    @include shaking(14rem, 12rem);
+    @include shaking(10rem, 8rem);
 }
 
 .Services__image--astronaut--column {
@@ -84,7 +84,7 @@
     scroll-snap-align: start;
     padding: .3rem .85rem;
     border-radius: .75rem;
-    font-size: 1.35rem;
+    font-size: 1em;
 }
 
 .design {
@@ -162,7 +162,7 @@
 
 
     .Services__title {
-        font-size: calc($font-size-title-big * 2);
+        font-size: calc($font-size-title-big * 1.5);
     }
     
     .image__astronaut--flying {
