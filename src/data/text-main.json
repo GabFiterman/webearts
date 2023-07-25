@@ -41,11 +41,26 @@
     "Portfolio": {
         "title": "Portfolio",
         "categories": ["design gráfico", "desenvolvimento"],
-        "highlightProjects": [
-            "ambrossia",
-            "goBestLife"
-        ],
-        "orderProjectsBy": "name"
+        "designSubCategories": [
+            {
+                "id": 1,
+                "name": "social media",
+                "slug": "social-media",
+                "backgroundName": "Texture_Category_Earth.webp"
+            },
+            {
+                "id": 2,
+                "name": "e-books",
+                "slug": "ebooks",
+                "backgroundName": "Texture_Category_Vennus.webp"
+            },
+            {
+                "id": 1,
+                "name": "ilustrações e manipulações",
+                "slug": "ilustracoes-e-manipulacoes",
+                "backgroundName": "Texture_Category_Moon.webp"
+            }
+        ]
     },
     "Contact": {
         "title": "<p>Pronto para <b class=\"highlight\">Decolar</b> ?</p>",
