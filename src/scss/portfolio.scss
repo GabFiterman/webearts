@@ -1,7 +1,7 @@
 @import './variables';
 
 .Portfolio {
-    margin-top: -10vh;
+    margin-top: -25vh;
 }
 
 .CategoriesContainer {
@@ -20,4 +20,10 @@
 .activeCategory {
     border-bottom: 2px #cdcdcd solid;
     font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .Portfolio {
+        margin-top: -10vh;
+    }
 }

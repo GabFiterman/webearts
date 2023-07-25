@@ -6,17 +6,22 @@
     background-size: 125%;
     background-repeat: no-repeat;
     background-position: center center;
+
 }
 
+.design__container, .desenvolvimento__container {
+    h3 {
+        margin-left: 8vw !important;
+    }
+}
 .Services__title {
     color: $color-text-highlight;
-    margin-left: 5vw;
+    margin-left: 8vw;
     margin-top: 5vh;
 }
 
 .image__astronaut--flying {
-    margin: -5vh 0 0 -40vw;
-
+    margin: 9.5em 0 0 -40vw;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-out;
@@ -50,7 +55,11 @@
 }
 
 .design__container {
-    margin-top: 10vh !important;
+    margin-top: 5vh !important;
+}
+
+.desenvolvimento__container {
+    margin-top: 0 !important;
 }
 
 .design__element {
@@ -59,10 +68,6 @@
     overflow-x: hidden !important;
     margin-top: -5vh;
     margin-left: 20vw;
-}
-
-.desenvolvimento__container {
-    margin-top: 10vh !important;
 }
 
 .desenvolvimento__element {
@@ -83,20 +88,20 @@
     scroll-snap-align: start;
     padding: .3rem .85rem;
     border-radius: .75rem;
-    font-size: 1em;
+    font-size: 1.25em;
 }
 
 .design {
     background-color: $color-design-main;
     color: $color-design-secondary;
-    height: 30vh;
+    height: 20vh;
     min-width: 50vw;
 }
 
 .desenvolvimento {
     background-color: $color-dev-main;
     color: $color-dev-secondary;
-    height: 38vh;
+    height: 30vh;
     min-width: 65vw;
 }
 
