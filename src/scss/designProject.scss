@@ -1,6 +1,16 @@
 .DesignProject {}
 
-.SocialMedia {}
+.SocialMedia {
+    .compactRow {
+        width: 80vw;
+        text-align: justify;
+        margin: 0 auto;
+
+        @media (min-width: 767px) {
+            width: 65vw;
+        }
+    }
+}
 
 .Ebooks {}
 
@@ -8,6 +18,15 @@
 
 .ImageGallery {
     font-weight: bold;
+
+    img {
+        transition: 0.25s;
+        &:hover {
+            cursor: pointer;
+            filter: brightness(1.25);
+            margin-bottom: 1.5em;
+        }
+    }
 
     span {
         letter-spacing: .25em;

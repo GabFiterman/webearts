@@ -11,7 +11,7 @@ export default function DesignProjectSocialMedia() {
   return (
     <Container fluid className="SocialMedia DesignProject Root px-4">
       <StarsBackground />
-      <Row className="px-4">
+      <Row className="compactRow">
         <Col>
           <h1 className="title title-big highlight text-center">
             {data.CategoryName}
@@ -19,13 +19,13 @@ export default function DesignProjectSocialMedia() {
         </Col>
       </Row>
 
-      <Row>
+      <Row className="compactRow">
         <Col>
           <h3>{data.TechnologiesTitle}</h3>
         </Col>
       </Row>
 
-      <Row className="technologies__list">
+      <Row className="technologies__list compactRow">
         {data.Technologies.map((item, index) => (
           <Col key={index}>
             <p>{item}</p>
@@ -33,13 +33,13 @@ export default function DesignProjectSocialMedia() {
         ))}
       </Row>
 
-      <Row>
+      <Row className="compactRow">
         <Col>
           <h3>{data.AboutTitle}</h3>
         </Col>
       </Row>
 
-      <Row>
+      <Row className="compactRow">
         <Col>{ReactHtmlParser(data.About)}</Col>
       </Row>
 
