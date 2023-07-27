@@ -4,7 +4,7 @@ import ReturnButton from "../components/ReturnButton.jsx";
 import StarsBackground from "../components/starsBackground";
 import portfolioData from "../data/portfolio-design.json";
 import ReactHtmlParser from "react-html-parser";
-import SocialMediaGallery from "../components/SocialMediaGallery";
+import ImageGallery from "../components/ImageGallery";
 
 export default function DesignProjectSocialMedia() {
   const data = portfolioData[0];
@@ -43,7 +43,7 @@ export default function DesignProjectSocialMedia() {
         <Col>{ReactHtmlParser(data.About)}</Col>
       </Row>
 
-      <SocialMediaGallery gallery={data.Gallery} />
+      <ImageGallery gallery={data.Gallery} />
       <ReturnButton />
     </Container>
   );

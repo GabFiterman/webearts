@@ -1,15 +1,41 @@
-.DesignProject {
+.DesignProject {}
 
+.SocialMedia {}
+
+.Ebooks {}
+
+.Illustrations {}
+
+.ImageGallery {
+    font-weight: bold;
+
+    span {
+        letter-spacing: .25em;
+    }
+
+    button {
+        background: rgba(#5a5a5a, 0.15);
+        padding: .75em 2.5em;
+        border-radius: 2em;
+        border: none;
+        color: white;
+
+        &:hover {
+            background: rgba(#a7a7a7, 0.45);
+        }
+    }
 }
 
-.SocialMedia {
+.ImagePopup {
+    .galleryImage {
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
 
-}
-
-.Ebooks {
-
-}
-
-.Illustrations {
-
+    .modalImage {
+        border-radius: 2em !important;
+    }
 }
