@@ -2,12 +2,14 @@
     {
         "CategoryName": "social media",
         "CategorySlug": "social-media",
+        "TechnologiesTitle": "criado com",
         "Technologies": [
             "Photoshop",
             "Illustrator",
             "Notion",
             "mLabs"
         ],
+        "AboutTitle": "sobre ...",
         "About": "<p>Esses conteúdos são produzidos para as <b class=\"highlight\">mídias sociais</b>, com o objetivo de atender às diversas necessidades de diferentes clientes. Cada peça é <em>cuidadosamente desenvolvida</em>, levando em consideração a <b class=\"highlight\">individualidade</b> de cada projeto. Através da criatividade e estratégia, buscamos criar <b class=\"highlight\">conexões significativas</b> e <b>oferecer valor</b> aos seguidores. É um trabalho em constante evolução, voltado para proporcionar <b class=\"highlight\">experiências autênticas</b> e relevantes na era digital.</p>",
         "Gallery":[
             {
@@ -138,13 +140,6 @@
             },
             {
                 "id": 20,
-                "priority": 3,
-                "company": "Casa das Carnes",
-                "src": "CasaDasCarnes_(3).webp",
-                "tags": ["Casa da Arte"]
-            },
-            {
-                "id": 21,
                 "priority": 3,
                 "company": "Casa das Carnes",
                 "src": "CasaDasCarnes_(3).webp",
@@ -376,14 +371,14 @@
             },
             {
                 "id": 54,
-                "priority": 3,
+                "priority": 1,
                 "company": "Italink",
                 "src": "Italink_(2).webp",
                 "tags": ["Casa da Arte"]
             },
             {
                 "id": 55,
-                "priority": 3,
+                "priority": 1,
                 "company": "Italink",
                 "src": "Italink_(3).webp",
                 "tags": ["Casa da Arte"]
@@ -471,13 +466,6 @@
                 "company": "JC Açaí",
                 "src": "JCAcai_(7).webp",
                 "tags": ["Casa da Arte"]
-            },
-            {
-                "id": 67,
-                "priority": 3,
-                "company": "Liberdade Modas",
-                "src": "LiberdadeModas_(1).webp",
-                "tags": ["Liberdade Modas"]
             },
             {
                 "id": 68,
@@ -679,13 +667,6 @@
                 "id": 96,
                 "priority": 3,
                 "company": "Trust Clean",
-                "src": "TrustClean.webp",
-                "tags": ["Honoss"]
-            },
-            {
-                "id": 96,
-                "priority": 3,
-                "company": "Trust Clean",
                 "src": "TrustClean_(1).webp",
                 "tags": ["Honoss"]
             },
@@ -730,6 +711,20 @@
                 "company": "Ultra Mídias",
                 "src": "UltraMidias_(2).webp",
                 "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 103,
+                "priority": 3,
+                "company": "Liberdade Modas",
+                "src": "LiberdadeModas_(1).webp",
+                "tags": ["Liberdade Modas"]
+            },
+            {
+                "id": 104,
+                "priority": 3,
+                "company": "Trust Clean",
+                "src": "TrustClean.webp",
+                "tags": ["Honoss"]
             }
         ]
     }
