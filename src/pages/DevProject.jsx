@@ -5,6 +5,7 @@ import portfolioData from "../data/portfolio-dev.json";
 import { Container, Row, Col } from "react-bootstrap";
 import "../scss/DevProject.scss";
 import ReactHtmlParser from "react-html-parser";
+import ReturnButton from "../components/ReturnButton.jsx";
 
 function ProjectInfos({ project }) {
   return (
@@ -175,28 +176,6 @@ function AboutText({ description }) {
   );
 }
 
-function Return() {
-  const navigate = useNavigate();
-  const AstronautGoBack = "/img/astronauts/Astronaut-MontadoAviaoPapel.webp";
-
-  const handleBack = () => {
-    navigate(-1);
-  };
-
-  return (
-    <Row className="justify-content-center mt-5">
-      <img
-        className="return__image"
-        src={AstronautGoBack}
-        alt="voltar"
-        onClick={handleBack}
-      />
-      {/* <Col xs={12}>
-      </Col> */}
-    </Row>
-  );
-}
-
 export default function DevProject() {
   const { id } = useParams();
   const project = portfolioData.find((project) => project.id === parseInt(id));
@@ -230,19 +209,19 @@ export default function DevProject() {
           </>
         ) : (
           <>
-          <Col>
-            <h1 className="title title-big highlight text-center">
-              {project.projectName}
-            </h1>
-          </Col>
-        </>
+            <Col>
+              <h1 className="title title-big highlight text-center">
+                {project.projectName}
+              </h1>
+            </Col>
+          </>
         )}
       </Row>
       <ProjectInfos project={project} />
       <AboutText description={project.description} />
       <MainBanner project={project} />
       <SecondaryBanners project={project} />
-      <Return />
+      <ReturnButton />
     </Container>
   );
 }
