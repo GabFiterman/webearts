@@ -1,4 +1,5 @@
 @import './variables';
+@import './variables';
 
 @function multiple-box-shadow($n) {
   $value: '#{random($random-stars-size)}px #{random($random-stars-size)}px #FFF';
@@ -125,22 +126,6 @@ $shadows-big: multiple-box-shadow(400);
     margin-top: 15vh;
 
     animation: floatingAnimation 3s ease-in-out infinite;
-
-
-    @keyframes floatingAnimation {
-      0% {
-        transform: translateY(0);
-      }
-
-      50% {
-        transform: translateY(-5px);
-      }
-
-      100% {
-        transform: translateY(0);
-      }
-    }
-
   }
 }
 

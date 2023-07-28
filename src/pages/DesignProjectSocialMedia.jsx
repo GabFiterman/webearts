@@ -5,6 +5,7 @@ import StarsBackground from "../components/starsBackground";
 import portfolioData from "../data/portfolio-design.json";
 import ReactHtmlParser from "react-html-parser";
 import ImageGallery from "../components/ImageGallery";
+import IconTech from "../components/IconTech";
 
 export default function DesignProjectSocialMedia() {
   const data = portfolioData[0];
@@ -25,10 +26,10 @@ export default function DesignProjectSocialMedia() {
         </Col>
       </Row>
 
-      <Row className="technologies__list compactRow">
+      <Row className="technologies__list compactRow my-3">
         {data.Technologies.map((item, index) => (
-          <Col key={index}>
-            <p>{item}</p>
+          <Col xs={2} className="mx-2" key={index}>
+            <IconTech techName={item} index={index} />
           </Col>
         ))}
       </Row>

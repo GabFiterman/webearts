@@ -1,4 +1,5 @@
 @import './variables';
+@import './animations.scss';
 
 .Contact__heading {
     // margin-bottom: -10vh;
@@ -18,20 +19,6 @@
     margin-left: -5vw;
     animation: floatingAnimation 3s ease-in-out infinite;
 
-}
-
-@keyframes floatingAnimation {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-5px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
 }
 
 .Contact__image--logoWhatsapp {

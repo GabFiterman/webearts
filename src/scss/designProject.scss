@@ -18,6 +18,7 @@
 
 .ImageGallery {
     font-weight: bold;
+    font-size: .8em;
 
     img {
         transition: 0.25s;
@@ -34,7 +35,7 @@
 
     button {
         background: rgba(#5a5a5a, 0.15);
-        padding: .75em 2.5em;
+        padding: .5em 1.5em;
         border-radius: 2em;
         border: none;
         color: white;

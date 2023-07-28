@@ -1,4 +1,5 @@
 @import './variables';
+@import './animations.scss';
 
 .Team__heading {}
 
@@ -75,22 +76,6 @@
     background-color: $color-design-main;
     color: $color-design-secondary;
     animation: floatingAnimation 2.5s ease-in-out infinite;
-}
-
-
-
-@keyframes floatingAnimation {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-5px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
 }
 
 

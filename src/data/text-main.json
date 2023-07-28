@@ -40,7 +40,10 @@
     },
     "Portfolio": {
         "title": "Portfolio",
-        "categories": ["design gráfico", "desenvolvimento"],
+        "categories": [
+            "design gráfico",
+            "desenvolvimento"
+        ],
         "designSubCategories": [
             {
                 "id": 1,
@@ -59,6 +62,128 @@
                 "name": "ilustrações e manipulações",
                 "slug": "ilustracoes-e-manipulacoes",
                 "backgroundName": "Texture_Category_Moon.webp"
+            }
+        ],
+        "techonologiesList": [
+            {
+                "id": 1,
+                "name": "Vue",
+                "iconSrc": "Icon-Vue.webp"
+            },
+            {
+                "id": 2,
+                "name": "React",
+                "iconSrc": "Icon-React.webp"
+            },
+            {
+                "id": 3,
+                "name": "Sass",
+                "iconSrc": "Icon-Sass.webp"
+            },
+            {
+                "id": 4,
+                "name": "Vuetify",
+                "iconSrc": "Icon-Vuetify.webp"
+            },
+            {
+                "id": 5,
+                "name": "Bootstrap",
+                "iconSrc": "Icon-Bootstrap.webp"
+            },
+            {
+                "id": 6,
+                "name": "Node",
+                "iconSrc": "Icon-Node.webp"
+            },
+            {
+                "id": 7,
+                "name": "MongoDB",
+                "iconSrc": "Icon-MongoDB.webp"
+            },
+            {
+                "id": 8,
+                "name": "AWS",
+                "iconSrc": "Icon-AWS.webp"
+            },
+            {
+                "id": 9,
+                "name": "Html",
+                "iconSrc": "Icon-Html.webp"
+            },
+            {
+                "id": 10,
+                "name": "Css",
+                "iconSrc": "Icon-Css.webp"
+            },
+            {
+                "id": 11,
+                "name": "Javascript",
+                "iconSrc": "Icon-Javascript.webp"
+            },
+            {
+                "id": 12,
+                "name": "Git",
+                "iconSrc": "Icon-Git.webp"
+            },
+            {
+                "id": 13,
+                "name": "Github",
+                "iconSrc": "Icon-Github.webp"
+            },
+            {
+                "id": 14,
+                "name": "Jenkins",
+                "iconSrc": "Icon-Jenkins.webp"
+            },
+            {
+                "id": 15,
+                "name": "VsCode",
+                "iconSrc": "Icon-VsCode.webp"
+            },
+            {
+                "id": 16,
+                "name": "JsonServer",
+                "iconSrc": "Icon-JsonServer.webp"
+            },
+            {
+                "id": 17,
+                "name": "Figma",
+                "iconSrc": "Icon-Figma.webp"
+            },
+            {
+                "id": 18,
+                "name": "Photoshop",
+                "iconSrc": "Icon-Photoshop.webp"
+            },
+            {
+                "id": 19,
+                "name": "Illustrator",
+                "iconSrc": "Icon-Illustrator.webp"
+            },
+            {
+                "id": 20,
+                "name": "InDesign",
+                "iconSrc": "Icon-InDesign.webp"
+            },
+            {
+                "id": 21,
+                "name": "Premiere",
+                "iconSrc": "Icon-Premiere.webp"
+            },
+            {
+                "id": 22,
+                "name": "AfterEffects",
+                "iconSrc": "Icon-AfterEffects.webp"
+            },
+            {
+                "id": 23,
+                "name": "Notion",
+                "iconSrc": "Icon-Notion.webp"
+            },
+            {
+                "id": 24,
+                "name": "Blender",
+                "iconSrc": "Icon-Blender.webp"
             }
         ]
     },

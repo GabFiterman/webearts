@@ -47,6 +47,10 @@
 .return__image {
     max-height: 10em;
     width: auto;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .github__logo {
