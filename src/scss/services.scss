@@ -89,6 +89,7 @@
     padding: .3rem .85rem;
     border-radius: .75rem;
     font-size: 1.25em;
+    border-bottom: .25em solid white;
 }
 
 .design {
@@ -96,6 +97,7 @@
     color: $color-design-secondary;
     height: 20vh;
     min-width: 50vw;
+    border-color: $color-text-highlight;
 }
 
 .desenvolvimento {
@@ -103,6 +105,7 @@
     color: $color-dev-secondary;
     height: 30vh;
     min-width: 65vw;
+    border-color: $color-design-main;
 }
 
 @media (min-width: 768px) {

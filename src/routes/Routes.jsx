@@ -1,5 +1,4 @@
 import Root from "../pages/Root";
-import Project from "../pages/Project";
 import DevProject from "../pages/DevProject";
 import DesignProjectSocialMedia from "../pages/DesignProjectSocialMedia";
 import DesignProjectIlustracoes from "../pages/DesignProjectIlustracoes";
@@ -12,10 +11,6 @@ export default function Routes() {
     {
       path: "/",
       element: <Root />,
-    },
-    {
-      path: "/portfolio/:id",
-      element: <Project />,
     },
     {
       path: "/portfolio/dev-projects/:id",

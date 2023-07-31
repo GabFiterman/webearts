@@ -2,6 +2,9 @@
     padding: 2em 0;
     max-width: 80vw;
     border-radius: 1em;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
 
     &:not(:first-child) {
         margin-top: 2em;
