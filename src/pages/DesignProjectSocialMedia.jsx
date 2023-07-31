@@ -44,7 +44,7 @@ export default function DesignProjectSocialMedia() {
         <Col>{ReactHtmlParser(data.About)}</Col>
       </Row>
 
-      <ImageGallery gallery={data.Gallery} />
+      <ImageGallery gallery={data.Gallery} rootPath="social_media" />
       <ReturnButton />
     </Container>
   );

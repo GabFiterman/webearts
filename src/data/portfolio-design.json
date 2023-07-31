@@ -727,5 +727,91 @@
                 "tags": ["Honoss"]
             }
         ]
+    },
+    {
+        "CategoryName": "Artes e Ilustrações",
+        "CategorySlug": "ilustracoes-e-manipulacoes",
+        "TechnologiesTitle": "criado com",
+        "Technologies": [
+            "Photoshop",
+            "Illustrator",
+            "Premiere",
+            "Pentoolsai",
+            "Blender"
+        ],
+        "AboutTitle": "sobre ...",
+        "About": "<p>Apresentamos composições que, de forma singela, <b class=\"highlight\">desafiam as convenções e oferecem novas perspectivas estéticas.</b>Com cores vibrantes e elementos inusitados, procuramos despertar sua curiosidade e prender sua imaginação em <b class=\"highlight\">histórias intrigantes.</b> Esses projetos são uma tentativa de fundir <b class=\"highlight\">criatividade e expressão artística,</b> proporcionando uma experiência visual envolvente e inspiradora.Seja bem-vindo a um universo simples, porém repleto de encanto, onde a arte busca transcender a realidade e convidar você a <b class=\"highlight\">explorar novos horizontes.</b></p>",
+        "Gallery":[
+            {
+                "id": 1,
+                "priority": 3,
+                "company": "BigMouth",
+                "src": "BigMouth.webp",
+                "tags": ["BigMouth", "Ilustration"]
+            },
+            {
+                "id": 2,
+                "priority": 3,
+                "company": "Daedric",
+                "src": "Daedric.webp",
+                "tags": ["Daedric", "Ilustration"]
+            },
+            {
+                "id": 3,
+                "priority": 3,
+                "company": "Flower-1",
+                "src": "Flower-1.webp",
+                "tags": ["Flower-1", "Ilustration"]
+            },
+            {
+                "id": 4,
+                "priority": 3,
+                "company": "Hurt_LUL",
+                "src": "Hurt_LUL.webp",
+                "tags": ["Hurt_LUL", "Ilustration"]
+            },
+            {
+                "id": 5,
+                "priority": 3,
+                "company": "Ilustration_CreepyCenerentola",
+                "src": "Ilustration_CreepyCenerentola_8.webp",
+                "tags": ["Ilustration_CreepyCenerentola", "Ilustration", "Manipulation", "Creepyart"]
+            },
+            {
+                "id": 6,
+                "priority": 3,
+                "company": "Floral Armor",
+                "src": "Ilustration_FloralArmor_Wallpaper (1).webp",
+                "tags": ["Floral Armor", "Ilustration", "Creepyart"]
+            },
+            {
+                "id": 7,
+                "priority": 3,
+                "company": "Floral Armor",
+                "src": "Ilustration_FloralArmor_Step (7).webp",
+                "tags": ["Floral Armor", "Ilustration", "Creepyart"]
+            },
+            {
+                "id": 9,
+                "priority": 3,
+                "company": "A foto",
+                "src": "Poly_A_Foto.webp",
+                "tags": ["A Foto", "PolygonalArt", "Ilustration"]
+            },
+            {
+                "id": 10,
+                "priority": 3,
+                "company": "Melanie",
+                "src": "Poly_Melanie.webp",
+                "tags": ["Melanie", "PolygonalArt", "Ilustration"]
+            },
+            {
+                "id": 11,
+                "priority": 3,
+                "company": "TheGirl",
+                "src": "Polyart_TheGirl.webp",
+                "tags": ["TheGirl", "PolygonalArt", "Ilustration"]
+            }
+        ]
     }
 ]

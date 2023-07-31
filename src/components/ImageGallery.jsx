@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import ImagePopup from "./ImagePopup";
 
-const ImageGallery = ({ gallery }) => {
+const ImageGallery = (props) => {
+  const { gallery, rootPath } = props;
   const sortByPriority = (a, b) => a.priority - b.priority;
 
   const shuffleArray = (array) => {
@@ -87,7 +88,7 @@ const ImageGallery = ({ gallery }) => {
             {paginatedItems[currentPage - 1].map((item) => (
               <Col key={item.id} xs={6} lg={4} className="mb-4">
                 <ImagePopup
-                  imageUrl={`/img/portfolio/social_media/${item.src}`}
+                  imageUrl={`/img/portfolio/${rootPath}/${item.src}`}
                   imageAlt={item.company}
                 />
               </Col>
