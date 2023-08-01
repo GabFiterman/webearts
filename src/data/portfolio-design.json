@@ -1,0 +1,817 @@
+[
+    {
+        "CategoryName": "social media",
+        "CategorySlug": "social-media",
+        "TechnologiesTitle": "criado com",
+        "Technologies": [
+            "Photoshop",
+            "Illustrator",
+            "Notion",
+            "mLabs"
+        ],
+        "AboutTitle": "sobre ...",
+        "About": "<p>Esses conteúdos são produzidos para as <b class=\"highlight\">mídias sociais</b>, com o objetivo de atender às diversas necessidades de diferentes clientes. Cada peça é <em>cuidadosamente desenvolvida</em>, levando em consideração a <b class=\"highlight\">individualidade</b> de cada projeto. Através da criatividade e estratégia, buscamos criar <b class=\"highlight\">conexões significativas</b> e <b>oferecer valor</b> aos seguidores. É um trabalho em constante evolução, voltado para proporcionar <b class=\"highlight\">experiências autênticas</b> e relevantes na era digital.</p>",
+        "Gallery":[
+            {
+                "id": 1,
+                "priority": 3,
+                "company": "Agata Cristy",
+                "src": "AgataCristy__Portfolio_(1).webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 2,
+                "priority": 3,
+                "company": "Agata Cristy",
+                "src": "AgataCristy__Portfolio_(2).webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 3,
+                "priority": 3,
+                "company": "Bahia + Saúde",
+                "src": "Bahia+Saude_(1).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 4,
+                "priority": 3,
+                "company": "Bahia + Saúde",
+                "src": "Bahia+Saude_(2).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 5,
+                "priority": 3,
+                "company": "Bahia + Saúde",
+                "src": "Bahia+Saude_(3).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 6,
+                "priority": 3,
+                "company": "Bahia + Saúde",
+                "src": "Bahia+Saude_(1).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 7,
+                "priority": 3,
+                "company": "Casa da Arte",
+                "src": "CasaDaArte_(1).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 9,
+                "priority": 3,
+                "company": "Casa da Arte",
+                "src": "CasaDaArte_(2).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 10,
+                "priority": 3,
+                "company": "Casa da Arte",
+                "src": "CasaDaArte_(3).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 11,
+                "priority": 3,
+                "company": "Casa da Arte",
+                "src": "CasaDaArte_(4).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 12,
+                "priority": 3,
+                "company": "Casa da Arte",
+                "src": "CasaDaArte_(5).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 13,
+                "priority": 3,
+                "company": "Casa da Arte",
+                "src": "CasaDaArte_(6).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 14,
+                "priority": 3,
+                "company": "Casa da Arte",
+                "src": "CasaDaArte_(7).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 15,
+                "priority": 3,
+                "company": "Casa da Arte",
+                "src": "CasaDaArte_(8).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 16,
+                "priority": 3,
+                "company": "Casa da Arte",
+                "src": "CasaDaArte_(9).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 17,
+                "priority": 3,
+                "company": "Casa da Arte",
+                "src": "CasaDaArte_(10).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 18,
+                "priority": 3,
+                "company": "Casa das Carnes",
+                "src": "CasaDasCarnes_(1).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 19,
+                "priority": 3,
+                "company": "Casa das Carnes",
+                "src": "CasaDasCarnes_(2).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 20,
+                "priority": 3,
+                "company": "Casa das Carnes",
+                "src": "CasaDasCarnes_(3).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 22,
+                "priority": 3,
+                "company": "Casa do Produtor",
+                "src": "CasaDoProdutor_(1).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 23,
+                "priority": 3,
+                "company": "Casa do Produtor",
+                "src": "CasaDoProdutor_(2).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 24,
+                "priority": 3,
+                "company": "Casa do Produtor",
+                "src": "CasaDoProdutor_(3).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 25,
+                "priority": 3,
+                "company": "Casa do Produtor",
+                "src": "CasaDoProdutor_(4).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 26,
+                "priority": 3,
+                "company": "Casa Santo Antônio",
+                "src": "CasaSantoAntonio_(1).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 27,
+                "priority": 3,
+                "company": "Casa Santo Antônio",
+                "src": "CasaSantoAntonio_(2).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 28,
+                "priority": 3,
+                "company": "Comsel",
+                "src": "Comsel_(1).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 29,
+                "priority": 3,
+                "company": "Comsel",
+                "src": "Comsel_(2).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 30,
+                "priority": 3,
+                "company": "Dry Clean",
+                "src": "DryClean_(1).webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 31,
+                "priority": 3,
+                "company": "Dry Clean",
+                "src": "DryClean_(4).webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 32,
+                "priority": 3,
+                "company": "Dry Clean",
+                "src": "DryClean_(9).webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 33,
+                "priority": 3,
+                "company": "Dry Clean",
+                "src": "DryClean_(10).webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 34,
+                "priority": 3,
+                "company": "Ferticol",
+                "src": "Ferticol.webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 35,
+                "priority": 3,
+                "company": "General 7",
+                "src": "General7_(1).webp",
+                "tags": ["General 7"]
+            },
+            {
+                "id": 36,
+                "priority": 3,
+                "company": "General 7",
+                "src": "General7_(2).webp",
+                "tags": ["General 7"]
+            },
+            {
+                "id": 37,
+                "priority": 3,
+                "company": "General 7",
+                "src": "General7_(3).webp",
+                "tags": ["General 7"]
+            },
+            {
+                "id": 38,
+                "priority": 3,
+                "company": "General 7",
+                "src": "General7_(4).webp",
+                "tags": ["General 7"]
+            },
+            {
+                "id": 39,
+                "priority": 3,
+                "company": "General 7",
+                "src": "General7_(5).webp",
+                "tags": ["General 7"]
+            },
+            {
+                "id": 40,
+                "priority": 3,
+                "company": "Genyus Store",
+                "src": "Genyus.webp",
+                "tags": ["Genyus Store"]
+            },
+            {
+                "id": 41,
+                "priority": 3,
+                "company": "Go Best Life",
+                "src": "GoBestLife_(1).webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 42,
+                "priority": 3,
+                "company": "Go Best Life",
+                "src": "GoBestLife_(2).webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 43,
+                "priority": 3,
+                "company": "Go Best Life",
+                "src": "GoBestLife_(3).webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 44,
+                "priority": 3,
+                "company": "Go Best Life",
+                "src": "GoBestLife_(4).webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 45,
+                "priority": 3,
+                "company": "Griffe Modas",
+                "src": "GriffeModas_(1).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 46,
+                "priority": 3,
+                "company": "Griffe Modas",
+                "src": "GriffeModas_(2).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 47,
+                "priority": 3,
+                "company": "Griffe Modas",
+                "src": "GriffeModas_(3).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 48,
+                "priority": 3,
+                "company": "Griffe Modas",
+                "src": "GriffeModas_(4).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 49,
+                "priority": 3,
+                "company": "Griffe Modas",
+                "src": "GriffeModas_(5).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 50,
+                "priority": 3,
+                "company": "Home Beer",
+                "src": "HomeBeer_(1).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 51,
+                "priority": 3,
+                "company": "Home Beer",
+                "src": "HomeBeer_(2).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 52,
+                "priority": 3,
+                "company": "Home Beer",
+                "src": "HomeBeer_(3).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 53,
+                "priority": 3,
+                "company": "Italink",
+                "src": "Italink_(1).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 54,
+                "priority": 1,
+                "company": "Italink",
+                "src": "Italink_(2).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 55,
+                "priority": 1,
+                "company": "Italink",
+                "src": "Italink_(3).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 56,
+                "priority": 3,
+                "company": "JA Panificadora",
+                "src": "JAPanificadora_(1).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 57,
+                "priority": 3,
+                "company": "JA Panificadora",
+                "src": "JAPanificadora_(2).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 58,
+                "priority": 3,
+                "company": "JA Panificadora",
+                "src": "JAPanificadora_(3).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 59,
+                "priority": 3,
+                "company": "JA Panificadora",
+                "src": "JAPanificadora_(4).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 60,
+                "priority": 3,
+                "company": "JA Panificadora",
+                "src": "JAPanificadora_(5).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 61,
+                "priority": 3,
+                "company": "JC Açaí",
+                "src": "JCAcai_(1).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 62,
+                "priority": 3,
+                "company": "JC Açaí",
+                "src": "JCAcai_(2).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 63,
+                "priority": 3,
+                "company": "JC Açaí",
+                "src": "JCAcai_(3).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 64,
+                "priority": 3,
+                "company": "JC Açaí",
+                "src": "JCAcai_(4).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 65,
+                "priority": 3,
+                "company": "JC Açaí",
+                "src": "JCAcai_(5).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 66,
+                "priority": 3,
+                "company": "JC Açaí",
+                "src": "JCAcai_(6).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 67,
+                "priority": 3,
+                "company": "JC Açaí",
+                "src": "JCAcai_(7).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 68,
+                "priority": 3,
+                "company": "Liberdade Modas",
+                "src": "LiberdadeModas_(2).webp",
+                "tags": ["Liberdade Modas"]
+            },
+            {
+                "id": 69,
+                "priority": 3,
+                "company": "Liberdade Modas",
+                "src": "LiberdadeModas_(3).webp",
+                "tags": ["Liberdade Modas"]
+            },
+            {
+                "id": 70,
+                "priority": 3,
+                "company": "Liberdade Modas",
+                "src": "LiberdadeModas_(4).webp",
+                "tags": ["Liberdade Modas"]
+            },
+            {
+                "id": 71,
+                "priority": 3,
+                "company": "Liberdade Modas",
+                "src": "LiberdadeModas_(5).webp",
+                "tags": ["Liberdade Modas"]
+            },
+            {
+                "id": 72,
+                "priority": 3,
+                "company": "Liberdade Modas",
+                "src": "LiberdadeModas_(6).webp",
+                "tags": ["Liberdade Modas"]
+            },
+            {
+                "id": 73,
+                "priority": 3,
+                "company": "Liberdade Modas",
+                "src": "LiberdadeModas_(7).webp",
+                "tags": ["Liberdade Modas"]
+            },
+            {
+                "id": 74,
+                "priority": 3,
+                "company": "Linx",
+                "src": "Linx(1).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 75,
+                "priority": 3,
+                "company": "Minas Calçados",
+                "src": "MinasCalcados_(1).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 76,
+                "priority": 3,
+                "company": "Minas Calçados",
+                "src": "MinasCalcados_(2).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 77,
+                "priority": 3,
+                "company": "Minas Calçados",
+                "src": "MinasCalcados_(3).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 78,
+                "priority": 3,
+                "company": "Minas Calçados",
+                "src": "MinasCalcados_(4).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 79,
+                "priority": 3,
+                "company": "Minas Calçados",
+                "src": "MinasCalcados_(5).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 80,
+                "priority": 3,
+                "company": "Minas Calçados",
+                "src": "MinasCalcados_(6).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 81,
+                "priority": 3,
+                "company": "Minas Calçados",
+                "src": "MinasCalcados_(7).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 82,
+                "priority": 3,
+                "company": "Optimus",
+                "src": "Optimus_(2).webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 83,
+                "priority": 3,
+                "company": "Optimus",
+                "src": "Optimus_(3).webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 84,
+                "priority": 3,
+                "company": "Optimus",
+                "src": "Optimus_(4).webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 85,
+                "priority": 3,
+                "company": "Optimus",
+                "src": "Optimus_(5).webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 86,
+                "priority": 3,
+                "company": "Optimus",
+                "src": "Optimus_(6).webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 87,
+                "priority": 3,
+                "company": "Optimus",
+                "src": "Optimus_(7).webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 88,
+                "priority": 3,
+                "company": "Optimus",
+                "src": "Optimus_(8).webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 89,
+                "priority": 3,
+                "company": "Panificadora Italiana",
+                "src": "PanificadoraItaliana(1).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 90,
+                "priority": 3,
+                "company": "Panificadora Italiana",
+                "src": "PanificadoraItaliana(2).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 91,
+                "priority": 3,
+                "company": "Panificadora Italiana",
+                "src": "PanificadoraItaliana(3).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 92,
+                "priority": 3,
+                "company": "Pitstop",
+                "src": "Pitstop.webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 93,
+                "priority": 3,
+                "company": "Santa Fé",
+                "src": "SantaFe.webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 94,
+                "priority": 3,
+                "company": "Thaline Vierde",
+                "src": "ThalineVierde.webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 95,
+                "priority": 3,
+                "company": "Thinklife",
+                "src": "Thinklife_(2).webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 96,
+                "priority": 3,
+                "company": "Trust Clean",
+                "src": "TrustClean_(1).webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 97,
+                "priority": 3,
+                "company": "Trust Clean",
+                "src": "TrustClean_(2).webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 98,
+                "priority": 3,
+                "company": "Trust Clean",
+                "src": "TrustClean_(3).webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 99,
+                "priority": 3,
+                "company": "Trust Clean",
+                "src": "TrustClean_(4).webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 100,
+                "priority": 3,
+                "company": "Trust Clean",
+                "src": "TrustClean_(5).webp",
+                "tags": ["Honoss"]
+            },
+            {
+                "id": 101,
+                "priority": 3,
+                "company": "Ultra Mídias",
+                "src": "UltraMidias_(1).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 102,
+                "priority": 3,
+                "company": "Ultra Mídias",
+                "src": "UltraMidias_(2).webp",
+                "tags": ["Casa da Arte"]
+            },
+            {
+                "id": 103,
+                "priority": 3,
+                "company": "Liberdade Modas",
+                "src": "LiberdadeModas_(1).webp",
+                "tags": ["Liberdade Modas"]
+            },
+            {
+                "id": 104,
+                "priority": 3,
+                "company": "Trust Clean",
+                "src": "TrustClean.webp",
+                "tags": ["Honoss"]
+            }
+        ]
+    },
+    {
+        "CategoryName": "Artes e Ilustrações",
+        "CategorySlug": "ilustracoes-e-manipulacoes",
+        "TechnologiesTitle": "criado com",
+        "Technologies": [
+            "Photoshop",
+            "Illustrator",
+            "Premiere",
+            "Pentoolsai",
+            "Blender"
+        ],
+        "AboutTitle": "sobre ...",
+        "About": "<p>Apresentamos composições que, de forma singela, <b class=\"highlight\">desafiam as convenções e oferecem novas perspectivas estéticas.</b>Com cores vibrantes e elementos inusitados, procuramos despertar sua curiosidade e prender sua imaginação em <b class=\"highlight\">histórias intrigantes.</b> Esses projetos são uma tentativa de fundir <b class=\"highlight\">criatividade e expressão artística,</b> proporcionando uma experiência visual envolvente e inspiradora.Seja bem-vindo a um universo simples, porém repleto de encanto, onde a arte busca transcender a realidade e convidar você a <b class=\"highlight\">explorar novos horizontes.</b></p>",
+        "Gallery":[
+            {
+                "id": 1,
+                "priority": 3,
+                "company": "BigMouth",
+                "src": "BigMouth.webp",
+                "tags": ["BigMouth", "Ilustration"]
+            },
+            {
+                "id": 2,
+                "priority": 3,
+                "company": "Daedric",
+                "src": "Daedric.webp",
+                "tags": ["Daedric", "Ilustration"]
+            },
+            {
+                "id": 3,
+                "priority": 3,
+                "company": "Flower-1",
+                "src": "Flower-1.webp",
+                "tags": ["Flower-1", "Ilustration"]
+            },
+            {
+                "id": 4,
+                "priority": 3,
+                "company": "Hurt_LUL",
+                "src": "Hurt_LUL.webp",
+                "tags": ["Hurt_LUL", "Ilustration"]
+            },
+            {
+                "id": 5,
+                "priority": 3,
+                "company": "Ilustration_CreepyCenerentola",
+                "src": "Ilustration_CreepyCenerentola_8.webp",
+                "tags": ["Ilustration_CreepyCenerentola", "Ilustration", "Manipulation", "Creepyart"]
+            },
+            {
+                "id": 6,
+                "priority": 3,
+                "company": "Floral Armor",
+                "src": "Ilustration_FloralArmor_Wallpaper (1).webp",
+                "tags": ["Floral Armor", "Ilustration", "Creepyart"]
+            },
+            {
+                "id": 7,
+                "priority": 3,
+                "company": "Floral Armor",
+                "src": "Ilustration_FloralArmor_Step (7).webp",
+                "tags": ["Floral Armor", "Ilustration", "Creepyart"]
+            },
+            {
+                "id": 9,
+                "priority": 3,
+                "company": "A foto",
+                "src": "Poly_A_Foto.webp",
+                "tags": ["A Foto", "PolygonalArt", "Ilustration"]
+            },
+            {
+                "id": 10,
+                "priority": 3,
+                "company": "Melanie",
+                "src": "Poly_Melanie.webp",
+                "tags": ["Melanie", "PolygonalArt", "Ilustration"]
+            },
+            {
+                "id": 11,
+                "priority": 3,
+                "company": "TheGirl",
+                "src": "Polyart_TheGirl.webp",
+                "tags": ["TheGirl", "PolygonalArt", "Ilustration"]
+            }
+        ]
+    }
+]

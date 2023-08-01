@@ -1,5 +1,9 @@
 @import './variables';
 
+.gallery__item:not(:first-child) {
+    margin-top: 6em;
+}
+
 .gallery__item--title {
     text-decoration: underline;
     color: $color-text-highlight;
@@ -18,11 +22,6 @@
 .coverBanner--gif:hover {
     filter: brightness(1.1);
 }
-
-.gallery__item {
-    margin: 5vh 0;
-}
-
 
 .coverBanner__container {
 

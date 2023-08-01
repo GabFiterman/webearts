@@ -92,7 +92,7 @@ export default function Contact({ _t }) {
   return (
     <Container className="Contact">
       <Row className="align-items-center justify-content-between">
-        <Col xs={7} md={9} className="Contact__heading">
+        <Col xs={8} md={9} className="Contact__heading">
           <h1 className="title Contact__heading--title">
             {ReactHtmlParser(_t.title)}
           </h1>
@@ -100,7 +100,7 @@ export default function Contact({ _t }) {
             {ReactHtmlParser(_t.subtitle)}
           </div>
         </Col>
-        <Col xs={5} md={3}>
+        <Col xs={4} md={3}>
           <a href={linkWhatsapp} target="_blank" rel="noreferrer">
             <img
               className="Contact__image--logoWhatsapp"

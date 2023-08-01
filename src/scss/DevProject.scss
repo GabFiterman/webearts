@@ -24,6 +24,7 @@
 
 .aboutText__title {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .activeAboutText {
@@ -37,6 +38,7 @@
 
 .youtube_embeded,
 .vimeo_embeded,
+.generic_video,
 .imageBanner {
     aspect-ratio: 16/9;
     width: 100%;
@@ -47,6 +49,10 @@
 .return__image {
     max-height: 10em;
     width: auto;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .github__logo {

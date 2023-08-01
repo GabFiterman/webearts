@@ -5,6 +5,8 @@ import portfolioData from "../data/portfolio-dev.json";
 import { Container, Row, Col } from "react-bootstrap";
 import "../scss/DevProject.scss";
 import ReactHtmlParser from "react-html-parser";
+import ReturnButton from "../components/ReturnButton.jsx";
+import IconTech from "../components/IconTech";
 
 function ProjectInfos({ project }) {
   return (
@@ -44,7 +46,9 @@ function ProjectInfos({ project }) {
         <Col xs={12}>
           <ul className="DevProject__techList">
             {project.infos.tech.map((tech, i) => (
-              <li key={i}>{tech} | &nbsp;</li>
+              <li key={i}>
+                <IconTech techName={tech} index={i} />
+              </li>
             ))}
           </ul>
         </Col>
@@ -66,6 +70,12 @@ function MainBanner({ project }) {
 
         {mainSource.type === "video" && mainSource.host === "vimeo" ? (
           <VimeoEmbededVideo src={mainSource.src} />
+        ) : undefined}
+
+        {mainSource.type === "video" &&
+        mainSource.host !== "vimeo" &&
+        mainSource.host !== "youtube" ? (
+          <GenericVideo src={mainSource.src} />
         ) : undefined}
 
         {mainSource.type == "image" || mainSource.type == "gif" ? (
@@ -123,6 +133,19 @@ function VimeoEmbededVideo({ src }) {
   );
 }
 
+function GenericVideo({ src }) {
+  return (
+    <Row className="">
+      <Col xs={12}>
+        <video controls className="generic_video">
+          <source src={src} type="video/mp4" />
+          <img src="/img/Art_404.webp" />
+        </video>
+      </Col>
+    </Row>
+  );
+}
+
 function SecondaryBanners({ project }) {
   return (
     <Row className="justify-content-center mt-2 px-4">
@@ -134,6 +157,12 @@ function SecondaryBanners({ project }) {
 
           {source.type === "video" && source.host === "vimeo" ? (
             <VimeoEmbededVideo src={source.src} />
+          ) : undefined}
+
+          {source.type === "video" &&
+          source.host !== "vimeo" &&
+          source.host !== "youtube" ? (
+            <GenericVideo src={source.src} />
           ) : undefined}
 
           {source.type == "image" || source.type == "gif" ? (
@@ -175,28 +204,6 @@ function AboutText({ description }) {
   );
 }
 
-function Return() {
-  const navigate = useNavigate();
-  const AstronautGoBack = "/img/astronauts/Astronaut-MontadoAviaoPapel.webp";
-
-  const handleBack = () => {
-    navigate(-1);
-  };
-
-  return (
-    <Row className="justify-content-center mt-5">
-      <img
-        className="return__image"
-        src={AstronautGoBack}
-        alt="voltar"
-        onClick={handleBack}
-      />
-      {/* <Col xs={12}>
-      </Col> */}
-    </Row>
-  );
-}
-
 export default function DevProject() {
   const { id } = useParams();
   const project = portfolioData.find((project) => project.id === parseInt(id));
@@ -230,19 +237,19 @@ export default function DevProject() {
           </>
         ) : (
           <>
-          <Col>
-            <h1 className="title title-big highlight text-center">
-              {project.projectName}
-            </h1>
-          </Col>
-        </>
+            <Col>
+              <h1 className="title title-big highlight text-center">
+                {project.projectName}
+              </h1>
+            </Col>
+          </>
         )}
       </Row>
       <ProjectInfos project={project} />
       <AboutText description={project.description} />
       <MainBanner project={project} />
       <SecondaryBanners project={project} />
-      <Return />
+      <ReturnButton />
     </Container>
   );
 }
