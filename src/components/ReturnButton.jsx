@@ -6,7 +6,7 @@ export default function Return() {
     const AstronautGoBack = "/img/astronauts/Astronaut-MontadoAviaoPapel.webp";
   
     const handleBack = () => {
-      navigate(-1);
+      navigate("/");
     };
 
     return (
