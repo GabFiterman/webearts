@@ -2,7 +2,7 @@ import { useState } from "react";
 import ReactHtmlParser from "react-html-parser";
 import { Col, Container, Row } from "react-bootstrap";
 import emailjs from '@emailjs/browser';
-import "../scss/contact.scss";
+// import "../scss/contact.scss";
 
 
 function EmailForm({ _t }) {

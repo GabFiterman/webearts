@@ -1,4 +1,4 @@
-import "../scss/portfolio.scss";
+// import "../scss/portfolio.scss";
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import PortfolioDev from "./PortfolioDev";

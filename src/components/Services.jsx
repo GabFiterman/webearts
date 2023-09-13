@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useRef, useEffect, useState } from "react";
-import "../scss/services.scss";
+// import "../scss/services.scss";
 import ReactHtmlParser from "react-html-parser";
 
 function HorizontalGallery({ type, _t }) {

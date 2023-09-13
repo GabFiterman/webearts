@@ -1,9 +1,9 @@
-import StarsBackground from "../components/starsBackground";
+// import "../scss/devProject.scss";
+import StarsBackground from "../components/StarsBackground";
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import portfolioData from "../data/portfolio-dev.json";
 import { Container, Row, Col } from "react-bootstrap";
-import "../scss/DevProject.scss";
 import ReactHtmlParser from "react-html-parser";
 import ReturnButton from "../components/ReturnButton.jsx";
 import IconTech from "../components/IconTech";

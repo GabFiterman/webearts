@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import ReactHtmlParser from "react-html-parser";
-import "../scss/heading.scss";
+// import "../scss/heading.scss";
 
 function FadeText({ texts, interval }) {
   const [currentIndex, setCurrentIndex] = useState(0);

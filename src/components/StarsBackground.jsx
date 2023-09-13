@@ -1,4 +1,4 @@
-import '../scss/starsBackground.scss'
+// import '../scss/starsBackground.scss'
 export default function StarsBackground() {
     return (
         <>

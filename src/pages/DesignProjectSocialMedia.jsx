@@ -1,7 +1,7 @@
-import "../scss/designProject.scss";
+// import "../scss/designProject.scss";
 import { Col, Container, Row } from "react-bootstrap";
 import ReturnButton from "../components/ReturnButton.jsx";
-import StarsBackground from "../components/starsBackground";
+import StarsBackground from "../components/StarsBackground";
 import portfolioData from "../data/portfolio-design.json";
 import ReactHtmlParser from "react-html-parser";
 import ImageGallery from "../components/ImageGallery";

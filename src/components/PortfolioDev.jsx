@@ -1,4 +1,4 @@
-import "../scss/portfolioDev.scss";
+// import "../scss/portfolioDev.scss";
 import portfolioData from "../data/portfolio-dev.json";
 import { useNavigate } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
