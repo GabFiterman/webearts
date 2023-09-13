@@ -7,7 +7,7 @@ import Team from "../components/Team";
 import Footer from "../components/Footer";
 import StarsBackground from "../components/StarsBackground";
 
-import "../scss/root.scss";
+// import "../scss/root.scss";
 import { Col, Container, Row } from "react-bootstrap";
 import textData from "../data/text-main.json";
 

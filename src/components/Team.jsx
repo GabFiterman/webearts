@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import ReactHtmlParser from "react-html-parser";
-import "../scss/team.scss";
+// import "../scss/team.scss";
 
 function Member({ name }) {
   return (

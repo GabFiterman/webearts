@@ -1,5 +1,5 @@
 import React from "react";
-import "../scss/iconTech.scss";
+// import "../scss/iconTech.scss";
 import textData from "../data/text-main.json";
 import { useState } from "react";
 

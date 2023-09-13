@@ -1,5 +1,5 @@
 import { Col, Row } from "react-bootstrap";
-import "../scss/introduction.scss";
+// import "../scss/introduction.scss";
 import ReactHtmlParser from "react-html-parser";
 import { useState, useEffect } from "react";
 

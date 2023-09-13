@@ -1,4 +1,4 @@
-import '../scss/footer.scss';
+// import '../scss/footer.scss';
 
 export default function Footer({_t}) {
     const logoSrc = '/img/Logo-DarkMode.webp'

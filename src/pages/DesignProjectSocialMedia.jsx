@@ -1,4 +1,4 @@
-import "../scss/designProject.scss";
+// import "../scss/designProject.scss";
 import { Col, Container, Row } from "react-bootstrap";
 import ReturnButton from "../components/ReturnButton.jsx";
 import StarsBackground from "../components/StarsBackground";
