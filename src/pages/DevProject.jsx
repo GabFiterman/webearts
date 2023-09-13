@@ -1,4 +1,4 @@
-import StarsBackground from "../components/starsBackground";
+import StarsBackground from "../components/StarsBackground";
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import portfolioData from "../data/portfolio-dev.json";

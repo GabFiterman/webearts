@@ -5,7 +5,7 @@ import Portfolio from "../components/Portfolio";
 import Contact from "../components/Contact";
 import Team from "../components/Team";
 import Footer from "../components/Footer";
-import StarsBackground from "../components/starsBackground";
+import StarsBackground from "../components/StarsBackground";
 
 import "../scss/root.scss";
 import { Col, Container, Row } from "react-bootstrap";
