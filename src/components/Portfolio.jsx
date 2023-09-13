@@ -19,6 +19,7 @@ function CategoriesContainer(props) {
               ? "activeCategory category__title"
               : "category__title"
           }
+          style={{backgroundColor: 'rgba(255,255,255, 0.15)', padding: '1rem', borderRadius: '.5rem'}}
           key={i}
           onClick={() => setActiveCategory(category)}
         >
