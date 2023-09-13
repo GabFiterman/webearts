@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - development
-name: 🚀 Deploy to DEV website on push
+name: 🚀 Deploy to PROD website on push
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -28,4 +28,4 @@ jobs:
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
           local-dir: build
-          server-dir: development.webearts.com/
+          server-dir: public_html/
