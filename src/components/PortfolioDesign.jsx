@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import "../scss/PortfolioDesign.scss";
+import "../scss/portfolioDesign.scss";
 import { useNavigate } from "react-router-dom";
 
 export default function PortfolioDesign({ _t }) {
