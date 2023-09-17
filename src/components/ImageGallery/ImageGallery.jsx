@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { ImagePopup } from '@/components';
+import { scrollTo } from '@/utils/utils';
 
 const ImageGallery = (props) => {
     const { gallery, rootPath } = props;
@@ -48,12 +49,12 @@ const ImageGallery = (props) => {
     };
 
     const nextPage = () => {
-        setCurrentPage((prevPage) =>
-            Math.min(prevPage + 1, paginatedItems.length),
-        );
+        scrollTo();
+        setCurrentPage((prevPage) => Math.min(prevPage + 1, paginatedItems.length));
     };
 
     const prevPage = () => {
+        scrollTo();
         setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
     };
 

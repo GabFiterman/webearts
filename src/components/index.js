@@ -13,6 +13,7 @@ import PortfolioDev from './Portfolio/PortfolioDev.jsx';
 import ReturnButton from './Buttons/ReturnButton.jsx';
 import Services from './Services/Services.jsx';
 import Team from './Team/Team.jsx';
+import CopyToClipboard from './Utility/CopyToClipboard.jsx';
 
 export {
 	StarsBackground,
@@ -28,5 +29,6 @@ export {
 	PortfolioDev,
 	ReturnButton,
 	Services,
-	Team
+	Team,
+	CopyToClipboard
 };

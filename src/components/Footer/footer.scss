@@ -4,23 +4,35 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('/BackgroundFooter.webp');
-    // background-color: #282828;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
     padding-top: 10vh;
     min-height: 50vh;
 }
 
-.Footer__logo {
-    max-height: 15vw;
+.Footer__info {
+    .Footer__logo {
+        max-height: 15vw;
+    }
+
+    .Footer__title {
+        font-size: 2rem;
+        font-weight: 200;
+        margin-top: 5vh;
+    }
 }
 
-.Footer__title {
-    font-size: 2rem;
-    font-weight: 200;
-    margin-top: 5vh;
+.Footer__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
 }
 
 .Footer__subtitle {

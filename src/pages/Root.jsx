@@ -1,6 +1,5 @@
 import {
     StarsBackground,
-    Contact,
     Footer,
     Heading,
     Introduction,
@@ -34,11 +33,6 @@ export default function Root() {
             <Row>
                 <Col className="px-0 mb-5">
                     <Services _t={textData.Services} />
-                </Col>
-            </Row>
-            <Row>
-                <Col className="px-0 mt-5">
-                    <Contact _t={textData.Contact} />
                 </Col>
             </Row>
             <Row>

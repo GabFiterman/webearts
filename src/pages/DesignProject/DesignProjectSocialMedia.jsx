@@ -7,8 +7,15 @@ import {
     ReturnButton,
 } from '@/components';
 import portfolioData from '@/data/portfolio-design';
+import { scrollTo } from '@/utils/utils';
+import { useEffect } from 'react';
 
 export default function DesignProjectSocialMedia() {
+
+    useEffect(() => {
+        scrollTo()
+    }, []);
+
     const data = portfolioData[0];
     return (
         <Container fluid className="SocialMedia DesignProject Root px-4">
