@@ -3,15 +3,10 @@
         "CategoryName": "social media",
         "CategorySlug": "social-media",
         "TechnologiesTitle": "criado com",
-        "Technologies": [
-            "Photoshop",
-            "Illustrator",
-            "Notion",
-            "mLabs"
-        ],
+        "Technologies": ["Photoshop", "Illustrator", "Notion", "mLabs"],
         "AboutTitle": "sobre ...",
         "About": "<p>Esses conteúdos são produzidos para as <b class=\"highlight\">mídias sociais</b>, com o objetivo de atender às diversas necessidades de diferentes clientes. Cada peça é <em>cuidadosamente desenvolvida</em>, levando em consideração a <b class=\"highlight\">individualidade</b> de cada projeto. Através da criatividade e estratégia, buscamos criar <b class=\"highlight\">conexões significativas</b> e <b>oferecer valor</b> aos seguidores. É um trabalho em constante evolução, voltado para proporcionar <b class=\"highlight\">experiências autênticas</b> e relevantes na era digital.</p>",
-        "Gallery":[
+        "Gallery": [
             {
                 "id": 1,
                 "priority": 3,
@@ -741,7 +736,7 @@
         ],
         "AboutTitle": "sobre ...",
         "About": "<p>Apresentamos composições que, de forma singela, <b class=\"highlight\">desafiam as convenções e oferecem novas perspectivas estéticas.</b>Com cores vibrantes e elementos inusitados, procuramos despertar sua curiosidade e prender sua imaginação em <b class=\"highlight\">histórias intrigantes.</b> Esses projetos são uma tentativa de fundir <b class=\"highlight\">criatividade e expressão artística,</b> proporcionando uma experiência visual envolvente e inspiradora.Seja bem-vindo a um universo simples, porém repleto de encanto, onde a arte busca transcender a realidade e convidar você a <b class=\"highlight\">explorar novos horizontes.</b></p>",
-        "Gallery":[
+        "Gallery": [
             {
                 "id": 1,
                 "priority": 3,
@@ -775,7 +770,12 @@
                 "priority": 3,
                 "company": "Ilustration_CreepyCenerentola",
                 "src": "Ilustration_CreepyCenerentola_8.webp",
-                "tags": ["Ilustration_CreepyCenerentola", "Ilustration", "Manipulation", "Creepyart"]
+                "tags": [
+                    "Ilustration_CreepyCenerentola",
+                    "Ilustration",
+                    "Manipulation",
+                    "Creepyart"
+                ]
             },
             {
                 "id": 6,

@@ -1,0 +1,179 @@
+@import '@/scss/variables';
+@import '@/scss/animations.scss';
+
+.Services {
+    background-image: url('/img/PenTool_Curve_Constelation.webp');
+    background-size: 125%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.design__container,
+.desenvolvimento__container {
+    h3 {
+        margin-left: 8vw !important;
+    }
+}
+
+.Services__title {
+    color: $color-text-highlight;
+    margin-left: 8vw;
+    margin-top: 5vh;
+}
+
+.image__astronaut--flying {
+    margin: 9.5em 0 0 -40vw;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-name: shaking;
+    @include shaking(14rem, 12rem);
+}
+
+.Services__image--astronaut--sleeping--container {
+    height: 18vh;
+}
+
+.image__astronaut--sleeping {
+    margin: -2vh 0 0 5rem;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-name: shaking;
+    @include shaking(10rem, 8rem);
+}
+
+.Services__image--astronaut--column {
+    height: 30vh;
+}
+
+.horizontalGallery {
+    display: flex;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.design__container {
+    margin-top: 5vh !important;
+}
+
+.desenvolvimento__container {
+    margin-top: 0 !important;
+}
+
+.design__element {
+    width: 40vw;
+    position: static;
+    overflow-x: hidden !important;
+    margin-top: -5vh;
+    margin-left: 20vw;
+}
+
+.desenvolvimento__element {
+    position: static;
+    width: 40%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.Services__card {
+    margin: 1.5rem .75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $color-design-secondary;
+    scroll-snap-align: start;
+    padding: .3rem .85rem;
+    border-radius: .75rem;
+    font-size: 1.25em;
+    border-bottom: .25em solid white;
+}
+
+.design {
+    background-color: $color-design-main;
+    color: $color-design-secondary;
+    height: 20vh;
+    min-width: 50vw;
+    border-color: $color-text-highlight;
+}
+
+.desenvolvimento {
+    background-color: $color-dev-main;
+    color: $color-dev-secondary;
+    height: 30vh;
+    min-width: 65vw;
+    border-color: $color-design-main;
+}
+
+@media (min-width: 768px) {
+    .Services {
+        background-image: url();
+        background-size: 95%;
+        background-position: left 25vh;
+    }
+
+    .design__element {
+        width: 50vw;
+        margin-top: -25vh;
+        margin-left: 22vw;
+    }
+
+    .Services__title {}
+
+    .image__astronaut--flying {
+        margin: -2vh 0 0 -25vw;
+        height: 25vh !important;
+    }
+
+    .Services__image--astronaut--sleeping--container {
+        height: 8vh;
+    }
+
+    .image__astronaut--sleeping {
+        @include shaking(15rem, 12rem);
+        margin: -6vh 0 0 65vw;
+    }
+
+    .design {
+        height: 32vh;
+        min-width: 40vw;
+    }
+
+    .desenvolvimento {
+        height: 42vh;
+        min-width: 50vw;
+    }
+}
+
+@media (min-width: 992px) {
+    .design__element {
+        width: 30vw;
+        margin-top: -50vh;
+        margin-left: 30vw;
+    }
+
+    .image__astronaut--sleeping {
+        // margin: -6vh 0 0 65vw;
+    }
+
+    .image__astronaut--flying {
+        margin: -2vh 0 0 -25vw;
+        height: 45vh !important;
+    }
+
+    .design {
+        height: 38vh;
+        min-width: 25vw;
+    }
+
+    .desenvolvimento {
+        height: 45vh;
+        min-width: 35vw;
+    }
+
+}

@@ -1,0 +1,68 @@
+.DevProject {
+
+    ul {
+        padding-left: 0;
+    }
+
+    h2 {
+        font-size: 1.35em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+}
+
+.DevProject__techList {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        list-style: none;
+    }
+}
+
+.aboutText__title {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.activeAboutText {
+    font-weight: bold;
+}
+
+.aboutText__image {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.youtube_embeded,
+.vimeo_embeded,
+.generic_video,
+.imageBanner {
+    aspect-ratio: 16/9;
+    width: 100%;
+    background-color: white;
+    border-radius: .75rem !important;
+}
+
+.return__image {
+    max-height: 10em;
+    width: auto;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.github__logo {
+    filter: invert(1);
+    max-height: 3rem;
+    opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+    .DevProject {
+        padding: 0 20vw;
+    }
+}
