@@ -1,0 +1,23 @@
+@import '@/scss/variables';
+
+.CopyTo__successMessage {
+    background-color: #21a749;
+    border-radius: 0.65rem;
+    color: #e6fae8;
+    font-size: .8em;
+    margin-top: -4em;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    text-align: center;
+}
+
+.CopyTo__button {
+    background-color: #c5e6cf3a;
+    border-radius: 0.65rem;
+    color: #e6fae8;
+    font-weight: bold;
+    font-size: .8em;
+    margin: 0.5em;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
