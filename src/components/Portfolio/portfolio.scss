@@ -1,0 +1,29 @@
+@import '@/scss/variables';
+
+.Portfolio {
+    margin-top: -25vh;
+}
+
+.CategoriesContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5vh 0;
+}
+
+.category__title {
+    font-size: 1.25em;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.activeCategory {
+    border-bottom: 4px #cdcdcd solid;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .Portfolio {
+        margin-top: -10vh;
+    }
+}

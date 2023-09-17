@@ -1,0 +1,71 @@
+@import '@/scss/variables';
+
+.Introduction__logo {
+    background-color: $color-text-main;
+    height: 7rem;
+    border-radius: 0 0 2rem 0;
+    transition: opacity 0.5s ease;
+    padding: 2vh 2vw 2vh 25vw;
+}
+
+.Introduction__container {
+    color: $color-text-ternary;
+    background-color: $color-text-main;
+    border-radius: 0 0 4rem 0;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    margin-top: -16vh;
+}
+
+.Introduction__logo.hide {
+    opacity: 0;
+}
+
+.Introduction__container.show {
+    opacity: 1;
+}
+
+.Introduction__icon {
+    height: 7rem;
+    margin-left: -15vw;
+    opacity: .25;
+}
+
+.Introduction__text--title {
+    color: $color-text-highlight;
+}
+
+.Introduction__text--body {
+    // margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .Introduction__container {
+        padding: 0 8vw 5vh 8vw;
+    }
+
+    .Introduction__logo {
+        margin-top: 5vh;
+        height: 12rem;
+    }
+
+    .Introduction__icon {
+        margin-left: 2vw;
+        height: 18vw;
+    }
+}
+
+@media (min-width: 992px) {
+    .Introduction__container {
+        max-width: 75vw !important;
+    }
+
+    .Introduction__logo {
+        // margin-top: 2vh;
+    }
+
+    .Introduction__icon {
+        // margin-left: -4rem;
+        height: 10rem;
+    }
+}
