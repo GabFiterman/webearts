@@ -1,7 +1,6 @@
 @import '@/scss/variables';
 @import '@/scss/animations.scss';
 
-.Team__heading {}
 
 .Team__title {
     margin-left: 5vw;
@@ -13,7 +12,6 @@
     rotate: 10deg;
 }
 
-.Team__body {}
 
 .Team__body--subtittle {
     font-weight: bold;
@@ -21,12 +19,6 @@
     max-width: 75vw;
     text-align: center;
     margin: 1.65rem auto;
-}
-
-.Team__body--bodyText {
-    // text-align: justify;
-    // max-width: 40vw;
-    // padding: inherit 8vw;
 }
 
 .Team__members {
