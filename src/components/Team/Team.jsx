@@ -28,7 +28,7 @@ export default function Team({ _t }) {
                         {_t.title}
                     </h1>
                 </Col>
-                <Col>
+                <Col className="Team__title--image">
                     <img
                         className="Team__image--astronaut"
                         alt="Figurinha de astronauta apontando para o alto"

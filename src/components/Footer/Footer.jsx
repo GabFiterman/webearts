@@ -5,7 +5,8 @@ export default function Footer({ _t }) {
     const logoSrc = '/img/Logo-DarkMode.webp';
     const contactList = {
         whatsapp_link: 'https://api.whatsapp.com/send?phone=5562984602348',
-        email: 'gabriel@webearts.com',
+        emailGabe: 'gabriel@webearts.com',
+        emailKakau: 'kakau@webearts.com',
     };
 
     return (
@@ -24,7 +25,8 @@ export default function Footer({ _t }) {
                         Whatsapp
                     </a>
                 </button>
-                <CopyToClipboard textToCopy={contactList.email} />
+                <CopyToClipboard textToCopy={contactList.emailKakau} />
+                <CopyToClipboard textToCopy={contactList.emailGabe} />
             </div>
 
             <p className="Footer__subtitle">{_t.subtitle}</p>

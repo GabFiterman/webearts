@@ -3,12 +3,18 @@
 
 
 .Team__title {
-    margin-left: 5vw;
+    text-align: center;
+    width: 100vw;
+}
+
+.Team__title--image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Team__image--astronaut {
     max-height: 30vh;
-    // margin-left: -15vw;
     rotate: 10deg;
 }
 
